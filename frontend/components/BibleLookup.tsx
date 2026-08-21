@@ -52,6 +52,7 @@ export function BibleLookup({ userId }: BibleLookupProps) {
   const [expandedCrossRefs, setExpandedCrossRefs] = useState(false);
   const [selectedTag, setSelectedTag] = useState<string>('all');
   const [showSearchHelp, setShowSearchHelp] = useState(false);
+  const [showFilters, setShowFilters] = useState(false);
 
   const { toast } = useToast();
   const queryClient = useQueryClient();
@@ -530,193 +531,232 @@ export function BibleLookup({ userId }: BibleLookupProps) {
         <p className="text-slate-600 dark:text-gray-300">Search Scripture with advanced full-text search capabilities</p>
       </div>
 
-      <Card className="border-slate-200 dark:border-gray-800 bg-white dark:bg-black">
-        <CardHeader>
-          <CardTitle className="flex items-center justify-between text-slate-800 dark:text-white">
+      <Card className="border-slate-200 dark:border-gray-800 bg-white dark:bg-black shadow-lg">
+        <CardHeader className="pb-3">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <div className="flex items-center space-x-2">
-              <Search className="w-6 h-6 text-blue-600 dark:text-blue-400" />
-              <span>Advanced Scripture Search</span>
+              <div className="w-9 h-9 rounded-xl bg-blue-100 dark:bg-blue-950 flex items-center justify-center text-blue-600 dark:text-blue-400">
+                <Search className="w-5 h-5" />
+              </div>
+              <div>
+                <CardTitle className="text-xl text-slate-800 dark:text-white">
+                  Scripture Search
+                </CardTitle>
+                <p className="text-xs text-slate-500 dark:text-gray-400">Search keywords, topics, or exact phrases across the Bible</p>
+              </div>
             </div>
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center gap-2">
               <Button
                 variant="outline"
+                size="sm"
                 onClick={() => handleOpenStudyMode()}
-                className="text-green-600 dark:text-green-400 border-green-200 dark:border-green-700 hover:bg-green-50 dark:hover:bg-green-950"
+                className="text-green-600 dark:text-green-400 border-green-200 dark:border-green-700 hover:bg-green-50 dark:hover:bg-green-950 text-xs font-semibold"
               >
-                <BookOpen className="w-4 h-4 mr-2" />
+                <BookOpen className="w-3.5 h-3.5 mr-1.5" />
                 Study Mode
               </Button>
               <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => setShowSearchHelp(!showSearchHelp)}
-                className="text-slate-500 dark:text-gray-400"
-              >
-                ?
-              </Button>
-              <Button
                 variant="outline"
+                size="sm"
                 onClick={() => setShowBookmarks(true)}
-                className="text-purple-600 dark:text-purple-400 border-purple-200 dark:border-purple-700 hover:bg-purple-50 dark:hover:bg-purple-950"
+                className="text-purple-600 dark:text-purple-400 border-purple-200 dark:border-purple-700 hover:bg-purple-50 dark:hover:bg-purple-950 text-xs font-semibold"
               >
-                <Bookmark className="w-4 h-4 mr-2" />
-                My Bookmarks
+                <Bookmark className="w-3.5 h-3.5 mr-1.5" />
+                Bookmarks
               </Button>
             </div>
-          </CardTitle>
+          </div>
         </CardHeader>
-        <CardContent className="space-y-4">
-          {showSearchHelp && (
-            <div className="bg-blue-50 dark:bg-blue-950/50 p-4 rounded-lg border border-blue-200 dark:border-blue-800 mb-4">
-              <h3 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">Search Help</h3>
-              <div className="space-y-2 text-sm text-blue-600 dark:text-blue-400">
-                <div><strong>Keyword:</strong> Search for individual words (e.g., "love faith hope")</div>
-                <div><strong>Phrase:</strong> Search for exact phrases (e.g., "love your neighbor")</div>
-                <div><strong>Topic:</strong> Search by topics with related terms (e.g., "salvation" finds "save", "savior", "redeem")</div>
-                <div><strong>Study Mode:</strong> Navigate verse-by-verse with notes, highlights, and commentary</div>
+        <CardContent className="space-y-4 pt-1">
+          {/* Primary Search Bar */}
+          <div className="space-y-3">
+            <div className="relative flex items-center">
+              <Search className="absolute left-3.5 text-slate-400 dark:text-gray-500 w-4 h-4" />
+              <Input
+                placeholder="Search Bible e.g., 'Sabbath rest', 'Sanctuary', 'John 3:16'..."
+                value={searchQuery}
+                onChange={(e) => handleSearch(e.target.value)}
+                className="pl-10 pr-24 py-5 bg-white dark:bg-gray-900 border-slate-300 dark:border-gray-700 rounded-xl text-sm font-medium focus-visible:ring-blue-500"
+              />
+              <div className="absolute right-2 flex items-center gap-1">
+                {searchQuery && (
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => setSearchQuery('')}
+                    className="h-7 w-7 p-0 rounded-lg text-slate-400 hover:text-slate-600"
+                  >
+                    <X className="w-3.5 h-3.5" />
+                  </Button>
+                )}
+                <Button
+                  variant={showFilters ? 'default' : 'outline'}
+                  size="sm"
+                  onClick={() => setShowFilters(!showFilters)}
+                  className={`h-8 text-xs font-semibold rounded-lg flex items-center gap-1 ${
+                    showFilters 
+                      ? 'bg-blue-600 text-white' 
+                      : 'text-slate-600 dark:text-gray-300'
+                  }`}
+                >
+                  <Filter className="w-3.5 h-3.5" />
+                  <span>Filters</span>
+                  {(selectedTranslation || selectedBook || selectedTestament !== 'all') && (
+                    <span className="w-2 h-2 rounded-full bg-amber-400 ml-0.5" />
+                  )}
+                </Button>
+              </div>
+            </div>
+
+            {/* Quick Search Type selector pills */}
+            <div className="flex items-center justify-between text-xs pt-1">
+              <div className="flex items-center gap-1.5 overflow-x-auto pb-1">
+                <span className="text-slate-500 dark:text-gray-400 font-medium mr-1">Match:</span>
+                {(['keyword', 'phrase', 'topic'] as const).map((type) => {
+                  const Icon = getSearchTypeIcon(type);
+                  return (
+                    <button
+                      key={type}
+                      onClick={() => handleSearchTypeChange(type)}
+                      className={`px-2.5 py-1 rounded-lg font-semibold transition-all flex items-center gap-1 ${
+                        searchType === type
+                          ? 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300'
+                          : 'bg-slate-100 dark:bg-gray-800 text-slate-600 dark:text-gray-400 hover:bg-slate-200'
+                      }`}
+                    >
+                      <Icon className="w-3 h-3" />
+                      <span className="capitalize">{type}</span>
+                    </button>
+                  );
+                })}
+              </div>
+
+              {(selectedTranslation || selectedBook || selectedTestament !== 'all') && (
+                <button
+                  onClick={() => {
+                    setSelectedTranslation(null);
+                    setSelectedBook(null);
+                    setSelectedTestament('all');
+                  }}
+                  className="text-xs text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  Reset filters
+                </button>
+              )}
+            </div>
+          </div>
+
+          {/* Collapsible Search Filters Disclosure */}
+          {showFilters && (
+            <div className="p-4 rounded-2xl bg-slate-50 dark:bg-gray-900/80 border border-slate-200 dark:border-gray-800 space-y-3 animate-in fade-in zoom-in-95 duration-150">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-gray-400">
+                  Refine Search Scope
+                </span>
+                <span className="text-[11px] text-slate-400">
+                  Selecting a Testament automatically updates available Books
+                </span>
+              </div>
+              <div className="grid sm:grid-cols-3 gap-3">
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 dark:text-gray-300 mb-1">
+                    Translation
+                  </label>
+                  <Select 
+                    value={selectedTranslation?.toString() || 'default'} 
+                    onValueChange={(value) => setSelectedTranslation(value === 'default' ? null : parseInt(value))}
+                  >
+                    <SelectTrigger className="bg-white dark:bg-black border-slate-300 dark:border-gray-700 text-xs">
+                      <SelectValue placeholder="Select translation" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="default">Default (King James Version)</SelectItem>
+                      {translations.map((t) => (
+                        <SelectItem key={t.id} value={t.id.toString()}>
+                          {t.abbreviation} - {t.name}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 dark:text-gray-300 mb-1">
+                    Testament
+                  </label>
+                  <Select value={selectedTestament} onValueChange={(val) => {
+                    setSelectedTestament(val);
+                    setSelectedBook(null);
+                  }}>
+                    <SelectTrigger className="bg-white dark:bg-black border-slate-300 dark:border-gray-700 text-xs">
+                      <SelectValue placeholder="Select testament" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="all">Entire Bible (Old & New)</SelectItem>
+                      <SelectItem value="old">Old Testament (Genesis - Malachi)</SelectItem>
+                      <SelectItem value="new">New Testament (Matthew - Revelation)</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 dark:text-gray-300 mb-1">
+                    Specific Book
+                  </label>
+                  <Select 
+                    value={selectedBook?.toString() || 'all'} 
+                    onValueChange={(value) => setSelectedBook(value === 'all' ? null : parseInt(value))}
+                  >
+                    <SelectTrigger className="bg-white dark:bg-black border-slate-300 dark:border-gray-700 text-xs">
+                      <SelectValue placeholder="All Books" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="all">All Books</SelectItem>
+                      {selectedTestament !== 'new' && oldTestamentBooks.map((b) => (
+                        <SelectItem key={b.id} value={b.id.toString()}>
+                          {b.name} (OT)
+                        </SelectItem>
+                      ))}
+                      {selectedTestament !== 'old' && newTestamentBooks.map((b) => (
+                        <SelectItem key={b.id} value={b.id.toString()}>
+                          {b.name} (NT)
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
               </div>
             </div>
           )}
 
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2 mb-2">
-              <span className="text-sm font-medium text-slate-700 dark:text-gray-200">Search Type:</span>
-              <div className="flex space-x-1">
-                {(['keyword', 'phrase', 'topic'] as const).map((type) => {
-                  const Icon = getSearchTypeIcon(type);
-                  return (
-                    <Button
-                      key={type}
-                      variant={searchType === type ? 'default' : 'outline'}
-                      size="sm"
-                      onClick={() => handleSearchTypeChange(type)}
-                      className={searchType === type ? 'bg-blue-600 text-white' : ''}
-                    >
-                      <Icon className="w-4 h-4 mr-1" />
-                      {type.charAt(0).toUpperCase() + type.slice(1)}
-                    </Button>
-                  );
-                })}
+          {/* Quick Contextual Topic Suggestions (When empty) */}
+          {!searchQuery && (
+            <div className="pt-2">
+              <p className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
+                Curated Adventist Study Topics:
+              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {[
+                  'Creation & Eden',
+                  'Sabbath Rest',
+                  'Sanctuary in Heaven',
+                  'Second Coming of Christ',
+                  'Grace & Faith',
+                  'Three Angels Messages',
+                  'Peace in Troubled Times',
+                  'Daniel 8:14'
+                ].map((topic) => (
+                  <button
+                    key={topic}
+                    onClick={() => handleSearch(topic)}
+                    className="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-gray-800 hover:bg-blue-50 dark:hover:bg-blue-950 text-slate-700 dark:text-slate-300 hover:text-blue-600 text-xs font-medium border border-slate-200 dark:border-gray-700 transition-colors"
+                  >
+                    {topic}
+                  </button>
+                ))}
               </div>
             </div>
-
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 dark:text-gray-500 w-4 h-4" />
-              <Input
-                placeholder={`${getSearchTypeDescription(searchType)}...`}
-                value={searchQuery}
-                onChange={(e) => handleSearch(e.target.value)}
-                className="pl-10 bg-white dark:bg-black border-slate-300 dark:border-gray-600"
-              />
-            </div>
-
-            {suggestions.length > 0 && !searchQuery && (
-              <div className="bg-slate-50 dark:bg-gray-800 p-3 rounded-lg">
-                <p className="text-sm font-medium text-slate-700 dark:text-gray-200 mb-2">Popular searches:</p>
-                <div className="flex flex-wrap gap-2">
-                  {suggestions.slice(0, 8).map((suggestion, index) => (
-                    <Button
-                      key={index}
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => handleSuggestionClick(suggestion)}
-                      className="text-xs text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950"
-                    >
-                      {suggestion}
-                    </Button>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-4">
-            <div>
-              <label className="block text-sm font-medium text-slate-700 dark:text-gray-200 mb-2">
-                Translation
-              </label>
-              <Select value={selectedTranslation?.toString() || 'default'} onValueChange={(value) => setSelectedTranslation(value === 'default' ? null : parseInt(value))}>
-                <SelectTrigger className="bg-white dark:bg-black border-slate-300 dark:border-gray-600">
-                  <SelectValue placeholder="Select translation" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="default">Default (KJV)</SelectItem>
-                  {translations.map((translation) => (
-                    <SelectItem key={translation.id} value={translation.id.toString()}>
-                      {translation.abbreviation} - {translation.name}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-slate-700 dark:text-gray-200 mb-2">
-                Testament
-              </label>
-              <Select value={selectedTestament} onValueChange={setSelectedTestament}>
-                <SelectTrigger className="bg-white dark:bg-black border-slate-300 dark:border-gray-600">
-                  <SelectValue placeholder="Select testament" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">All Books</SelectItem>
-                  <SelectItem value="old">Old Testament</SelectItem>
-                  <SelectItem value="new">New Testament</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-
-            <div>
-              <label className="block text-sm font-medium text-slate-700 dark:text-gray-200 mb-2">
-                Book
-              </label>
-              <Select value={selectedBook?.toString() || 'all'} onValueChange={(value) => setSelectedBook(value === 'all' ? null : parseInt(value))}>
-                <SelectTrigger className="bg-white dark:bg-black border-slate-300 dark:border-gray-600">
-                  <SelectValue placeholder="Select book" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">All Books</SelectItem>
-                  {selectedTestament !== 'new' && (
-                    <>
-                      <div className="px-2 py-1 text-xs font-semibold text-slate-500 dark:text-gray-400">Old Testament</div>
-                      {oldTestamentBooks.map((book) => (
-                        <SelectItem key={book.id} value={book.id.toString()}>
-                          {book.name}
-                        </SelectItem>
-                      ))}
-                    </>
-                  )}
-                  {selectedTestament !== 'old' && (
-                    <>
-                      <div className="px-2 py-1 text-xs font-semibold text-slate-500 dark:text-gray-400">New Testament</div>
-                      {newTestamentBooks.map((book) => (
-                        <SelectItem key={book.id} value={book.id.toString()}>
-                          {book.name}
-                        </SelectItem>
-                      ))}
-                    </>
-                  )}
-                </SelectContent>
-              </Select>
-            </div>
-
-            <div className="flex items-end">
-              <Button
-                onClick={() => {
-                  setSearchQuery('');
-                  setSelectedTranslation(null);
-                  setSelectedBook(null);
-                  setSelectedTestament('all');
-                  setCurrentPage(0);
-                }}
-                variant="outline"
-                className="w-full"
-              >
-                <Filter className="w-4 h-4 mr-2" />
-                Clear
-              </Button>
-            </div>
-          </div>
+          )}
         </CardContent>
       </Card>
 

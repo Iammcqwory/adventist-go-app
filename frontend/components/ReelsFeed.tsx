@@ -1,4 +1,4 @@
-﻿import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { 
   Play, 
@@ -309,6 +309,7 @@ export function ReelsFeed() {
                   e.stopPropagation();
                   toggleMute();
                 }}
+                aria-label={isMuted ? "Unmute video audio" : "Mute video audio"}
                 className="h-9 w-9 p-0 rounded-full bg-black/50 text-white hover:bg-black/80 backdrop-blur-sm"
               >
                 {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
@@ -336,6 +337,7 @@ export function ReelsFeed() {
                 e.stopPropagation();
                 handleLike(currentReel.id);
               }}
+              aria-label={`Like reel ${currentReel.title}, current likes: ${(currentReel.likesCount || 0) + (likedReels[currentReel.id] ? 1 : 0)}`}
               className="flex flex-col items-center group"
             >
               <div
@@ -362,6 +364,7 @@ export function ReelsFeed() {
                 e.stopPropagation();
                 handleShare(currentReel);
               }}
+              aria-label={`Share reel ${currentReel.title}`}
               className="flex flex-col items-center group"
             >
               <div className="w-12 h-12 rounded-full bg-black/50 text-white hover:bg-black/70 flex items-center justify-center backdrop-blur-md transition-all group-hover:scale-110 active:scale-90">
@@ -386,6 +389,7 @@ export function ReelsFeed() {
                   e.stopPropagation();
                   handlePrev();
                 }}
+                aria-label="Previous reel"
                 className="w-10 h-10 p-0 rounded-full bg-black/40 text-white hover:bg-black/70 disabled:opacity-30 backdrop-blur-sm"
               >
                 <ChevronUp className="w-5 h-5" />
@@ -398,6 +402,7 @@ export function ReelsFeed() {
                   e.stopPropagation();
                   handleNext();
                 }}
+                aria-label="Next reel"
                 className="w-10 h-10 p-0 rounded-full bg-black/40 text-white hover:bg-black/70 disabled:opacity-30 backdrop-blur-sm"
               >
                 <ChevronDown className="w-5 h-5" />

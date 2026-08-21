@@ -1,10 +1,23 @@
-import React, { useState } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Settings as SettingsIcon, MapPin, Clock, Bell, Save, Sun, Moon } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { 
+  Settings as SettingsIcon, 
+  MapPin, 
+  Clock, 
+  Bell, 
+  Save, 
+  Sun, 
+  Moon, 
+  Globe, 
+  ShieldCheck, 
+  CheckCircle2, 
+  AlertCircle 
+} from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Switch } from '@/components/ui/switch';
+import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/components/ui/use-toast';
 import { useTheme } from '../contexts/ThemeContext';
 import backend from '~backend/client';
@@ -15,30 +28,46 @@ interface SettingsProps {
 }
 
 export function Settings({ userId, location }: SettingsProps) {
+  const detectedTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
   const [settings, setSettings] = useState({
-    timezone: 'UTC',
+    timezone: detectedTimezone || 'UTC',
     digitalDetoxEnabled: false,
     prepReminders: [] as string[],
   });
+
+  const [notificationPermission, setNotificationPermission] = useState<NotificationPermission>('default');
+
   const { toast } = useToast();
   const queryClient = useQueryClient();
   const { theme, toggleTheme } = useTheme();
 
+  useEffect(() => {
+    if ('Notification' in window) {
+      setNotificationPermission(Notification.permission);
+    }
+  }, []);
+
   const { data: preferencesData, isLoading } = useQuery({
     queryKey: ['preferences', userId],
-    queryFn: () => backend.sabbath.getPreferences({ userId }),
-    onSuccess: (data) => {
-      if (data?.preferences) {
-        setSettings({
-          timezone: data.preferences.timezone,
-          digitalDetoxEnabled: data.preferences.digitalDetoxEnabled,
-          prepReminders: data.preferences.prepReminders,
-        });
+    queryFn: async () => {
+      try {
+        return await backend.sabbath.getPreferences({ userId });
+      } catch (err) {
+        return null;
       }
     },
   });
 
-  const preferences = preferencesData?.preferences;
+  useEffect(() => {
+    if (preferencesData?.preferences) {
+      setSettings({
+        timezone: preferencesData.preferences.timezone || detectedTimezone,
+        digitalDetoxEnabled: preferencesData.preferences.digitalDetoxEnabled,
+        prepReminders: preferencesData.preferences.prepReminders || [],
+      });
+    }
+  }, [preferencesData, detectedTimezone]);
 
   const savePreferencesMutation = useMutation({
     mutationFn: (newSettings: any) =>
@@ -58,11 +87,11 @@ export function Settings({ userId, location }: SettingsProps) {
       });
     },
     onError: (error) => {
-      console.error('Failed to save settings:', error);
+      console.warn('Preferences fallback saved locally:', error);
+      localStorage.setItem('adventist_settings', JSON.stringify(settings));
       toast({
-        title: 'Error',
-        description: 'Failed to save your settings. Please try again.',
-        variant: 'destructive',
+        title: 'Preferences Saved',
+        description: 'Your settings have been saved locally on this device.',
       });
     },
   });
@@ -71,207 +100,202 @@ export function Settings({ userId, location }: SettingsProps) {
     savePreferencesMutation.mutate(settings);
   };
 
+  const requestNotificationPermission = async () => {
+    if (!('Notification' in window)) {
+      toast({
+        title: 'Not Supported',
+        description: 'Browser notifications are not supported on this device.',
+        variant: 'destructive',
+      });
+      return;
+    }
+
+    try {
+      const perm = await Notification.requestPermission();
+      setNotificationPermission(perm);
+      if (perm === 'granted') {
+        toast({
+          title: 'Notifications Enabled',
+          description: 'You will receive Sabbath sunset and preparation alerts.',
+        });
+      } else {
+        toast({
+          title: 'Permission Denied',
+          description: 'You can enable notifications anytime in your browser settings.',
+        });
+      }
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   const timezones = [
-    'UTC',
+    detectedTimezone,
+    'Africa/Nairobi',
+    'Africa/Johannesburg',
     'America/New_York',
     'America/Chicago',
     'America/Denver',
     'America/Los_Angeles',
-    'Europe/London',
-    'Europe/Paris',
-    'Europe/Berlin',
+    'America/Jamaica',
+    'America/Sao_Paulo',
+    'America/Toronto',
+    'Asia/Seoul',
     'Asia/Tokyo',
     'Asia/Shanghai',
     'Australia/Sydney',
+    'Europe/London',
+    'Europe/Paris',
+    'Europe/Berlin',
     'Pacific/Auckland',
-  ];
+    'UTC',
+  ].filter((tz, index, self) => self.indexOf(tz) === index);
 
   return (
-    <div className="space-y-6">
-      <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-slate-800 dark:text-white mb-2">Settings</h1>
-        <p className="text-slate-600 dark:text-gray-300">Customize your Adventist Go experience</p>
+    <div className="space-y-6 max-w-3xl mx-auto pb-12">
+      <div className="text-center mb-6">
+        <h1 className="text-3xl font-bold text-slate-800 dark:text-white mb-1.5">Settings</h1>
+        <p className="text-slate-600 dark:text-gray-400 text-sm">
+          Personalize your local Sabbath countdown, theme, and reminders
+        </p>
       </div>
 
-      <Card className="border-slate-200 dark:border-gray-800 bg-white dark:bg-black">
-        <CardHeader>
-          <CardTitle className="flex items-center space-x-2 text-slate-800 dark:text-white">
-            <Sun className="w-6 h-6 text-blue-600 dark:text-blue-400" />
-            <span>Appearance</span>
+      {/* Appearance Card */}
+      <Card className="border-slate-200 dark:border-gray-800 bg-white dark:bg-black shadow-sm">
+        <CardHeader className="pb-3">
+          <CardTitle className="flex items-center space-x-2 text-slate-800 dark:text-white text-lg">
+            <Sun className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+            <span>Theme & Appearance</span>
           </CardTitle>
+          <CardDescription className="text-xs">
+            Choose between daytime light theme or high-contrast dark sanctuary mode
+          </CardDescription>
         </CardHeader>
-        <CardContent className="space-y-4">
-          <div className="flex items-center justify-between p-4 bg-slate-50 dark:bg-gray-800 rounded-lg">
-            <div>
-              <h3 className="font-semibold text-slate-700 dark:text-gray-200">Dark Mode</h3>
-              <p className="text-sm text-slate-500 dark:text-gray-400">
-                Switch between light and dark themes
-              </p>
-            </div>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={toggleTheme}
-              className="flex items-center space-x-2"
-            >
-              {theme === 'light' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
-              <span>{theme === 'light' ? 'Dark' : 'Light'}</span>
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
-
-      <Card className="border-slate-200 dark:border-gray-800 bg-white dark:bg-black">
-        <CardHeader>
-          <CardTitle className="flex items-center space-x-2 text-slate-800 dark:text-white">
-            <Clock className="w-6 h-6 text-blue-600 dark:text-blue-400" />
-            <span>Time & Location</span>
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4">
+        <CardContent className="flex items-center justify-between pt-1">
           <div>
-            <label className="block text-sm font-medium text-slate-700 dark:text-gray-200 mb-2">
-              Timezone
-            </label>
-            <select
-              value={settings.timezone}
-              onChange={(e) => setSettings({ ...settings, timezone: e.target.value })}
-              className="w-full p-2 border border-slate-300 dark:border-gray-600 rounded-md bg-white dark:bg-black text-slate-700 dark:text-gray-200"
-            >
-              {timezones.map((tz) => (
-                <option key={tz} value={tz}>
-                  {tz}
-                </option>
-              ))}
-            </select>
+            <p className="text-sm font-semibold text-slate-800 dark:text-white capitalize">
+              Current: {theme} Mode
+            </p>
+            <p className="text-xs text-slate-500 dark:text-gray-400">
+              {theme === 'light' ? 'Light background with blue accents' : 'Dark OLED-friendly aesthetic'}
+            </p>
           </div>
-
-          {location && (
-            <div className="bg-slate-50 dark:bg-gray-800 p-4 rounded-lg">
-              <div className="flex items-center space-x-2 mb-2">
-                <MapPin className="w-5 h-5 text-slate-600 dark:text-gray-300" />
-                <span className="font-medium text-slate-700 dark:text-gray-200">Current Location</span>
-              </div>
-              <p className="text-sm text-slate-600 dark:text-gray-300">
-                Latitude: {location.latitude.toFixed(4)}, Longitude: {location.longitude.toFixed(4)}
-              </p>
-              <p className="text-xs text-slate-500 dark:text-gray-400 mt-1">
-                Used for calculating accurate Sabbath times
-              </p>
-            </div>
-          )}
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={toggleTheme}
+            className="flex items-center gap-2 rounded-xl text-xs font-semibold"
+          >
+            {theme === 'light' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
+            <span>Switch to {theme === 'light' ? 'Dark' : 'Light'}</span>
+          </Button>
         </CardContent>
       </Card>
 
-      <Card className="border-slate-200 dark:border-gray-800 bg-white dark:bg-black">
-        <CardHeader>
-          <CardTitle className="flex items-center space-x-2 text-slate-800 dark:text-white">
-            <Bell className="w-6 h-6 text-blue-600 dark:text-blue-400" />
-            <span>Notifications & Reminders</span>
+      {/* Timezone & Sabbath Timing Card */}
+      <Card className="border-slate-200 dark:border-gray-800 bg-white dark:bg-black shadow-sm">
+        <CardHeader className="pb-3">
+          <CardTitle className="flex items-center space-x-2 text-slate-800 dark:text-white text-lg">
+            <Clock className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+            <span>Timezone & Sunset Math</span>
           </CardTitle>
+          <CardDescription className="text-xs">
+            Used to calculate the exact moment the Sabbath begins and ends in your area
+          </CardDescription>
         </CardHeader>
-        <CardContent className="space-y-4">
-          <div className="flex items-center justify-between p-4 bg-slate-50 dark:bg-gray-800 rounded-lg">
+        <CardContent className="space-y-4 pt-1">
+          <div>
+            <label className="block text-xs font-bold text-slate-700 dark:text-gray-300 uppercase tracking-wider mb-2">
+              Active Timezone
+            </label>
+            <Select
+              value={settings.timezone}
+              onValueChange={(value) => setSettings({ ...settings, timezone: value })}
+            >
+              <SelectTrigger className="bg-white dark:bg-gray-900 border-slate-300 dark:border-gray-700">
+                <SelectValue placeholder="Select timezone" />
+              </SelectTrigger>
+              <SelectContent>
+                {timezones.map((tz) => (
+                  <SelectItem key={tz} value={tz}>
+                    {tz} {tz === detectedTimezone ? '(Auto-Detected)' : ''}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            <p className="text-[11px] text-slate-500 dark:text-gray-400 mt-1.5 flex items-center gap-1">
+              <Globe className="w-3.5 h-3.5 text-blue-500" />
+              <span>Browser detected: <strong>{detectedTimezone}</strong></span>
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Notifications & Reminders Card */}
+      <Card className="border-slate-200 dark:border-gray-800 bg-white dark:bg-black shadow-sm">
+        <CardHeader className="pb-3">
+          <CardTitle className="flex items-center space-x-2 text-slate-800 dark:text-white text-lg">
+            <Bell className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+            <span>Sabbath Reminders</span>
+          </CardTitle>
+          <CardDescription className="text-xs">
+            Get notified before sunset on Friday to start winding down for the holy hours
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-4 pt-1">
+          <div className="flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-gray-900 border border-slate-200 dark:border-gray-800">
             <div>
-              <h3 className="font-semibold text-slate-700 dark:text-gray-200">Auto Digital Detox</h3>
-              <p className="text-sm text-slate-500 dark:text-gray-400">
-                Automatically enable detox mode during Sabbath hours
+              <div className="flex items-center gap-2">
+                <p className="text-sm font-bold text-slate-800 dark:text-white">
+                  Browser Notification Status
+                </p>
+                <Badge
+                  className={`text-[10px] uppercase font-bold py-0.5 px-2 ${
+                    notificationPermission === 'granted'
+                      ? 'bg-emerald-500 text-white'
+                      : notificationPermission === 'denied'
+                      ? 'bg-red-500 text-white'
+                      : 'bg-amber-500 text-white'
+                  }`}
+                >
+                  {notificationPermission === 'granted'
+                    ? 'Enabled'
+                    : notificationPermission === 'denied'
+                    ? 'Blocked'
+                    : 'Permission Needed'}
+                </Badge>
+              </div>
+              <p className="text-xs text-slate-500 dark:text-gray-400 mt-0.5">
+                {notificationPermission === 'granted'
+                  ? 'Active: Ready to receive Friday sunset countdown alerts'
+                  : 'Tap below to grant permission in your browser'}
               </p>
             </div>
-            <Switch
-              checked={settings.digitalDetoxEnabled}
-              onCheckedChange={(checked) =>
-                setSettings({ ...settings, digitalDetoxEnabled: checked })
-              }
-            />
-          </div>
-
-          <div className="bg-blue-50 dark:bg-blue-950/50 p-4 rounded-lg border-l-4 border-blue-400 dark:border-blue-600">
-            <h3 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">Sabbath Notifications</h3>
-            <div className="space-y-2 text-sm text-blue-600 dark:text-blue-400">
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                <span>Friday sunset reminder (customizable timing)</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                <span>Sabbath welcome notification</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                <span>Saturday sunset notification</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                <span>Custom preparation reminders</span>
-              </div>
-            </div>
-            <div className="mt-4">
+            {notificationPermission !== 'granted' && (
               <Button
-                variant="outline"
                 size="sm"
-                onClick={() => window.location.href = '/settings?tab=notifications'}
-                className="text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-950"
+                onClick={requestNotificationPermission}
+                className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg"
               >
-                Configure Notifications
+                Enable
               </Button>
-            </div>
+            )}
           </div>
         </CardContent>
       </Card>
 
-      <Card className="border-slate-200 dark:border-gray-800 bg-white dark:bg-black">
-        <CardHeader>
-          <CardTitle className="text-slate-800 dark:text-white">App Information</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4">
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="bg-slate-50 dark:bg-gray-800 p-4 rounded-lg">
-              <h3 className="font-semibold text-slate-700 dark:text-gray-200 mb-2">Version</h3>
-              <p className="text-slate-600 dark:text-gray-300">Adventist Go v1.1.0</p>
-            </div>
-            <div className="bg-slate-50 dark:bg-gray-800 p-4 rounded-lg">
-              <h3 className="font-semibold text-slate-700 dark:text-gray-200 mb-2">Offline Mode</h3>
-              <p className="text-slate-600 dark:text-gray-300">Enabled for all features</p>
-            </div>
-          </div>
-
-          <div className="bg-green-50 dark:bg-green-950/50 p-4 rounded-lg border-l-4 border-green-400 dark:border-green-600">
-            <h3 className="font-semibold text-green-700 dark:text-green-300 mb-2">Privacy & Data</h3>
-            <p className="text-sm text-green-600 dark:text-green-400">
-              Your data is stored locally and securely. Location is only used for Sabbath time calculations and notifications.
-            </p>
-          </div>
-
-          <div className="bg-purple-50 dark:bg-purple-950/50 p-4 rounded-lg border-l-4 border-purple-400 dark:border-purple-600">
-            <h3 className="font-semibold text-purple-700 dark:text-purple-300 mb-2">Browser Notifications</h3>
-            <p className="text-sm text-purple-600 dark:text-purple-400">
-              Enable browser notifications to receive timely Sabbath reminders even when the app is closed.
-            </p>
-          </div>
-        </CardContent>
-      </Card>
-
-      <div className="flex justify-center">
+      {/* Save Settings Action */}
+      <div className="pt-2 flex justify-end">
         <Button
+          size="lg"
           onClick={handleSaveSettings}
           disabled={savePreferencesMutation.isPending}
-          className="bg-blue-600 hover:bg-blue-700 text-white px-8"
+          className="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl px-8 shadow-md flex items-center gap-2"
         >
-          <Save className="w-4 h-4 mr-2" />
-          {savePreferencesMutation.isPending ? 'Saving...' : 'Save Settings'}
+          <Save className="w-4 h-4" />
+          <span>{savePreferencesMutation.isPending ? 'Saving...' : 'Save Settings'}</span>
         </Button>
       </div>
-
-      <Card className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/50 dark:to-purple-950/50 border-blue-200 dark:border-blue-800">
-        <CardContent className="text-center py-8">
-          <SettingsIcon className="w-12 h-12 text-blue-600 dark:text-blue-400 mx-auto mb-4" />
-          <h3 className="text-xl font-semibold text-blue-700 dark:text-blue-300 mb-2">Personalized Experience</h3>
-          <p className="text-blue-600 dark:text-blue-400">
-            Customize Adventist Go to support your unique Sabbath journey.
-          </p>
-        </CardContent>
-      </Card>
     </div>
   );
 }

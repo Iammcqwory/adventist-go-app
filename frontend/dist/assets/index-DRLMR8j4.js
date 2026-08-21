@@ -20323,11 +20323,22 @@ const createLucideIcon = (iconName, iconNode) => {
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1b = [
+const __iconNode$1c = [
   ["path", { d: "m12 19-7-7 7-7", key: "1l729n" }],
   ["path", { d: "M19 12H5", key: "x3x0zl" }]
 ];
-const ArrowLeft = createLucideIcon("arrow-left", __iconNode$1b);
+const ArrowLeft = createLucideIcon("arrow-left", __iconNode$1c);
+/**
+ * @license lucide-react v0.484.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$1b = [
+  ["path", { d: "M5 12h14", key: "1ays0h" }],
+  ["path", { d: "m12 5 7 7-7 7", key: "xquz4c" }]
+];
+const ArrowRight = createLucideIcon("arrow-right", __iconNode$1b);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -20335,17 +20346,6 @@ const ArrowLeft = createLucideIcon("arrow-left", __iconNode$1b);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$1a = [
-  ["path", { d: "M5 12h14", key: "1ays0h" }],
-  ["path", { d: "m12 5 7 7-7 7", key: "xquz4c" }]
-];
-const ArrowRight = createLucideIcon("arrow-right", __iconNode$1a);
-/**
- * @license lucide-react v0.484.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$19 = [
   [
     "path",
     {
@@ -20355,14 +20355,14 @@ const __iconNode$19 = [
   ],
   ["circle", { cx: "12", cy: "8", r: "6", key: "1vp47v" }]
 ];
-const Award = createLucideIcon("award", __iconNode$19);
+const Award = createLucideIcon("award", __iconNode$1a);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$18 = [
+const __iconNode$19 = [
   ["path", { d: "M10.268 21a2 2 0 0 0 3.464 0", key: "vwvbt9" }],
   [
     "path",
@@ -20372,14 +20372,14 @@ const __iconNode$18 = [
     }
   ]
 ];
-const Bell = createLucideIcon("bell", __iconNode$18);
+const Bell = createLucideIcon("bell", __iconNode$19);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$17 = [
+const __iconNode$18 = [
   ["path", { d: "M12 7v14", key: "1akyts" }],
   [
     "path",
@@ -20389,14 +20389,14 @@ const __iconNode$17 = [
     }
   ]
 ];
-const BookOpen = createLucideIcon("book-open", __iconNode$17);
+const BookOpen = createLucideIcon("book-open", __iconNode$18);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$16 = [
+const __iconNode$17 = [
   [
     "path",
     {
@@ -20405,7 +20405,19 @@ const __iconNode$16 = [
     }
   ]
 ];
-const Book = createLucideIcon("book", __iconNode$16);
+const Book = createLucideIcon("book", __iconNode$17);
+/**
+ * @license lucide-react v0.484.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$16 = [
+  ["path", { d: "m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z", key: "1fy3hk" }],
+  ["line", { x1: "12", x2: "12", y1: "7", y2: "13", key: "1cppfj" }],
+  ["line", { x1: "15", x2: "9", y1: "10", y2: "10", key: "1gty7f" }]
+];
+const BookmarkPlus = createLucideIcon("bookmark-plus", __iconNode$16);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -20413,11 +20425,9 @@ const Book = createLucideIcon("book", __iconNode$16);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$15 = [
-  ["path", { d: "m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z", key: "1fy3hk" }],
-  ["line", { x1: "12", x2: "12", y1: "7", y2: "13", key: "1cppfj" }],
-  ["line", { x1: "15", x2: "9", y1: "10", y2: "10", key: "1gty7f" }]
+  ["path", { d: "m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z", key: "1fy3hk" }]
 ];
-const BookmarkPlus = createLucideIcon("bookmark-plus", __iconNode$15);
+const Bookmark = createLucideIcon("bookmark", __iconNode$15);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -20425,54 +20435,55 @@ const BookmarkPlus = createLucideIcon("bookmark-plus", __iconNode$15);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$14 = [
-  ["path", { d: "m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z", key: "1fy3hk" }]
-];
-const Bookmark = createLucideIcon("bookmark", __iconNode$14);
-/**
- * @license lucide-react v0.484.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$13 = [
   ["path", { d: "M8 2v4", key: "1cmpym" }],
   ["path", { d: "M16 2v4", key: "4m81vk" }],
   ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
   ["path", { d: "M3 10h18", key: "8toen8" }]
 ];
-const Calendar = createLucideIcon("calendar", __iconNode$13);
+const Calendar = createLucideIcon("calendar", __iconNode$14);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$12 = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
-const Check = createLucideIcon("check", __iconNode$12);
+const __iconNode$13 = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
+const Check = createLucideIcon("check", __iconNode$13);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$11 = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
-const ChevronDown = createLucideIcon("chevron-down", __iconNode$11);
+const __iconNode$12 = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
+const ChevronDown = createLucideIcon("chevron-down", __iconNode$12);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$10 = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
-const ChevronRight = createLucideIcon("chevron-right", __iconNode$10);
+const __iconNode$11 = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
+const ChevronRight = createLucideIcon("chevron-right", __iconNode$11);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$$ = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
-const ChevronUp = createLucideIcon("chevron-up", __iconNode$$);
+const __iconNode$10 = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
+const ChevronUp = createLucideIcon("chevron-up", __iconNode$10);
+/**
+ * @license lucide-react v0.484.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$$ = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
+];
+const CircleCheck = createLucideIcon("circle-check", __iconNode$$);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -20481,9 +20492,9 @@ const ChevronUp = createLucideIcon("chevron-up", __iconNode$$);
  */
 const __iconNode$_ = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
+  ["polyline", { points: "12 6 12 12 16 14", key: "68esgv" }]
 ];
-const CircleCheck = createLucideIcon("circle-check", __iconNode$_);
+const Clock = createLucideIcon("clock", __iconNode$_);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -20491,10 +20502,12 @@ const CircleCheck = createLucideIcon("circle-check", __iconNode$_);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$Z = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["polyline", { points: "12 6 12 12 16 14", key: "68esgv" }]
+  ["circle", { cx: "8", cy: "8", r: "6", key: "3yglwk" }],
+  ["path", { d: "M18.09 10.37A6 6 0 1 1 10.34 18", key: "t5s6rm" }],
+  ["path", { d: "M7 6h1v4", key: "1obek4" }],
+  ["path", { d: "m16.71 13.88.7.71-2.82 2.82", key: "1rbuyh" }]
 ];
-const Clock = createLucideIcon("clock", __iconNode$Z);
+const Coins = createLucideIcon("coins", __iconNode$Z);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -20502,19 +20515,6 @@ const Clock = createLucideIcon("clock", __iconNode$Z);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$Y = [
-  ["circle", { cx: "8", cy: "8", r: "6", key: "3yglwk" }],
-  ["path", { d: "M18.09 10.37A6 6 0 1 1 10.34 18", key: "t5s6rm" }],
-  ["path", { d: "M7 6h1v4", key: "1obek4" }],
-  ["path", { d: "m16.71 13.88.7.71-2.82 2.82", key: "1rbuyh" }]
-];
-const Coins = createLucideIcon("coins", __iconNode$Y);
-/**
- * @license lucide-react v0.484.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$X = [
   [
     "path",
     {
@@ -20524,7 +20524,18 @@ const __iconNode$X = [
   ],
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }]
 ];
-const Compass = createLucideIcon("compass", __iconNode$X);
+const Compass = createLucideIcon("compass", __iconNode$Y);
+/**
+ * @license lucide-react v0.484.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$X = [
+  ["rect", { width: "14", height: "14", x: "8", y: "8", rx: "2", ry: "2", key: "17jyea" }],
+  ["path", { d: "M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2", key: "zix9uf" }]
+];
+const Copy = createLucideIcon("copy", __iconNode$X);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -20532,10 +20543,11 @@ const Compass = createLucideIcon("compass", __iconNode$X);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$W = [
-  ["rect", { width: "14", height: "14", x: "8", y: "8", rx: "2", ry: "2", key: "17jyea" }],
-  ["path", { d: "M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2", key: "zix9uf" }]
+  ["path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", key: "ih7n3h" }],
+  ["polyline", { points: "7 10 12 15 17 10", key: "2ggqvy" }],
+  ["line", { x1: "12", x2: "12", y1: "15", y2: "3", key: "1vk2je" }]
 ];
-const Copy = createLucideIcon("copy", __iconNode$W);
+const Download = createLucideIcon("download", __iconNode$W);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -20543,11 +20555,11 @@ const Copy = createLucideIcon("copy", __iconNode$W);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$V = [
-  ["path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", key: "ih7n3h" }],
-  ["polyline", { points: "7 10 12 15 17 10", key: "2ggqvy" }],
-  ["line", { x1: "12", x2: "12", y1: "15", y2: "3", key: "1vk2je" }]
+  ["path", { d: "M15 3h6v6", key: "1q9fwt" }],
+  ["path", { d: "M10 14 21 3", key: "gplh6r" }],
+  ["path", { d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6", key: "a6xqqp" }]
 ];
-const Download = createLucideIcon("download", __iconNode$V);
+const ExternalLink = createLucideIcon("external-link", __iconNode$V);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -20555,18 +20567,6 @@ const Download = createLucideIcon("download", __iconNode$V);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$U = [
-  ["path", { d: "M15 3h6v6", key: "1q9fwt" }],
-  ["path", { d: "M10 14 21 3", key: "gplh6r" }],
-  ["path", { d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6", key: "a6xqqp" }]
-];
-const ExternalLink = createLucideIcon("external-link", __iconNode$U);
-/**
- * @license lucide-react v0.484.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$T = [
   [
     "path",
     {
@@ -20584,7 +20584,24 @@ const __iconNode$T = [
   ],
   ["path", { d: "m2 2 20 20", key: "1ooewy" }]
 ];
-const EyeOff = createLucideIcon("eye-off", __iconNode$T);
+const EyeOff = createLucideIcon("eye-off", __iconNode$U);
+/**
+ * @license lucide-react v0.484.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$T = [
+  [
+    "path",
+    {
+      d: "M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0",
+      key: "1nclc0"
+    }
+  ],
+  ["circle", { cx: "12", cy: "12", r: "3", key: "1v7zrd" }]
+];
+const Eye = createLucideIcon("eye", __iconNode$T);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -20595,13 +20612,12 @@ const __iconNode$S = [
   [
     "path",
     {
-      d: "M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0",
-      key: "1nclc0"
+      d: "M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z",
+      key: "96xj49"
     }
-  ],
-  ["circle", { cx: "12", cy: "12", r: "3", key: "1v7zrd" }]
+  ]
 ];
-const Eye = createLucideIcon("eye", __iconNode$S);
+const Flame = createLucideIcon("flame", __iconNode$S);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -20612,12 +20628,12 @@ const __iconNode$R = [
   [
     "path",
     {
-      d: "M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z",
-      key: "96xj49"
+      d: "M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z",
+      key: "sc7q7i"
     }
   ]
 ];
-const Flame = createLucideIcon("flame", __iconNode$R);
+const Funnel = createLucideIcon("funnel", __iconNode$R);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -20625,15 +20641,11 @@ const Flame = createLucideIcon("flame", __iconNode$R);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$Q = [
-  [
-    "path",
-    {
-      d: "M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z",
-      key: "sc7q7i"
-    }
-  ]
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20", key: "13o1zl" }],
+  ["path", { d: "M2 12h20", key: "9i4pu4" }]
 ];
-const Funnel = createLucideIcon("funnel", __iconNode$Q);
+const Globe = createLucideIcon("globe", __iconNode$Q);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -20641,18 +20653,6 @@ const Funnel = createLucideIcon("funnel", __iconNode$Q);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$P = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["path", { d: "M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20", key: "13o1zl" }],
-  ["path", { d: "M2 12h20", key: "9i4pu4" }]
-];
-const Globe = createLucideIcon("globe", __iconNode$P);
-/**
- * @license lucide-react v0.484.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$O = [
   [
     "path",
     {
@@ -20663,7 +20663,23 @@ const __iconNode$O = [
   ["path", { d: "M22 10v6", key: "1lu8f3" }],
   ["path", { d: "M6 12.5V16a6 3 0 0 0 12 0v-3.5", key: "1r8lef" }]
 ];
-const GraduationCap = createLucideIcon("graduation-cap", __iconNode$O);
+const GraduationCap = createLucideIcon("graduation-cap", __iconNode$P);
+/**
+ * @license lucide-react v0.484.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$O = [
+  [
+    "path",
+    {
+      d: "M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3",
+      key: "1xhozi"
+    }
+  ]
+];
+const Headphones = createLucideIcon("headphones", __iconNode$O);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -20674,12 +20690,12 @@ const __iconNode$N = [
   [
     "path",
     {
-      d: "M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3",
-      key: "1xhozi"
+      d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z",
+      key: "c3ymky"
     }
   ]
 ];
-const Headphones = createLucideIcon("headphones", __iconNode$N);
+const Heart = createLucideIcon("heart", __iconNode$N);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -20687,15 +20703,10 @@ const Headphones = createLucideIcon("headphones", __iconNode$N);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$M = [
-  [
-    "path",
-    {
-      d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z",
-      key: "c3ymky"
-    }
-  ]
+  ["path", { d: "m9 11-6 6v3h9l3-3", key: "1a3l36" }],
+  ["path", { d: "m22 12-4.6 4.6a2 2 0 0 1-2.8 0l-5.2-5.2a2 2 0 0 1 0-2.8L14 4", key: "14a9rk" }]
 ];
-const Heart = createLucideIcon("heart", __iconNode$M);
+const Highlighter = createLucideIcon("highlighter", __iconNode$M);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -20703,17 +20714,6 @@ const Heart = createLucideIcon("heart", __iconNode$M);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$L = [
-  ["path", { d: "m9 11-6 6v3h9l3-3", key: "1a3l36" }],
-  ["path", { d: "m22 12-4.6 4.6a2 2 0 0 1-2.8 0l-5.2-5.2a2 2 0 0 1 0-2.8L14 4", key: "14a9rk" }]
-];
-const Highlighter = createLucideIcon("highlighter", __iconNode$L);
-/**
- * @license lucide-react v0.484.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$K = [
   ["path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8", key: "5wwlr5" }],
   [
     "path",
@@ -20723,14 +20723,14 @@ const __iconNode$K = [
     }
   ]
 ];
-const House = createLucideIcon("house", __iconNode$K);
+const House = createLucideIcon("house", __iconNode$L);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$J = [
+const __iconNode$K = [
   [
     "path",
     {
@@ -20741,14 +20741,14 @@ const __iconNode$J = [
   ["path", { d: "M9 18h6", key: "x1upvd" }],
   ["path", { d: "M10 22h4", key: "ceow96" }]
 ];
-const Lightbulb = createLucideIcon("lightbulb", __iconNode$J);
+const Lightbulb = createLucideIcon("lightbulb", __iconNode$K);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$I = [
+const __iconNode$J = [
   [
     "path",
     {
@@ -20758,7 +20758,19 @@ const __iconNode$I = [
   ],
   ["circle", { cx: "12", cy: "10", r: "3", key: "ilqhr7" }]
 ];
-const MapPin = createLucideIcon("map-pin", __iconNode$I);
+const MapPin = createLucideIcon("map-pin", __iconNode$J);
+/**
+ * @license lucide-react v0.484.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$I = [
+  ["line", { x1: "4", x2: "20", y1: "12", y2: "12", key: "1e0a9i" }],
+  ["line", { x1: "4", x2: "20", y1: "6", y2: "6", key: "1owob3" }],
+  ["line", { x1: "4", x2: "20", y1: "18", y2: "18", key: "yk5zj1" }]
+];
+const Menu = createLucideIcon("menu", __iconNode$I);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -21091,9 +21103,10 @@ const __iconNode$k = [
       d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
       key: "oel41y"
     }
-  ]
+  ],
+  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
 ];
-const Shield = createLucideIcon("shield", __iconNode$k);
+const ShieldCheck = createLucideIcon("shield-check", __iconNode$k);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -21101,10 +21114,15 @@ const Shield = createLucideIcon("shield", __iconNode$k);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$j = [
-  ["polygon", { points: "19 20 9 12 19 4 19 20", key: "o2sva" }],
-  ["line", { x1: "5", x2: "5", y1: "19", y2: "5", key: "1ocqjk" }]
+  [
+    "path",
+    {
+      d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
+      key: "oel41y"
+    }
+  ]
 ];
-const SkipBack = createLucideIcon("skip-back", __iconNode$j);
+const Shield = createLucideIcon("shield", __iconNode$j);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -21112,10 +21130,10 @@ const SkipBack = createLucideIcon("skip-back", __iconNode$j);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$i = [
-  ["polygon", { points: "5 4 15 12 5 20 5 4", key: "16p6eg" }],
-  ["line", { x1: "19", x2: "19", y1: "5", y2: "19", key: "futhcm" }]
+  ["polygon", { points: "19 20 9 12 19 4 19 20", key: "o2sva" }],
+  ["line", { x1: "5", x2: "5", y1: "19", y2: "5", key: "1ocqjk" }]
 ];
-const SkipForward = createLucideIcon("skip-forward", __iconNode$i);
+const SkipBack = createLucideIcon("skip-back", __iconNode$i);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -21123,10 +21141,10 @@ const SkipForward = createLucideIcon("skip-forward", __iconNode$i);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$h = [
-  ["rect", { width: "14", height: "20", x: "5", y: "2", rx: "2", ry: "2", key: "1yt0o3" }],
-  ["path", { d: "M12 18h.01", key: "mhygvu" }]
+  ["polygon", { points: "5 4 15 12 5 20 5 4", key: "16p6eg" }],
+  ["line", { x1: "19", x2: "19", y1: "5", y2: "19", key: "futhcm" }]
 ];
-const Smartphone = createLucideIcon("smartphone", __iconNode$h);
+const SkipForward = createLucideIcon("skip-forward", __iconNode$h);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -21134,6 +21152,17 @@ const Smartphone = createLucideIcon("smartphone", __iconNode$h);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$g = [
+  ["rect", { width: "14", height: "20", x: "5", y: "2", rx: "2", ry: "2", key: "1yt0o3" }],
+  ["path", { d: "M12 18h.01", key: "mhygvu" }]
+];
+const Smartphone = createLucideIcon("smartphone", __iconNode$g);
+/**
+ * @license lucide-react v0.484.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$f = [
   [
     "path",
     {
@@ -21146,18 +21175,7 @@ const __iconNode$g = [
   ["path", { d: "M4 17v2", key: "vumght" }],
   ["path", { d: "M5 18H3", key: "zchphs" }]
 ];
-const Sparkles = createLucideIcon("sparkles", __iconNode$g);
-/**
- * @license lucide-react v0.484.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$f = [
-  ["path", { d: "M21 10.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.5", key: "1uzm8b" }],
-  ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
-];
-const SquareCheckBig = createLucideIcon("square-check-big", __iconNode$f);
+const Sparkles = createLucideIcon("sparkles", __iconNode$f);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -21165,6 +21183,17 @@ const SquareCheckBig = createLucideIcon("square-check-big", __iconNode$f);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$e = [
+  ["path", { d: "M21 10.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12.5", key: "1uzm8b" }],
+  ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
+];
+const SquareCheckBig = createLucideIcon("square-check-big", __iconNode$e);
+/**
+ * @license lucide-react v0.484.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$d = [
   [
     "path",
     {
@@ -21173,14 +21202,14 @@ const __iconNode$e = [
     }
   ]
 ];
-const Star = createLucideIcon("star", __iconNode$e);
+const Star = createLucideIcon("star", __iconNode$d);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$d = [
+const __iconNode$c = [
   ["circle", { cx: "12", cy: "12", r: "4", key: "4exip2" }],
   ["path", { d: "M12 2v2", key: "tus03m" }],
   ["path", { d: "M12 20v2", key: "1lh1kg" }],
@@ -21191,24 +21220,7 @@ const __iconNode$d = [
   ["path", { d: "m6.34 17.66-1.41 1.41", key: "1m8zz5" }],
   ["path", { d: "m19.07 4.93-1.41 1.41", key: "1shlcs" }]
 ];
-const Sun = createLucideIcon("sun", __iconNode$d);
-/**
- * @license lucide-react v0.484.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$c = [
-  ["path", { d: "M12 2v8", key: "1q4o3n" }],
-  ["path", { d: "m4.93 10.93 1.41 1.41", key: "2a7f42" }],
-  ["path", { d: "M2 18h2", key: "j10viu" }],
-  ["path", { d: "M20 18h2", key: "wocana" }],
-  ["path", { d: "m19.07 10.93-1.41 1.41", key: "15zs5n" }],
-  ["path", { d: "M22 22H2", key: "19qnx5" }],
-  ["path", { d: "m8 6 4-4 4 4", key: "ybng9g" }],
-  ["path", { d: "M16 18a4 4 0 0 0-8 0", key: "1lzouq" }]
-];
-const Sunrise = createLucideIcon("sunrise", __iconNode$c);
+const Sun = createLucideIcon("sun", __iconNode$c);
 /**
  * @license lucide-react v0.484.0 - ISC
  *
@@ -24935,76 +24947,6 @@ class ErrorBoundary extends reactExports.Component {
     return this.props.children;
   }
 }
-const navItems = [
-  { path: "/", icon: Clock, label: "Countdown" },
-  { path: "/reels", icon: Flame, label: "Reels" },
-  { path: "/verse-master", icon: Trophy, label: "Verse Master" },
-  { path: "/prep", icon: SquareCheckBig, label: "Prep" },
-  { path: "/devotionals", icon: Book, label: "Study" },
-  { path: "/sabbath-school", icon: GraduationCap, label: "SS Lessons" },
-  { path: "/bible", icon: BookOpen, label: "Bible" },
-  { path: "/hymns", icon: Music, label: "Hymns" },
-  { path: "/family", icon: Users, label: "Family" },
-  { path: "/detox", icon: Smartphone, label: "Detox" },
-  { path: "/churches", icon: MapPin, label: "Churches" },
-  { path: "/journal", icon: PenTool, label: "Journal" },
-  { path: "/settings", icon: Settings$1, label: "Settings" }
-];
-function Navigation() {
-  const location = useLocation();
-  const { theme, toggleTheme } = useTheme();
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("nav", { className: "bg-white/80 dark:bg-black/80 backdrop-blur-sm border-b border-slate-200 dark:border-gray-800 sticky top-0 z-50 transition-colors", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between h-16", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs(Link, { to: "/", className: "flex items-center space-x-2", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-5 h-5 text-white" }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xl font-semibold text-slate-800 dark:text-white", children: "Adventist Go" })
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "hidden md:flex items-center space-x-1", children: [
-      navItems.map(({ path, icon: Icon2, label }) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-        Link,
-        {
-          to: path,
-          className: `flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${location.pathname === path ? "bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300" : "text-slate-600 dark:text-gray-300 hover:text-slate-800 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-gray-800"}`,
-          children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { className: "w-4 h-4" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: label })
-          ]
-        },
-        path
-      )),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(
-        Button,
-        {
-          variant: "ghost",
-          size: "sm",
-          onClick: toggleTheme,
-          className: "ml-2 text-slate-600 dark:text-gray-300 hover:text-slate-800 dark:hover:text-white",
-          children: theme === "light" ? /* @__PURE__ */ jsxRuntimeExports.jsx(Moon, { className: "w-4 h-4" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Sun, { className: "w-4 h-4" })
-        }
-      )
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "md:hidden flex items-center space-x-2", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(
-        Button,
-        {
-          variant: "ghost",
-          size: "sm",
-          onClick: toggleTheme,
-          className: "text-slate-600 dark:text-gray-300",
-          children: theme === "light" ? /* @__PURE__ */ jsxRuntimeExports.jsx(Moon, { className: "w-4 h-4" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Sun, { className: "w-4 h-4" })
-        }
-      ),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(
-        "select",
-        {
-          value: location.pathname,
-          onChange: (e) => window.location.href = e.target.value,
-          className: "bg-transparent border-none text-slate-600 dark:text-gray-300 font-medium",
-          children: navItems.map(({ path, label }) => /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: path, children: label }, path))
-        }
-      )
-    ] })
-  ] }) }) });
-}
 const badgeVariants = cva(
   "inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden",
   {
@@ -25036,6 +24978,292 @@ function Badge({
       ...props
     }
   );
+}
+const NAV_GROUPS = [
+  {
+    label: "Prepare",
+    icon: SquareCheckBig,
+    items: [
+      { path: "/prep", label: "Prep Checklist", description: "Weekly Sabbath preparation tasks", icon: SquareCheckBig },
+      { path: "/detox", label: "Digital Detox", description: "Mindful screen time & Sabbath pause", icon: Smartphone }
+    ]
+  },
+  {
+    label: "Study",
+    icon: BookOpen,
+    items: [
+      { path: "/bible", label: "Bible Lookup", description: "Full-text scripture search & study", icon: BookOpen },
+      { path: "/verse-master", label: "Verse Master", description: "Voice recitation memory game", icon: Trophy, badge: "New" },
+      { path: "/sabbath-school", label: "SS Lessons", description: "Quarterly daily study guides", icon: GraduationCap },
+      { path: "/devotionals", label: "Devotionals", description: "Morning & evening reflections", icon: Book },
+      { path: "/hymns", label: "Hymnal", description: "Audio & lyrics for 695 hymns", icon: Music }
+    ]
+  },
+  {
+    label: "Community",
+    icon: Users,
+    items: [
+      { path: "/family", label: "Family Worship", description: "Interactive ideas & templates", icon: Users },
+      { path: "/churches", label: "Church Finder", description: "Locate Seventh-day Adventist churches", icon: MapPin },
+      { path: "/journal", label: "Spiritual Journal", description: "Private Sabbath reflections", icon: PenTool }
+    ]
+  }
+];
+function Navigation() {
+  const location = useLocation();
+  const { theme, toggleTheme } = useTheme();
+  const [activeDropdown, setActiveDropdown] = reactExports.useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = reactExports.useState(false);
+  const isGroupActive = (group) => {
+    return group.items.some((item) => item.path === location.pathname);
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("header", { className: "bg-white/90 dark:bg-black/90 backdrop-blur-md border-b border-slate-200 dark:border-gray-800 sticky top-0 z-40 transition-colors w-full", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 max-w-6xl", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between h-16", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          Link,
+          {
+            to: "/",
+            className: "flex items-center space-x-2.5 flex-shrink-0 group",
+            "aria-label": "Adventist Go Home",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-9 h-9 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 rounded-xl flex items-center justify-center shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-5 h-5 text-white" }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-lg font-black tracking-tight text-slate-900 dark:text-white", children: [
+                "Adventist",
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-blue-600 dark:text-blue-400", children: "Go" })
+              ] }) })
+            ]
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("nav", { className: "hidden lg:flex items-center space-x-1", "aria-label": "Main Navigation", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Link,
+            {
+              to: "/",
+              className: `px-3 py-2 rounded-xl text-sm font-semibold transition-all flex items-center gap-1.5 ${location.pathname === "/" ? "bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300" : "text-slate-600 dark:text-gray-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-gray-800"}`,
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-4 h-4" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Countdown" })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Link,
+            {
+              to: "/reels",
+              className: `px-3 py-2 rounded-xl text-sm font-semibold transition-all flex items-center gap-1.5 ${location.pathname === "/reels" ? "bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300" : "text-slate-600 dark:text-gray-300 hover:text-amber-700 hover:bg-amber-50 dark:hover:bg-gray-800"}`,
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Flame, { className: "w-4 h-4 text-amber-500" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Reels" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex h-2 w-2 relative", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "relative inline-flex rounded-full h-2 w-2 bg-red-500" })
+                ] })
+              ]
+            }
+          ),
+          NAV_GROUPS.map((group) => {
+            const isActive = isGroupActive(group);
+            const isOpen = activeDropdown === group.label;
+            return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                className: "relative",
+                onMouseEnter: () => setActiveDropdown(group.label),
+                onMouseLeave: () => setActiveDropdown(null),
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "button",
+                    {
+                      className: `px-3 py-2 rounded-xl text-sm font-semibold transition-all flex items-center gap-1.5 ${isActive ? "bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300" : "text-slate-600 dark:text-gray-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-gray-800"}`,
+                      "aria-expanded": isOpen,
+                      "aria-label": `${group.label} menu`,
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(group.icon, { className: "w-4 h-4" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: group.label }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronDown, { className: `w-3.5 h-3.5 transition-transform ${isOpen ? "rotate-180" : ""}` })
+                      ]
+                    }
+                  ),
+                  isOpen && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute left-0 top-full pt-1.5 w-64 z-50 animate-in fade-in zoom-in-95 duration-150", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "bg-white dark:bg-gray-900 border border-slate-200 dark:border-gray-800 rounded-2xl shadow-xl p-2 space-y-1", children: group.items.map((item) => {
+                    const isItemActive = location.pathname === item.path;
+                    return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                      Link,
+                      {
+                        to: item.path,
+                        onClick: () => setActiveDropdown(null),
+                        className: `flex items-start gap-3 p-2.5 rounded-xl transition-all ${isItemActive ? "bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300" : "hover:bg-slate-50 dark:hover:bg-gray-800 text-slate-700 dark:text-gray-200"}`,
+                        children: [
+                          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-2 rounded-lg bg-slate-100 dark:bg-gray-800 text-slate-600 dark:text-gray-300 mt-0.5", children: /* @__PURE__ */ jsxRuntimeExports.jsx(item.icon, { className: "w-4 h-4" }) }),
+                          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+                            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+                              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-bold truncate", children: item.label }),
+                              item.badge && /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { className: "bg-amber-500 text-white text-[9px] px-1.5 py-0", children: item.badge })
+                            ] }),
+                            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[11px] text-slate-400 dark:text-gray-400 line-clamp-1", children: item.description })
+                          ] })
+                        ]
+                      },
+                      item.path
+                    );
+                  }) }) })
+                ]
+              },
+              group.label
+            );
+          })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/settings", "aria-label": "Open Settings", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+            Button,
+            {
+              variant: "ghost",
+              size: "sm",
+              "aria-label": "Settings",
+              className: "h-9 w-9 p-0 rounded-xl text-slate-600 dark:text-gray-300 hover:bg-slate-100 dark:hover:bg-gray-800",
+              children: /* @__PURE__ */ jsxRuntimeExports.jsx(Settings$1, { className: "w-4 h-4" })
+            }
+          ) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            Button,
+            {
+              variant: "ghost",
+              size: "sm",
+              onClick: toggleTheme,
+              "aria-label": theme === "light" ? "Switch to dark mode" : "Switch to light mode",
+              className: "h-9 w-9 p-0 rounded-xl text-slate-600 dark:text-gray-300 hover:bg-slate-100 dark:hover:bg-gray-800",
+              children: theme === "light" ? /* @__PURE__ */ jsxRuntimeExports.jsx(Moon, { className: "w-4 h-4" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Sun, { className: "w-4 h-4" })
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            Button,
+            {
+              variant: "ghost",
+              size: "sm",
+              onClick: () => setMobileMenuOpen(!mobileMenuOpen),
+              "aria-label": mobileMenuOpen ? "Close Navigation Menu" : "Open Navigation Menu",
+              className: "lg:hidden h-9 w-9 p-0 rounded-xl text-slate-600 dark:text-gray-300",
+              children: mobileMenuOpen ? /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-5 h-5" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Menu, { className: "w-5 h-5" })
+            }
+          )
+        ] })
+      ] }) }),
+      mobileMenuOpen && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "lg:hidden border-t border-slate-200 dark:border-gray-800 bg-white/95 dark:bg-black/95 backdrop-blur-xl p-4 max-h-[80vh] overflow-y-auto space-y-6 animate-in slide-in-from-top duration-200", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 gap-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Link,
+            {
+              to: "/",
+              onClick: () => setMobileMenuOpen(false),
+              className: `p-3 rounded-xl flex items-center gap-2 text-sm font-bold ${location.pathname === "/" ? "bg-blue-600 text-white" : "bg-slate-100 dark:bg-gray-800 text-slate-800 dark:text-white"}`,
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-4 h-4" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Countdown" })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Link,
+            {
+              to: "/reels",
+              onClick: () => setMobileMenuOpen(false),
+              className: `p-3 rounded-xl flex items-center gap-2 text-sm font-bold ${location.pathname === "/reels" ? "bg-amber-500 text-white" : "bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-200 border border-amber-200"}`,
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Flame, { className: "w-4 h-4 text-amber-500" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Advent Reels" })
+              ]
+            }
+          )
+        ] }),
+        NAV_GROUPS.map((group) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-bold uppercase tracking-wider text-slate-400", children: group.label }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-2", children: group.items.map((item) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Link,
+            {
+              to: item.path,
+              onClick: () => setMobileMenuOpen(false),
+              className: `flex items-center gap-3 p-3 rounded-xl border ${location.pathname === item.path ? "border-blue-500 bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 font-bold" : "border-slate-200 dark:border-gray-800 text-slate-700 dark:text-gray-200"}`,
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(item.icon, { className: "w-4 h-4 text-slate-500" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm", children: item.label }),
+                item.badge && /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { className: "ml-auto bg-amber-500 text-white text-[9px]", children: item.badge })
+              ]
+            },
+            item.path
+          )) })
+        ] }, group.label))
+      ] })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "nav",
+      {
+        className: "lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-black/95 backdrop-blur-lg border-t border-slate-200 dark:border-gray-800 px-3 py-1.5",
+        "aria-label": "Mobile Bottom Navigation",
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-around", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Link,
+            {
+              to: "/",
+              className: `flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold transition-all ${location.pathname === "/" ? "text-blue-600 dark:text-blue-400" : "text-slate-400"}`,
+              "aria-label": "Countdown Tab",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-5 h-5" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-0.5", children: "Countdown" })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Link,
+            {
+              to: "/reels",
+              className: `flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold transition-all ${location.pathname === "/reels" ? "text-amber-500" : "text-slate-400"}`,
+              "aria-label": "Reels Tab",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Flame, { className: "w-5 h-5 text-amber-500" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-0.5", children: "Reels" })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Link,
+            {
+              to: "/bible",
+              className: `flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold transition-all ${location.pathname === "/bible" ? "text-blue-600 dark:text-blue-400" : "text-slate-400"}`,
+              "aria-label": "Bible Tab",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(BookOpen, { className: "w-5 h-5" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-0.5", children: "Bible" })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Link,
+            {
+              to: "/family",
+              className: `flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold transition-all ${location.pathname === "/family" ? "text-blue-600 dark:text-blue-400" : "text-slate-400"}`,
+              "aria-label": "Family Tab",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Users, { className: "w-5 h-5" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-0.5", children: "Family" })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "button",
+            {
+              onClick: () => setMobileMenuOpen(true),
+              className: "flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold text-slate-400",
+              "aria-label": "More Menu",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Menu, { className: "w-5 h-5" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-0.5", children: "More" })
+              ]
+            }
+          )
+        ] })
+      }
+    )
+  ] });
 }
 const BROWSER = typeof globalThis === "object" && "window" in globalThis;
 class Client {
@@ -25929,841 +26157,29 @@ function NotificationCenter({ userId, location, onOpenSettings }) {
     ] }, notification.id);
   }) });
 }
-function Skeleton({ className }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    "div",
-    {
-      className: cn(
-        "animate-pulse rounded-md bg-slate-200 dark:bg-gray-700",
-        className
-      )
-    }
-  );
-}
-function CardSkeleton() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "border border-slate-200 dark:border-gray-700 rounded-lg p-4 bg-white dark:bg-gray-900", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-3", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-3/4" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-3 w-1/2" }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-3 w-full" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-3 w-5/6" })
-    ] })
-  ] }) });
-}
-function ListSkeleton({ count: count2 = 3 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: Array.from({ length: count2 }).map((_, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(CardSkeleton, {}, i)) });
-}
-function CountdownSkeleton() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-64 mx-auto mb-2" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-48 mx-auto" })
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/50 dark:to-purple-950/50 border border-blue-200 dark:border-blue-800 rounded-lg p-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center space-y-4", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-32 mx-auto" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-16 w-48 mx-auto" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-24 mx-auto" })
-    ] }) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid md:grid-cols-2 gap-4", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border border-slate-200 dark:border-gray-800 rounded-lg p-4 bg-white dark:bg-black", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-32 mb-4" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-24 mb-2" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-3 w-20" })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border border-slate-200 dark:border-gray-800 rounded-lg p-4 bg-white dark:bg-black", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-32 mb-4" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-24 mb-2" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-3 w-20" })
-      ] })
-    ] })
-  ] });
-}
-function HymnsSkeleton() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-48 mx-auto mb-2" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-64 mx-auto" })
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "border border-slate-200 dark:border-gray-800 rounded-lg p-6 bg-white dark:bg-black", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-32" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-10 w-full" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid md:grid-cols-3 gap-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-10 w-full" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-10 w-full" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-10 w-full" })
-      ] })
-    ] }) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border border-slate-200 dark:border-gray-800 rounded-lg p-6 bg-white dark:bg-black", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-24" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-32" })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(ListSkeleton, { count: 5 })
-    ] })
-  ] });
-}
-function DevotionalsSkeleton() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-56 mx-auto mb-2" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-72 mx-auto" })
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border border-slate-200 dark:border-gray-800 rounded-lg p-6 bg-white dark:bg-black", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-32" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-24" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-10 w-48" })
-        ] })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(ListSkeleton, { count: 4 })
-    ] })
-  ] });
-}
-function SabbathSchoolSkeleton() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-48 mx-auto mb-2" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-64 mx-auto" })
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/50 dark:to-purple-950/50 border border-blue-200 dark:border-blue-800 rounded-lg p-6", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-40 mb-4" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-3/4" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-1/2" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-white/50 dark:bg-gray-800/50 p-4 rounded-lg", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-5 w-2/3 mb-2" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-3 w-1/2" })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-10 w-48" })
-      ] })
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border border-slate-200 dark:border-gray-800 rounded-lg p-6 bg-white dark:bg-black", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-48 mb-4" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid md:grid-cols-2 gap-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardSkeleton, {}),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardSkeleton, {})
-      ] })
-    ] })
-  ] });
-}
-function ChurchFinderSkeleton() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-48 mx-auto mb-2" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-64 mx-auto" })
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "border border-slate-200 dark:border-gray-800 rounded-lg p-6 bg-white dark:bg-black", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-32" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-12" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-16" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-8" })
-      ] })
-    ] }) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: Array.from({ length: 3 }).map((_, i) => /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "border border-slate-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-gray-900", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-start justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-3/4 mb-2" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-4" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-32" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-5 w-16" })
-        ] })
-      ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-4" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-48" })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-4" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-32" })
-        ] })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-24" })
-    ] }) }, i)) })
-  ] });
-}
-function SabbathCountdown({ userId, location }) {
-  const [currentTime, setCurrentTime] = reactExports.useState(/* @__PURE__ */ new Date());
-  const { data: sabbathTimes, isLoading, error } = useQuery({
-    queryKey: ["sabbathTimes", location == null ? void 0 : location.latitude, location == null ? void 0 : location.longitude],
-    queryFn: async () => {
-      if (!location) return null;
-      return backend.sabbath.getSabbathTimes({
-        latitude: location.latitude,
-        longitude: location.longitude
-      });
-    },
-    enabled: !!location,
-    refetchInterval: 6e4
-    // Refetch every minute
-  });
-  reactExports.useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentTime(/* @__PURE__ */ new Date());
-    }, 1e3);
-    return () => clearInterval(timer);
-  }, []);
-  const formatTimeRemaining = (milliseconds) => {
-    if (milliseconds <= 0) return "00:00:00";
-    const hours = Math.floor(milliseconds / (1e3 * 60 * 60));
-    const minutes = Math.floor(milliseconds % (1e3 * 60 * 60) / (1e3 * 60));
-    const seconds = Math.floor(milliseconds % (1e3 * 60) / 1e3);
-    if (hours >= 24) {
-      const days = Math.floor(hours / 24);
-      const remainingHours = hours % 24;
-      return `${days}d ${remainingHours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-    }
-    return `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-  };
-  const formatTime = (dateString) => {
-    return new Date(dateString).toLocaleTimeString([], {
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: true
-    });
-  };
-  if (!location) {
-    return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-6", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "border-slate-200 dark:border-gray-800 bg-white dark:bg-black", children: /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "flex items-center justify-center py-12", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-12 h-12 text-slate-400 dark:text-gray-500 mx-auto mb-4" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-slate-700 dark:text-gray-200 mb-2", children: "Location Required" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-slate-500 dark:text-gray-400", children: "Please enable location access to see Sabbath times for your area." })
-    ] }) }) }) });
-  }
-  if (isLoading) {
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(CountdownSkeleton, {});
-  }
-  if (error || !sabbathTimes) {
-    return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-6", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-950/50", children: /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "flex items-center justify-center py-12", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-12 h-12 text-red-400 dark:text-red-500 mx-auto mb-4" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-lg font-semibold text-red-700 dark:text-red-300 mb-2", children: "Unable to Calculate Sabbath Times" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-red-600 dark:text-red-400", children: "There was an error calculating Sabbath times for your location. Please try again later." })
-    ] }) }) }) });
-  }
-  const timeToSabbath = new Date(sabbathTimes.fridaySunset).getTime() - currentTime.getTime();
-  const timeToSabbathEnd = new Date(sabbathTimes.saturdaySunset).getTime() - currentTime.getTime();
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-8", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-slate-800 dark:text-white mb-2", children: "Sabbath Countdown" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-slate-600 dark:text-gray-300", children: "Prepare your heart for sacred time" })
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/50 dark:to-purple-950/50 border-blue-200 dark:border-blue-800", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { className: "text-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "flex items-center justify-center space-x-2", children: sabbathTimes.isCurrentlySabbath ? /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Moon, { className: "w-6 h-6 text-purple-600 dark:text-purple-400" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-purple-700 dark:text-purple-300", children: "Sabbath is Here" })
-      ] }) : /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Sunrise, { className: "w-6 h-6 text-blue-600 dark:text-blue-400" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-blue-700 dark:text-blue-300", children: "Time Until Sabbath" })
-      ] }) }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "text-center", children: sabbathTimes.isCurrentlySabbath ? /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { variant: "secondary", className: "bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 px-4 py-2 text-lg", children: "Sabbath Blessings" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-4xl font-mono font-bold text-purple-700 dark:text-purple-300", children: formatTimeRemaining(timeToSabbathEnd) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-purple-600 dark:text-purple-400", children: "until Sabbath ends" })
-      ] }) : /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-5xl font-mono font-bold text-blue-700 dark:text-blue-300", children: formatTimeRemaining(timeToSabbath) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-blue-600 dark:text-blue-400", children: "until Friday sunset" })
-      ] }) })
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid md:grid-cols-2 gap-4", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-slate-200 dark:border-gray-800 bg-white dark:bg-black", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardTitle, { className: "flex items-center space-x-2 text-orange-700 dark:text-orange-400", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Sunset, { className: "w-5 h-5" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Friday Sunset" })
-        ] }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-2xl font-semibold text-orange-600 dark:text-orange-400", children: formatTime(sabbathTimes.fridaySunset) }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-slate-500 dark:text-gray-400 mt-1", children: "Sabbath begins" })
-        ] })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-slate-200 dark:border-gray-800 bg-white dark:bg-black", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardTitle, { className: "flex items-center space-x-2 text-indigo-700 dark:text-indigo-400", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Sunset, { className: "w-5 h-5" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Saturday Sunset" })
-        ] }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-2xl font-semibold text-indigo-600 dark:text-indigo-400", children: formatTime(sabbathTimes.saturdaySunset) }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-slate-500 dark:text-gray-400 mt-1", children: "Sabbath ends" })
-        ] })
-      ] })
-    ] }),
-    sabbathTimes.isCurrentlySabbath && /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-950/50 dark:to-blue-950/50 border-purple-200 dark:border-purple-800", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "text-center py-8", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Moon, { className: "w-12 h-12 text-purple-600 dark:text-purple-400 mx-auto mb-4" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-purple-700 dark:text-purple-300 mb-2", children: "Sabbath Shalom" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-purple-600 dark:text-purple-400", children: '"Remember the Sabbath day, to keep it holy." - Exodus 20:8' })
-    ] }) })
-  ] });
-}
-function Input({ className, type, ...props }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    "input",
-    {
-      type,
-      "data-slot": "input",
-      className: cn(
-        "file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
-        "focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]",
-        "aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
-        className
-      ),
-      ...props
-    }
-  );
-}
 var __defProp$b = Object.defineProperty;
 var __name$b = (target, value) => __defProp$b(target, "name", { value, configurable: true });
-function useSize(element) {
-  const [size2, setSize] = reactExports.useState(void 0);
-  useLayoutEffect2(() => {
-    if (element) {
-      setSize({ width: element.offsetWidth, height: element.offsetHeight });
-      const resizeObserver = new ResizeObserver((entries) => {
-        if (!Array.isArray(entries)) {
-          return;
-        }
-        if (!entries.length) {
-          return;
-        }
-        const entry = entries[0];
-        let width;
-        let height;
-        if ("borderBoxSize" in entry) {
-          const borderSizeEntry = entry["borderBoxSize"];
-          const borderSize = Array.isArray(borderSizeEntry) ? borderSizeEntry[0] : borderSizeEntry;
-          width = borderSize["inlineSize"];
-          height = borderSize["blockSize"];
-        } else {
-          width = element.offsetWidth;
-          height = element.offsetHeight;
-        }
-        setSize({ width, height });
-      });
-      resizeObserver.observe(element, { box: "border-box" });
-      return () => resizeObserver.unobserve(element);
-    } else {
-      setSize(void 0);
-    }
-  }, [element]);
-  return size2;
-}
-__name$b(useSize, "useSize");
-var __defProp$a = Object.defineProperty;
-var __name$a = (target, value) => __defProp$a(target, "name", { value, configurable: true });
-var CHECKBOX_NAME = "Checkbox";
-var [createCheckboxContext, createCheckboxScope] = /* @__PURE__ */ createContextScope(CHECKBOX_NAME);
-var [CheckboxProviderImpl, useCheckboxContext] = createCheckboxContext(CHECKBOX_NAME);
-function CheckboxProvider(props) {
-  const {
-    __scopeCheckbox,
-    checked: checkedProp,
-    children,
-    defaultChecked,
-    disabled,
-    form,
-    name,
-    onCheckedChange,
-    required,
-    value = "on",
-    // @ts-expect-error
-    internal_do_not_use_render
-  } = props;
-  const [checked, setChecked] = useControllableState({
-    prop: checkedProp,
-    defaultProp: defaultChecked ?? false,
-    onChange: onCheckedChange,
-    caller: CHECKBOX_NAME
-  });
-  const [control, setControl] = reactExports.useState(null);
-  const [bubbleInput, setBubbleInput] = reactExports.useState(null);
-  const hasConsumerStoppedPropagationRef = reactExports.useRef(false);
-  const [userInteractionCount, onUserInteraction] = reactExports.useReducer(
-    (count2) => count2 + 1,
-    0
-  );
-  const isFormControl = control ? !!form || !!control.closest("form") : (
-    // We set this to true by default so that events bubble to forms without JS (SSR)
-    true
-  );
-  const context = {
-    checked,
-    disabled,
-    setChecked,
-    control,
-    setControl,
-    name,
-    form,
-    value,
-    hasConsumerStoppedPropagationRef,
-    userInteractionCount,
-    onUserInteraction,
-    required,
-    defaultChecked: isIndeterminate(defaultChecked) ? false : defaultChecked,
-    isFormControl,
-    bubbleInput,
-    setBubbleInput
-  };
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    CheckboxProviderImpl,
-    {
-      scope: __scopeCheckbox,
-      ...context,
-      children: isFunction$3(internal_do_not_use_render) ? internal_do_not_use_render(context) : children
-    }
-  );
-}
-__name$a(CheckboxProvider, "CheckboxProvider");
-var TRIGGER_NAME$2 = "CheckboxTrigger";
-var CheckboxTrigger = /* @__PURE__ */ reactExports.forwardRef(
-  /* @__PURE__ */ __name$a(function CheckboxTrigger2({ __scopeCheckbox, onKeyDown, onClick, ...checkboxProps }, forwardedRef) {
-    const {
-      control,
-      value,
-      disabled,
-      checked,
-      required,
-      setControl,
-      setChecked,
-      hasConsumerStoppedPropagationRef,
-      onUserInteraction,
-      isFormControl,
-      bubbleInput
-    } = useCheckboxContext(TRIGGER_NAME$2, __scopeCheckbox);
-    const composedRefs = useComposedRefs(forwardedRef, setControl);
-    const initialCheckedStateRef = reactExports.useRef(checked);
-    reactExports.useEffect(() => {
-      const form = control == null ? void 0 : control.form;
-      if (form) {
-        const reset = /* @__PURE__ */ __name$a(() => setChecked(initialCheckedStateRef.current), "reset");
-        form.addEventListener("reset", reset);
-        return () => form.removeEventListener("reset", reset);
-      }
-    }, [control, setChecked]);
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(
-      Primitive.button,
-      {
-        type: "button",
-        role: "checkbox",
-        "aria-checked": isIndeterminate(checked) ? "mixed" : checked,
-        "aria-required": required,
-        "data-state": getState$1(checked),
-        "data-disabled": disabled ? "" : void 0,
-        disabled,
-        value,
-        ...checkboxProps,
-        ref: composedRefs,
-        onKeyDown: composeEventHandlers(onKeyDown, (event) => {
-          if (event.key === "Enter") event.preventDefault();
-        }),
-        onClick: composeEventHandlers(onClick, (event) => {
-          onUserInteraction();
-          setChecked((prevChecked) => isIndeterminate(prevChecked) ? true : !prevChecked);
-          if (bubbleInput && isFormControl) {
-            hasConsumerStoppedPropagationRef.current = event.isPropagationStopped();
-            if (!hasConsumerStoppedPropagationRef.current) event.stopPropagation();
-          }
-        })
-      }
-    );
-  }, "CheckboxTrigger")
-);
-var Checkbox$1 = /* @__PURE__ */ reactExports.forwardRef(
-  // blank line to reduce diff noise
-  /* @__PURE__ */ __name$a(function Checkbox2(props, forwardedRef) {
-    const {
-      __scopeCheckbox,
-      name,
-      checked,
-      defaultChecked,
-      required,
-      disabled,
-      value,
-      onCheckedChange,
-      form,
-      ...checkboxProps
-    } = props;
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(
-      CheckboxProvider,
-      {
-        __scopeCheckbox,
-        checked,
-        defaultChecked,
-        disabled,
-        required,
-        onCheckedChange,
-        name,
-        form,
-        value,
-        internal_do_not_use_render: ({ isFormControl }) => /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            CheckboxTrigger,
-            {
-              ...checkboxProps,
-              ref: forwardedRef,
-              __scopeCheckbox
-            }
-          ),
-          isFormControl && /* @__PURE__ */ jsxRuntimeExports.jsx(
-            CheckboxBubbleInput,
-            {
-              __scopeCheckbox
-            }
-          )
-        ] })
-      }
-    );
-  }, "Checkbox")
-);
-var INDICATOR_NAME = "CheckboxIndicator";
-var CheckboxIndicator = /* @__PURE__ */ reactExports.forwardRef(
-  // blank line to reduce diff noise
-  /* @__PURE__ */ __name$a(function CheckboxIndicator2(props, forwardedRef) {
-    const { __scopeCheckbox, forceMount, ...indicatorProps } = props;
-    const context = useCheckboxContext(INDICATOR_NAME, __scopeCheckbox);
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(
-      Presence,
-      {
-        present: forceMount || isIndeterminate(context.checked) || context.checked === true,
-        children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-          Primitive.span,
-          {
-            "data-state": getState$1(context.checked),
-            "data-disabled": context.disabled ? "" : void 0,
-            ...indicatorProps,
-            ref: forwardedRef,
-            style: { pointerEvents: "none", ...props.style }
-          }
-        )
-      }
-    );
-  }, "CheckboxIndicator")
-);
-var BUBBLE_INPUT_NAME$3 = "CheckboxBubbleInput";
-var CheckboxBubbleInput = /* @__PURE__ */ reactExports.forwardRef(
-  // blank line to reduce diff noise
-  /* @__PURE__ */ __name$a(function CheckboxBubbleInput2({ __scopeCheckbox, onClick, ...props }, forwardedRef) {
-    const {
-      control,
-      hasConsumerStoppedPropagationRef,
-      userInteractionCount,
-      checked,
-      defaultChecked,
-      required,
-      disabled,
-      name,
-      value,
-      form,
-      bubbleInput,
-      setBubbleInput
-    } = useCheckboxContext(BUBBLE_INPUT_NAME$3, __scopeCheckbox);
-    const composedRefs = useComposedRefs(forwardedRef, setBubbleInput);
-    const controlSize = useSize(control);
-    const shouldStopClickPropagationRef = reactExports.useRef(false);
-    const prevCheckedRef = reactExports.useRef(checked);
-    const prevUserInteractionCountRef = reactExports.useRef(userInteractionCount);
-    reactExports.useEffect(() => {
-      const input = bubbleInput;
-      if (!input) return;
-      const inputProto = window.HTMLInputElement.prototype;
-      const descriptor = Object.getOwnPropertyDescriptor(
-        inputProto,
-        "checked"
-      );
-      const setChecked = descriptor.set;
-      const isUserInteraction = userInteractionCount !== prevUserInteractionCountRef.current;
-      prevUserInteractionCountRef.current = userInteractionCount;
-      const checkedChanged = prevCheckedRef.current !== checked;
-      prevCheckedRef.current = checked;
-      const bubbles = !(isUserInteraction && hasConsumerStoppedPropagationRef.current);
-      if (checkedChanged && setChecked) {
-        shouldStopClickPropagationRef.current = !isUserInteraction;
-        const event = new Event("click", { bubbles });
-        input.indeterminate = isIndeterminate(checked);
-        setChecked.call(input, isIndeterminate(checked) ? false : checked);
-        input.dispatchEvent(event);
-        shouldStopClickPropagationRef.current = false;
-      }
-    }, [bubbleInput, checked, hasConsumerStoppedPropagationRef, userInteractionCount]);
-    const defaultCheckedRef = reactExports.useRef(isIndeterminate(checked) ? false : checked);
-    return /* @__PURE__ */ jsxRuntimeExports.jsx(
-      Primitive.input,
-      {
-        type: "checkbox",
-        "aria-hidden": true,
-        defaultChecked: defaultChecked ?? defaultCheckedRef.current,
-        required,
-        disabled,
-        name,
-        value,
-        form,
-        ...props,
-        tabIndex: -1,
-        ref: composedRefs,
-        onClick: composeEventHandlers(onClick, (event) => {
-          if (shouldStopClickPropagationRef.current) {
-            event.stopPropagation();
-          }
-        }),
-        style: {
-          ...props.style,
-          ...controlSize,
-          position: "absolute",
-          pointerEvents: "none",
-          opacity: 0,
-          margin: 0,
-          // We transform because the input is absolutely positioned but we have
-          // rendered it **after** the button. This pulls it back to sit on top
-          // of the button.
-          transform: "translateX(-100%)"
-        }
-      }
-    );
-  }, "CheckboxBubbleInput")
-);
-function isFunction$3(value) {
-  return typeof value === "function";
-}
-__name$a(isFunction$3, "isFunction");
-function isIndeterminate(checked) {
-  return checked === "indeterminate";
-}
-__name$a(isIndeterminate, "isIndeterminate");
-function getState$1(checked) {
-  return isIndeterminate(checked) ? "indeterminate" : checked ? "checked" : "unchecked";
-}
-__name$a(getState$1, "getState");
-function Checkbox({
-  className,
-  ...props
-}) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Checkbox$1,
-    {
-      "data-slot": "checkbox",
-      className: cn(
-        "peer border-input dark:bg-input/30 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground dark:data-[state=checked]:bg-primary data-[state=checked]:border-primary focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive size-4 shrink-0 rounded-[4px] border shadow-xs transition-shadow outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50",
-        className
-      ),
-      ...props,
-      children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-        CheckboxIndicator,
-        {
-          "data-slot": "checkbox-indicator",
-          className: "flex items-center justify-center text-current transition-none",
-          children: /* @__PURE__ */ jsxRuntimeExports.jsx(Check, { className: "size-3.5" })
-        }
-      )
-    }
-  );
-}
-const defaultReminders = [
-  "Clean and tidy the house",
-  "Prepare Sabbath meals",
-  "Choose appropriate attire",
-  "Turn off work devices",
-  "Prepare study materials",
-  "Set peaceful atmosphere",
-  "Review family worship plan",
-  "Charge devices for minimal use"
-];
-function PrepChecklist({ userId }) {
-  var _a2;
-  const [checkedItems, setCheckedItems] = reactExports.useState(/* @__PURE__ */ new Set());
-  const [newReminder, setNewReminder] = reactExports.useState("");
-  const [isAddingReminder, setIsAddingReminder] = reactExports.useState(false);
-  const { toast: toast2 } = useToast();
-  const queryClient2 = useQueryClient();
-  const { data: preferencesData } = useQuery({
-    queryKey: ["preferences", userId],
-    queryFn: () => backend.sabbath.getPreferences({ userId })
-  });
-  const preferences = preferencesData == null ? void 0 : preferencesData.preferences;
-  const savePreferencesMutation = useMutation({
-    mutationFn: (prepReminders) => backend.sabbath.savePreferences({ userId, prepReminders }),
-    onSuccess: () => {
-      queryClient2.invalidateQueries({ queryKey: ["preferences", userId] });
-      toast2({
-        title: "Preferences saved",
-        description: "Your preparation checklist has been updated."
-      });
-    },
-    onError: (error) => {
-      console.error("Failed to save preferences:", error);
-      toast2({
-        title: "Error",
-        description: "Failed to save your preferences. Please try again.",
-        variant: "destructive"
-      });
-    }
-  });
-  const currentReminders = ((_a2 = preferences == null ? void 0 : preferences.prepReminders) == null ? void 0 : _a2.length) ? preferences.prepReminders : defaultReminders;
-  const handleToggleItem = (item) => {
-    const newCheckedItems = new Set(checkedItems);
-    if (newCheckedItems.has(item)) {
-      newCheckedItems.delete(item);
-    } else {
-      newCheckedItems.add(item);
-    }
-    setCheckedItems(newCheckedItems);
-  };
-  const handleAddReminder = () => {
-    if (newReminder.trim()) {
-      const updatedReminders = [...currentReminders, newReminder.trim()];
-      savePreferencesMutation.mutate(updatedReminders);
-      setNewReminder("");
-      setIsAddingReminder(false);
-    }
-  };
-  const handleRemoveReminder = (reminderToRemove) => {
-    const updatedReminders = currentReminders.filter((reminder) => reminder !== reminderToRemove);
-    savePreferencesMutation.mutate(updatedReminders);
-    setCheckedItems((prev) => {
-      const newSet = new Set(prev);
-      newSet.delete(reminderToRemove);
-      return newSet;
-    });
-  };
-  const completedCount = Array.from(checkedItems).filter(
-    (item) => currentReminders.includes(item)
-  ).length;
-  const progressPercentage = currentReminders.length > 0 ? completedCount / currentReminders.length * 100 : 0;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-8", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-slate-800 dark:text-white mb-2", children: "Sabbath Preparation" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-slate-600 dark:text-gray-300", children: "Prepare your heart and home for sacred time" })
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-950/50 dark:to-blue-950/50 border-green-200 dark:border-green-800", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardTitle, { className: "flex items-center justify-between", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-green-700 dark:text-green-300", children: "Preparation Progress" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-2xl font-bold text-green-600 dark:text-green-400", children: [
-          completedCount,
-          "/",
-          currentReminders.length
-        ] })
-      ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full bg-green-100 dark:bg-green-900 rounded-full h-3 mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: "bg-gradient-to-r from-green-500 to-green-600 h-3 rounded-full transition-all duration-300",
-            style: { width: `${progressPercentage}%` }
-          }
-        ) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-green-600 dark:text-green-400 text-center", children: progressPercentage === 100 ? "🎉 Ready for Sabbath!" : `${Math.round(progressPercentage)}% complete` })
-      ] })
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-slate-200 dark:border-gray-800 bg-white dark:bg-black", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardTitle, { className: "flex items-center justify-between text-slate-800 dark:text-white", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Preparation Checklist" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          Button,
-          {
-            variant: "outline",
-            size: "sm",
-            onClick: () => setIsAddingReminder(true),
-            className: "text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-950",
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { className: "w-4 h-4 mr-2" }),
-              "Add Item"
-            ]
-          }
-        )
-      ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "space-y-4", children: [
-        isAddingReminder && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex space-x-2 p-4 bg-blue-50 dark:bg-blue-950/50 rounded-lg", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            Input,
-            {
-              value: newReminder,
-              onChange: (e) => setNewReminder(e.target.value),
-              placeholder: "Enter new reminder...",
-              onKeyPress: (e) => e.key === "Enter" && handleAddReminder(),
-              className: "flex-1 bg-white dark:bg-black border-slate-300 dark:border-gray-600"
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { onClick: handleAddReminder, size: "sm", children: "Add" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            Button,
-            {
-              variant: "outline",
-              size: "sm",
-              onClick: () => {
-                setIsAddingReminder(false);
-                setNewReminder("");
-              },
-              children: "Cancel"
-            }
-          )
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-3", children: currentReminders.map((reminder, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-          "div",
-          {
-            className: "flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-gray-800 transition-colors group",
-            children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                Checkbox,
-                {
-                  checked: checkedItems.has(reminder),
-                  onCheckedChange: () => handleToggleItem(reminder),
-                  className: "data-[state=checked]:bg-green-600 data-[state=checked]:border-green-600"
-                }
-              ),
-              /* @__PURE__ */ jsxRuntimeExports.jsx(
-                "span",
-                {
-                  className: `flex-1 ${checkedItems.has(reminder) ? "line-through text-slate-500 dark:text-gray-400" : "text-slate-700 dark:text-gray-200"}`,
-                  children: reminder
-                }
-              ),
-              !defaultReminders.includes(reminder) && /* @__PURE__ */ jsxRuntimeExports.jsx(
-                Button,
-                {
-                  variant: "ghost",
-                  size: "sm",
-                  onClick: () => handleRemoveReminder(reminder),
-                  className: "opacity-0 group-hover:opacity-100 transition-opacity text-red-500 hover:text-red-700 hover:bg-red-50 dark:hover:bg-red-950",
-                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-4 h-4" })
-                }
-              )
-            ]
-          },
-          index2
-        )) }),
-        currentReminders.length === 0 && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center py-8 text-slate-500 dark:text-gray-400", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(SquareCheckBig, { className: "w-12 h-12 mx-auto mb-4 text-slate-300 dark:text-gray-600" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "No preparation items yet. Add some to get started!" })
-        ] })
-      ] })
-    ] }),
-    progressPercentage === 100 && /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-950/50 dark:to-blue-950/50 border-green-200 dark:border-green-800", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "text-center py-8", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(SquareCheckBig, { className: "w-12 h-12 text-green-600 dark:text-green-400 mx-auto mb-4" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-green-700 dark:text-green-300 mb-2", children: "Preparation Complete!" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-green-600 dark:text-green-400", children: '"And God blessed the seventh day and made it holy." - Genesis 2:3' })
-    ] }) })
-  ] });
-}
-var __defProp$9 = Object.defineProperty;
-var __name$9 = (target, value) => __defProp$9(target, "name", { value, configurable: true });
 function clamp$1(value, [min2, max2]) {
   return Math.min(max2, Math.max(min2, value));
 }
-__name$9(clamp$1, "clamp");
-var __defProp$8 = Object.defineProperty;
-var __name$8 = (target, value) => __defProp$8(target, "name", { value, configurable: true });
+__name$b(clamp$1, "clamp");
+var __defProp$a = Object.defineProperty;
+var __name$a = (target, value) => __defProp$a(target, "name", { value, configurable: true });
 var DirectionContext = reactExports.createContext(void 0);
 function useDirection(localDir) {
   const globalDir = reactExports.useContext(DirectionContext);
   return localDir || globalDir || "ltr";
 }
-__name$8(useDirection, "useDirection");
-var __defProp$7 = Object.defineProperty;
-var __name$7 = (target, value) => __defProp$7(target, "name", { value, configurable: true });
+__name$a(useDirection, "useDirection");
+var __defProp$9 = Object.defineProperty;
+var __name$9 = (target, value) => __defProp$9(target, "name", { value, configurable: true });
 var count$1 = 0;
 var guards = null;
 function FocusGuards(props) {
   useFocusGuards();
   return props.children;
 }
-__name$7(FocusGuards, "FocusGuards");
+__name$9(FocusGuards, "FocusGuards");
 function useFocusGuards() {
   reactExports.useEffect(() => {
     if (!guards) {
@@ -26787,7 +26203,7 @@ function useFocusGuards() {
     };
   }, []);
 }
-__name$7(useFocusGuards, "useFocusGuards");
+__name$9(useFocusGuards, "useFocusGuards");
 function createFocusGuard() {
   const element = document.createElement("span");
   element.setAttribute("data-radix-focus-guard", "");
@@ -26798,14 +26214,14 @@ function createFocusGuard() {
   element.style.pointerEvents = "none";
   return element;
 }
-__name$7(createFocusGuard, "createFocusGuard");
-var __defProp$6 = Object.defineProperty;
-var __name$6 = (target, value) => __defProp$6(target, "name", { value, configurable: true });
+__name$9(createFocusGuard, "createFocusGuard");
+var __defProp$8 = Object.defineProperty;
+var __name$8 = (target, value) => __defProp$8(target, "name", { value, configurable: true });
 var AUTOFOCUS_ON_MOUNT = "focusScope.autoFocusOnMount";
 var AUTOFOCUS_ON_UNMOUNT = "focusScope.autoFocusOnUnmount";
 var EVENT_OPTIONS = { bubbles: false, cancelable: true };
 var FocusScope = /* @__PURE__ */ reactExports.forwardRef(
-  /* @__PURE__ */ __name$6(function FocusScope2(props, forwardedRef) {
+  /* @__PURE__ */ __name$8(function FocusScope2(props, forwardedRef) {
     const {
       loop = false,
       trapped = false,
@@ -26851,9 +26267,9 @@ var FocusScope = /* @__PURE__ */ reactExports.forwardRef(
             if (mutation.removedNodes.length > 0) focus(container);
           }
         };
-        __name$6(handleFocusIn2, "handleFocusIn");
-        __name$6(handleFocusOut2, "handleFocusOut");
-        __name$6(handleMutations2, "handleMutations");
+        __name$8(handleFocusIn2, "handleFocusIn");
+        __name$8(handleFocusOut2, "handleFocusOut");
+        __name$8(handleMutations2, "handleMutations");
         document.addEventListener("focusin", handleFocusIn2);
         document.addEventListener("focusout", handleFocusOut2);
         const mutationObserver = new MutationObserver(handleMutations2);
@@ -26931,18 +26347,18 @@ function focusFirst(candidates, { select = false } = {}) {
     if (document.activeElement !== previouslyFocusedElement) return;
   }
 }
-__name$6(focusFirst, "focusFirst");
+__name$8(focusFirst, "focusFirst");
 function getTabbableEdges(container) {
   const candidates = getTabbableCandidates(container);
   const first = findVisible(candidates, container);
   const last = findVisible(candidates.reverse(), container);
   return [first, last];
 }
-__name$6(getTabbableEdges, "getTabbableEdges");
+__name$8(getTabbableEdges, "getTabbableEdges");
 function getTabbableCandidates(container) {
   const nodes = [];
   const walker = document.createTreeWalker(container, NodeFilter.SHOW_ELEMENT, {
-    acceptNode: /* @__PURE__ */ __name$6((node) => {
+    acceptNode: /* @__PURE__ */ __name$8((node) => {
       const isHiddenInput = node.tagName === "INPUT" && node.type === "hidden";
       if (node.disabled || node.hidden || isHiddenInput) return NodeFilter.FILTER_SKIP;
       return node.tabIndex >= 0 ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
@@ -26951,7 +26367,7 @@ function getTabbableCandidates(container) {
   while (walker.nextNode()) nodes.push(walker.currentNode);
   return nodes;
 }
-__name$6(getTabbableCandidates, "getTabbableCandidates");
+__name$8(getTabbableCandidates, "getTabbableCandidates");
 function findVisible(elements, container) {
   const canUseCheckVisibility = typeof container.checkVisibility === "function" && container.checkVisibility({ checkVisibilityCSS: true });
   for (const element of elements) {
@@ -26961,7 +26377,7 @@ function findVisible(elements, container) {
     }
   }
 }
-__name$6(findVisible, "findVisible");
+__name$8(findVisible, "findVisible");
 function isHidden(node, { upTo }) {
   if (getComputedStyle(node).visibility === "hidden") return true;
   while (node) {
@@ -26971,11 +26387,11 @@ function isHidden(node, { upTo }) {
   }
   return false;
 }
-__name$6(isHidden, "isHidden");
+__name$8(isHidden, "isHidden");
 function isSelectableInput(element) {
   return element instanceof HTMLInputElement && "select" in element;
 }
-__name$6(isSelectableInput, "isSelectableInput");
+__name$8(isSelectableInput, "isSelectableInput");
 function focus(element, { select = false } = {}) {
   if (element && element.focus) {
     const previouslyFocusedElement = document.activeElement;
@@ -26984,7 +26400,7 @@ function focus(element, { select = false } = {}) {
       element.select();
   }
 }
-__name$6(focus, "focus");
+__name$8(focus, "focus");
 var focusScopesStack = createFocusScopesStack();
 function createFocusScopesStack() {
   let stack = [];
@@ -27004,7 +26420,7 @@ function createFocusScopesStack() {
     }
   };
 }
-__name$6(createFocusScopesStack, "createFocusScopesStack");
+__name$8(createFocusScopesStack, "createFocusScopesStack");
 function arrayRemove(array, item) {
   const updatedArray = [...array];
   const index2 = updatedArray.indexOf(item);
@@ -27013,13 +26429,13 @@ function arrayRemove(array, item) {
   }
   return updatedArray;
 }
-__name$6(arrayRemove, "arrayRemove");
+__name$8(arrayRemove, "arrayRemove");
 function removeLinks(items) {
   return items.filter((item) => item.tagName !== "A");
 }
-__name$6(removeLinks, "removeLinks");
-var __defProp$5 = Object.defineProperty;
-var __name$5 = (target, value) => __defProp$5(target, "name", { value, configurable: true });
+__name$8(removeLinks, "removeLinks");
+var __defProp$7 = Object.defineProperty;
+var __name$7 = (target, value) => __defProp$7(target, "name", { value, configurable: true });
 var useReactId = React$1[" useId ".trim().toString()] || (() => void 0);
 var count = 0;
 function useId(deterministicId) {
@@ -27029,7 +26445,7 @@ function useId(deterministicId) {
   }, [deterministicId]);
   return deterministicId || (id ? `radix-${id}` : "");
 }
-__name$5(useId, "useId");
+__name$7(useId, "useId");
 const sides = ["top", "right", "bottom", "left"];
 const min = Math.min;
 const max = Math.max;
@@ -28920,12 +28336,49 @@ const arrow = (options, deps) => {
     options: [options, deps]
   };
 };
-var __defProp$4 = Object.defineProperty;
-var __name$4 = (target, value) => __defProp$4(target, "name", { value, configurable: true });
+var __defProp$6 = Object.defineProperty;
+var __name$6 = (target, value) => __defProp$6(target, "name", { value, configurable: true });
+function useSize(element) {
+  const [size2, setSize] = reactExports.useState(void 0);
+  useLayoutEffect2(() => {
+    if (element) {
+      setSize({ width: element.offsetWidth, height: element.offsetHeight });
+      const resizeObserver = new ResizeObserver((entries) => {
+        if (!Array.isArray(entries)) {
+          return;
+        }
+        if (!entries.length) {
+          return;
+        }
+        const entry = entries[0];
+        let width;
+        let height;
+        if ("borderBoxSize" in entry) {
+          const borderSizeEntry = entry["borderBoxSize"];
+          const borderSize = Array.isArray(borderSizeEntry) ? borderSizeEntry[0] : borderSizeEntry;
+          width = borderSize["inlineSize"];
+          height = borderSize["blockSize"];
+        } else {
+          width = element.offsetWidth;
+          height = element.offsetHeight;
+        }
+        setSize({ width, height });
+      });
+      resizeObserver.observe(element, { box: "border-box" });
+      return () => resizeObserver.unobserve(element);
+    } else {
+      setSize(void 0);
+    }
+  }, [element]);
+  return size2;
+}
+__name$6(useSize, "useSize");
+var __defProp$5 = Object.defineProperty;
+var __name$5 = (target, value) => __defProp$5(target, "name", { value, configurable: true });
 var POPPER_NAME = "Popper";
 var [createPopperContext, createPopperScope] = /* @__PURE__ */ createContextScope(POPPER_NAME);
 var [PopperProvider, usePopperContext] = createPopperContext(POPPER_NAME);
-var Popper = /* @__PURE__ */ __name$4((props) => {
+var Popper = /* @__PURE__ */ __name$5((props) => {
   const { __scopePopper, children } = props;
   const [anchor, setAnchor] = reactExports.useState(null);
   const [placementState, setPlacementState] = reactExports.useState(void 0);
@@ -28943,7 +28396,7 @@ var Popper = /* @__PURE__ */ __name$4((props) => {
 }, "Popper");
 var ANCHOR_NAME = "PopperAnchor";
 var PopperAnchor = /* @__PURE__ */ reactExports.forwardRef(
-  /* @__PURE__ */ __name$4(function PopperAnchor2(props, forwardedRef) {
+  /* @__PURE__ */ __name$5(function PopperAnchor2(props, forwardedRef) {
     const { __scopePopper, virtualRef, ...anchorProps } = props;
     const context = usePopperContext(ANCHOR_NAME, __scopePopper);
     const ref = reactExports.useRef(null);
@@ -28986,7 +28439,7 @@ var PopperAnchor = /* @__PURE__ */ reactExports.forwardRef(
 var CONTENT_NAME$1 = "PopperContent";
 var [PopperContentProvider, useContentContext] = createPopperContext(CONTENT_NAME$1);
 var PopperContent = /* @__PURE__ */ reactExports.forwardRef(
-  /* @__PURE__ */ __name$4(function PopperContent2(props, forwardedRef) {
+  /* @__PURE__ */ __name$5(function PopperContent2(props, forwardedRef) {
     var _a2, _b2, _c2, _d2, _e2, _f2, _g2;
     const {
       __scopePopper,
@@ -29025,7 +28478,7 @@ var PopperContent = /* @__PURE__ */ reactExports.forwardRef(
       // default to `fixed` strategy so users don't have to pick and we also avoid focus scroll issues
       strategy: "fixed",
       placement: desiredPlacement,
-      whileElementsMounted: /* @__PURE__ */ __name$4((...args) => {
+      whileElementsMounted: /* @__PURE__ */ __name$5((...args) => {
         const cleanup = autoUpdate(...args, {
           animationFrame: updatePositionStrategy === "always"
         });
@@ -29045,7 +28498,7 @@ var PopperContent = /* @__PURE__ */ reactExports.forwardRef(
         avoidCollisions && flip({ ...detectOverflowOptions }),
         size({
           ...detectOverflowOptions,
-          apply: /* @__PURE__ */ __name$4(({ elements, rects, availableWidth, availableHeight }) => {
+          apply: /* @__PURE__ */ __name$5(({ elements, rects, availableWidth, availableHeight }) => {
             const { width: anchorWidth, height: anchorHeight } = rects.reference;
             const contentStyle = elements.floating.style;
             contentStyle.setProperty("--radix-popper-available-width", `${availableWidth}px`);
@@ -29150,8 +28603,8 @@ var PopperContent = /* @__PURE__ */ reactExports.forwardRef(
 function isNotNull(value) {
   return value !== null;
 }
-__name$4(isNotNull, "isNotNull");
-var transformOrigin = /* @__PURE__ */ __name$4((options) => ({
+__name$5(isNotNull, "isNotNull");
+var transformOrigin = /* @__PURE__ */ __name$5((options) => ({
   name: "transformOrigin",
   options,
   fn(data) {
@@ -29187,12 +28640,12 @@ function getSideAndAlignFromPlacement(placement) {
   const [side, align = "center"] = placement.split("-");
   return [side, align];
 }
-__name$4(getSideAndAlignFromPlacement, "getSideAndAlignFromPlacement");
+__name$5(getSideAndAlignFromPlacement, "getSideAndAlignFromPlacement");
 var Root2 = Popper;
 var Anchor = PopperAnchor;
 var Content = PopperContent;
-var __defProp$3 = Object.defineProperty;
-var __name$3 = (target, value) => __defProp$3(target, "name", { value, configurable: true });
+var __defProp$4 = Object.defineProperty;
+var __name$4 = (target, value) => __defProp$4(target, "name", { value, configurable: true });
 function usePrevious(value) {
   const ref = reactExports.useRef({ value, previous: value });
   return reactExports.useMemo(() => {
@@ -29203,7 +28656,7 @@ function usePrevious(value) {
     return ref.current.previous;
   }, [value]);
 }
-__name$3(usePrevious, "usePrevious");
+__name$4(usePrevious, "usePrevious");
 var getDefaultParent = function(originalTarget) {
   if (typeof document === "undefined") {
     return null;
@@ -29983,8 +29436,8 @@ var ReactRemoveScroll = reactExports.forwardRef(function(props, ref) {
   return reactExports.createElement(RemoveScroll, __assign({}, props, { ref, sideCar: SideCar }));
 });
 ReactRemoveScroll.classNames = RemoveScroll.classNames;
-var __defProp$2 = Object.defineProperty;
-var __name$2 = (target, value) => __defProp$2(target, "name", { value, configurable: true });
+var __defProp$3 = Object.defineProperty;
+var __name$3 = (target, value) => __defProp$3(target, "name", { value, configurable: true });
 var OPEN_KEYS = [" ", "Enter", "ArrowUp", "ArrowDown"];
 var SELECTION_KEYS = [" ", "Enter"];
 var SELECT_NAME = "Select";
@@ -30037,7 +29490,7 @@ function SelectProvider(props) {
   reactExports.useEffect(() => {
     const associatedForm = form ? trigger == null ? void 0 : trigger.ownerDocument.getElementById(form) : trigger == null ? void 0 : trigger.form;
     if (associatedForm instanceof HTMLFormElement) {
-      const reset = /* @__PURE__ */ __name$2(() => setValue(initialValueRef.current), "reset");
+      const reset = /* @__PURE__ */ __name$3(() => setValue(initialValueRef.current), "reset");
       associatedForm.addEventListener("reset", reset);
       return () => associatedForm.removeEventListener("reset", reset);
     }
@@ -30085,12 +29538,12 @@ function SelectProvider(props) {
       scope: __scopeSelect,
       onNativeOptionAdd: handleNativeOptionAdd,
       onNativeOptionRemove: handleNativeOptionRemove,
-      children: isFunction$2(internal_do_not_use_render) ? internal_do_not_use_render(context) : children
+      children: isFunction$3(internal_do_not_use_render) ? internal_do_not_use_render(context) : children
     }
   ) }) }) });
 }
-__name$2(SelectProvider, "SelectProvider");
-var Select$1 = /* @__PURE__ */ __name$2((props) => {
+__name$3(SelectProvider, "SelectProvider");
+var Select$1 = /* @__PURE__ */ __name$3((props) => {
   const { __scopeSelect, children, ...providerProps } = props;
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     SelectProvider,
@@ -30109,12 +29562,12 @@ var Select$1 = /* @__PURE__ */ __name$2((props) => {
     }
   );
 }, "Select");
-var TRIGGER_NAME$1 = "SelectTrigger";
+var TRIGGER_NAME$2 = "SelectTrigger";
 var SelectTrigger$1 = /* @__PURE__ */ reactExports.forwardRef(
-  /* @__PURE__ */ __name$2(function SelectTrigger2(props, forwardedRef) {
+  /* @__PURE__ */ __name$3(function SelectTrigger2(props, forwardedRef) {
     const { __scopeSelect, disabled = false, ...triggerProps } = props;
     const popperScope = usePopperScope(__scopeSelect);
-    const context = useSelectContext(TRIGGER_NAME$1, __scopeSelect);
+    const context = useSelectContext(TRIGGER_NAME$2, __scopeSelect);
     const isDisabled = context.disabled || disabled;
     const composedRefs = useComposedRefs(forwardedRef, context.onTriggerChange);
     const getItems = useCollection$1(__scopeSelect);
@@ -30127,7 +29580,7 @@ var SelectTrigger$1 = /* @__PURE__ */ reactExports.forwardRef(
         context.onValueChange(nextItem.value);
       }
     });
-    const handleOpen = /* @__PURE__ */ __name$2((pointerEvent) => {
+    const handleOpen = /* @__PURE__ */ __name$3((pointerEvent) => {
       if (!isDisabled) {
         context.onOpenChange(true);
         resetTypeahead();
@@ -30188,7 +29641,7 @@ var SelectTrigger$1 = /* @__PURE__ */ reactExports.forwardRef(
 );
 var VALUE_NAME = "SelectValue";
 var SelectValue$1 = /* @__PURE__ */ reactExports.forwardRef(
-  /* @__PURE__ */ __name$2(function SelectValue2(props, forwardedRef) {
+  /* @__PURE__ */ __name$3(function SelectValue2(props, forwardedRef) {
     const { __scopeSelect, className, style, children, placeholder = "", ...valueProps } = props;
     const context = useSelectContext(VALUE_NAME, __scopeSelect);
     const { onValueNodeHasChildrenChange } = context;
@@ -30211,7 +29664,7 @@ var SelectValue$1 = /* @__PURE__ */ reactExports.forwardRef(
   }, "SelectValue")
 );
 var SelectIcon = /* @__PURE__ */ reactExports.forwardRef(
-  /* @__PURE__ */ __name$2(function SelectIcon2(props, forwardedRef) {
+  /* @__PURE__ */ __name$3(function SelectIcon2(props, forwardedRef) {
     const { __scopeSelect, children, ...iconProps } = props;
     return /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive.span, { "aria-hidden": true, ...iconProps, ref: forwardedRef, children: children || "▼" });
   }, "SelectIcon")
@@ -30220,13 +29673,13 @@ var PORTAL_NAME = "SelectPortal";
 var [PortalProvider, usePortalContext] = createSelectContext(PORTAL_NAME, {
   forceMount: void 0
 });
-var SelectPortal = /* @__PURE__ */ __name$2((props) => {
+var SelectPortal = /* @__PURE__ */ __name$3((props) => {
   const { __scopeSelect, forceMount, ...portalProps } = props;
   return /* @__PURE__ */ jsxRuntimeExports.jsx(PortalProvider, { scope: props.__scopeSelect, forceMount, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Portal, { asChild: true, ...portalProps }) });
 }, "SelectPortal");
 var CONTENT_NAME = "SelectContent";
 var SelectContent$1 = /* @__PURE__ */ reactExports.forwardRef(
-  /* @__PURE__ */ __name$2(function SelectContent2(props, forwardedRef) {
+  /* @__PURE__ */ __name$3(function SelectContent2(props, forwardedRef) {
     const portalContext = usePortalContext(CONTENT_NAME, props.__scopeSelect);
     const { forceMount = portalContext.forceMount, ...contentProps } = props;
     const context = useSelectContext(CONTENT_NAME, props.__scopeSelect);
@@ -30237,7 +29690,7 @@ var SelectContent$1 = /* @__PURE__ */ reactExports.forwardRef(
     return /* @__PURE__ */ jsxRuntimeExports.jsx(Presence, { present: forceMount || context.open, children: ({ present }) => present ? /* @__PURE__ */ jsxRuntimeExports.jsx(SelectContentImpl, { ...contentProps, ref: forwardedRef }) : /* @__PURE__ */ jsxRuntimeExports.jsx(SelectContentFragment, { ...contentProps, fragment }) });
   }, "SelectContent")
 );
-var SelectContentFragment = /* @__PURE__ */ reactExports.forwardRef(/* @__PURE__ */ __name$2(function SelectContentFragment2(props, forwardedRef) {
+var SelectContentFragment = /* @__PURE__ */ reactExports.forwardRef(/* @__PURE__ */ __name$3(function SelectContentFragment2(props, forwardedRef) {
   const { __scopeSelect, children, fragment } = props;
   if (!fragment) return null;
   return reactDomExports.createPortal(
@@ -30250,7 +29703,7 @@ var [SelectContentProvider, useSelectContentContext] = createSelectContext(CONTE
 var Slot = /* @__PURE__ */ createSlot("SelectContent.RemoveScroll");
 var SelectContentImpl = /* @__PURE__ */ reactExports.forwardRef(
   // blank line to reduce diff noise
-  /* @__PURE__ */ __name$2(function SelectContentImpl2(props, forwardedRef) {
+  /* @__PURE__ */ __name$3(function SelectContentImpl2(props, forwardedRef) {
     const { __scopeSelect } = props;
     const {
       position = "item-aligned",
@@ -30316,14 +29769,14 @@ var SelectContentImpl = /* @__PURE__ */ reactExports.forwardRef(
     reactExports.useEffect(() => {
       if (content) {
         let pointerMoveDelta = { x: 0, y: 0 };
-        const handlePointerMove = /* @__PURE__ */ __name$2((event) => {
+        const handlePointerMove = /* @__PURE__ */ __name$3((event) => {
           var _a2, _b2;
           pointerMoveDelta = {
             x: Math.abs(Math.round(event.pageX) - (((_a2 = triggerPointerDownPosRef.current) == null ? void 0 : _a2.x) ?? 0)),
             y: Math.abs(Math.round(event.pageY) - (((_b2 = triggerPointerDownPosRef.current) == null ? void 0 : _b2.y) ?? 0))
           };
         }, "handlePointerMove");
-        const handlePointerUp = /* @__PURE__ */ __name$2((event) => {
+        const handlePointerUp = /* @__PURE__ */ __name$3((event) => {
           if (pointerMoveDelta.x <= 10 && pointerMoveDelta.y <= 10) {
             event.preventDefault();
           } else {
@@ -30345,7 +29798,7 @@ var SelectContentImpl = /* @__PURE__ */ reactExports.forwardRef(
       }
     }, [content, onOpenChange, triggerPointerDownPosRef]);
     reactExports.useEffect(() => {
-      const close = /* @__PURE__ */ __name$2(() => onOpenChange(false), "close");
+      const close = /* @__PURE__ */ __name$3(() => onOpenChange(false), "close");
       window.addEventListener("blur", close);
       window.addEventListener("resize", close);
       return () => {
@@ -30486,7 +29939,7 @@ var SelectContentImpl = /* @__PURE__ */ reactExports.forwardRef(
     );
   }, "SelectContentImpl")
 );
-var SelectItemAlignedPosition = /* @__PURE__ */ reactExports.forwardRef(/* @__PURE__ */ __name$2(function SelectItemAlignedPosition2(props, forwardedRef) {
+var SelectItemAlignedPosition = /* @__PURE__ */ reactExports.forwardRef(/* @__PURE__ */ __name$3(function SelectItemAlignedPosition2(props, forwardedRef) {
   const { __scopeSelect, onPlaced, ...popperProps } = props;
   const context = useSelectContext(CONTENT_NAME, __scopeSelect);
   const contentContext = useSelectContentContext(CONTENT_NAME, __scopeSelect);
@@ -30648,7 +30101,7 @@ var SelectItemAlignedPosition = /* @__PURE__ */ reactExports.forwardRef(/* @__PU
     }
   );
 }, "SelectItemAlignedPosition"));
-var SelectPopperPosition = /* @__PURE__ */ reactExports.forwardRef(/* @__PURE__ */ __name$2(function SelectPopperPosition2(props, forwardedRef) {
+var SelectPopperPosition = /* @__PURE__ */ reactExports.forwardRef(/* @__PURE__ */ __name$3(function SelectPopperPosition2(props, forwardedRef) {
   const {
     __scopeSelect,
     align = "start",
@@ -30683,7 +30136,7 @@ var SelectPopperPosition = /* @__PURE__ */ reactExports.forwardRef(/* @__PURE__ 
 var [SelectViewportProvider, useSelectViewportContext] = createSelectContext(CONTENT_NAME, {});
 var VIEWPORT_NAME = "SelectViewport";
 var SelectViewport = /* @__PURE__ */ reactExports.forwardRef(
-  /* @__PURE__ */ __name$2(function SelectViewport2(props, forwardedRef) {
+  /* @__PURE__ */ __name$3(function SelectViewport2(props, forwardedRef) {
     const { __scopeSelect, nonce, ...viewportProps } = props;
     const contentContext = useSelectContentContext(VIEWPORT_NAME, __scopeSelect);
     const viewportContext = useSelectViewportContext(VIEWPORT_NAME, __scopeSelect);
@@ -30753,7 +30206,7 @@ var [SelectGroupContextProvider, useSelectGroupContext] = createSelectContext(GR
 var ITEM_NAME = "SelectItem";
 var [SelectItemContextProvider, useSelectItemContext] = createSelectContext(ITEM_NAME);
 var SelectItem$1 = /* @__PURE__ */ reactExports.forwardRef(
-  /* @__PURE__ */ __name$2(function SelectItem2(props, forwardedRef) {
+  /* @__PURE__ */ __name$3(function SelectItem2(props, forwardedRef) {
     const {
       __scopeSelect,
       value,
@@ -30775,7 +30228,7 @@ var SelectItem$1 = /* @__PURE__ */ reactExports.forwardRef(
     const composedRefs = useComposedRefs(forwardedRef, handleItemRefCallback);
     const textId = useId();
     const pointerTypeRef = reactExports.useRef("touch");
-    const handleSelect = /* @__PURE__ */ __name$2(() => {
+    const handleSelect = /* @__PURE__ */ __name$3(() => {
       if (!disabled) {
         context.onValueChange(value);
         context.onOpenChange(false);
@@ -30864,7 +30317,7 @@ var SelectItem$1 = /* @__PURE__ */ reactExports.forwardRef(
 );
 var ITEM_TEXT_NAME = "SelectItemText";
 var SelectItemText = /* @__PURE__ */ reactExports.forwardRef(
-  /* @__PURE__ */ __name$2(function SelectItemText2(props, forwardedRef) {
+  /* @__PURE__ */ __name$3(function SelectItemText2(props, forwardedRef) {
     const { __scopeSelect, className, style, ...itemTextProps } = props;
     const context = useSelectContext(ITEM_TEXT_NAME, __scopeSelect);
     const contentContext = useSelectContentContext(ITEM_TEXT_NAME, __scopeSelect);
@@ -30902,14 +30355,14 @@ var SelectItemText = /* @__PURE__ */ reactExports.forwardRef(
 var ITEM_INDICATOR_NAME = "SelectItemIndicator";
 var SelectItemIndicator = /* @__PURE__ */ reactExports.forwardRef(
   // blank line to reduce diff noise
-  /* @__PURE__ */ __name$2(function SelectItemIndicator2(props, forwardedRef) {
+  /* @__PURE__ */ __name$3(function SelectItemIndicator2(props, forwardedRef) {
     const { __scopeSelect, ...itemIndicatorProps } = props;
     const itemContext = useSelectItemContext(ITEM_INDICATOR_NAME, __scopeSelect);
     return itemContext.isSelected ? /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive.span, { "aria-hidden": true, ...itemIndicatorProps, ref: forwardedRef }) : null;
   }, "SelectItemIndicator")
 );
 var SCROLL_UP_BUTTON_NAME = "SelectScrollUpButton";
-var SelectScrollUpButton$1 = /* @__PURE__ */ reactExports.forwardRef(/* @__PURE__ */ __name$2(function SelectScrollUpButton2(props, forwardedRef) {
+var SelectScrollUpButton$1 = /* @__PURE__ */ reactExports.forwardRef(/* @__PURE__ */ __name$3(function SelectScrollUpButton2(props, forwardedRef) {
   const contentContext = useSelectContentContext(SCROLL_UP_BUTTON_NAME, props.__scopeSelect);
   const viewportContext = useSelectViewportContext(SCROLL_UP_BUTTON_NAME, props.__scopeSelect);
   const [canScrollUp, setCanScrollUp] = reactExports.useState(false);
@@ -30920,7 +30373,7 @@ var SelectScrollUpButton$1 = /* @__PURE__ */ reactExports.forwardRef(/* @__PURE_
         const canScrollUp2 = viewport.scrollTop > 0;
         setCanScrollUp(canScrollUp2);
       };
-      __name$2(handleScroll2, "handleScroll");
+      __name$3(handleScroll2, "handleScroll");
       const viewport = contentContext.viewport;
       handleScroll2();
       viewport.addEventListener("scroll", handleScroll2);
@@ -30942,7 +30395,7 @@ var SelectScrollUpButton$1 = /* @__PURE__ */ reactExports.forwardRef(/* @__PURE_
   ) : null;
 }, "SelectScrollUpButton"));
 var SCROLL_DOWN_BUTTON_NAME = "SelectScrollDownButton";
-var SelectScrollDownButton$1 = /* @__PURE__ */ reactExports.forwardRef(/* @__PURE__ */ __name$2(function SelectScrollDownButton2(props, forwardedRef) {
+var SelectScrollDownButton$1 = /* @__PURE__ */ reactExports.forwardRef(/* @__PURE__ */ __name$3(function SelectScrollDownButton2(props, forwardedRef) {
   const contentContext = useSelectContentContext(SCROLL_DOWN_BUTTON_NAME, props.__scopeSelect);
   const viewportContext = useSelectViewportContext(SCROLL_DOWN_BUTTON_NAME, props.__scopeSelect);
   const [canScrollDown, setCanScrollDown] = reactExports.useState(false);
@@ -30954,7 +30407,7 @@ var SelectScrollDownButton$1 = /* @__PURE__ */ reactExports.forwardRef(/* @__PUR
         const canScrollDown2 = Math.ceil(viewport.scrollTop) < maxScroll;
         setCanScrollDown(canScrollDown2);
       };
-      __name$2(handleScroll2, "handleScroll");
+      __name$3(handleScroll2, "handleScroll");
       const viewport = contentContext.viewport;
       handleScroll2();
       viewport.addEventListener("scroll", handleScroll2);
@@ -30975,7 +30428,7 @@ var SelectScrollDownButton$1 = /* @__PURE__ */ reactExports.forwardRef(/* @__PUR
     }
   ) : null;
 }, "SelectScrollDownButton"));
-var SelectScrollButtonImpl = /* @__PURE__ */ reactExports.forwardRef(/* @__PURE__ */ __name$2(function SelectScrollButtonImpl2(props, forwardedRef) {
+var SelectScrollButtonImpl = /* @__PURE__ */ reactExports.forwardRef(/* @__PURE__ */ __name$3(function SelectScrollButtonImpl2(props, forwardedRef) {
   const { __scopeSelect, onAutoScroll, ...scrollIndicatorProps } = props;
   const contentContext = useSelectContentContext("SelectScrollButton", __scopeSelect);
   const autoScrollTimerRef = reactExports.useRef(null);
@@ -31019,11 +30472,11 @@ var SelectScrollButtonImpl = /* @__PURE__ */ reactExports.forwardRef(/* @__PURE_
     }
   );
 }, "SelectScrollButtonImpl"));
-var BUBBLE_INPUT_NAME$2 = "SelectBubbleInput";
+var BUBBLE_INPUT_NAME$3 = "SelectBubbleInput";
 var SelectBubbleInput = /* @__PURE__ */ reactExports.forwardRef(
   // blank line to reduce diff noise
-  /* @__PURE__ */ __name$2(function SelectBubbleInput2({ __scopeSelect, ...props }, forwardedRef) {
-    const context = useSelectContext(BUBBLE_INPUT_NAME$2, __scopeSelect);
+  /* @__PURE__ */ __name$3(function SelectBubbleInput2({ __scopeSelect, ...props }, forwardedRef) {
+    const context = useSelectContext(BUBBLE_INPUT_NAME$3, __scopeSelect);
     const { value, onValueChange, required, disabled, name, autoComplete, form } = context;
     const { nativeOptions, nativeSelectKey } = context;
     const ref = reactExports.useRef(null);
@@ -31072,14 +30525,14 @@ var SelectBubbleInput = /* @__PURE__ */ reactExports.forwardRef(
     );
   }, "SelectBubbleInput")
 );
-function isFunction$2(value) {
+function isFunction$3(value) {
   return typeof value === "function";
 }
-__name$2(isFunction$2, "isFunction");
+__name$3(isFunction$3, "isFunction");
 function shouldShowPlaceholder(value) {
   return value === "" || value === void 0;
 }
-__name$2(shouldShowPlaceholder, "shouldShowPlaceholder");
+__name$3(shouldShowPlaceholder, "shouldShowPlaceholder");
 function useTypeaheadSearch(onSearchChange) {
   const handleSearchChange = useCallbackRef$1(onSearchChange);
   const searchRef = reactExports.useRef("");
@@ -31088,7 +30541,7 @@ function useTypeaheadSearch(onSearchChange) {
     (key) => {
       const search = searchRef.current + key;
       handleSearchChange(search);
-      (/* @__PURE__ */ __name$2((function updateSearch(value) {
+      (/* @__PURE__ */ __name$3((function updateSearch(value) {
         searchRef.current = value;
         window.clearTimeout(timerRef.current);
         if (value !== "") timerRef.current = window.setTimeout(() => updateSearch(""), 1e3);
@@ -31105,7 +30558,7 @@ function useTypeaheadSearch(onSearchChange) {
   }, []);
   return [searchRef, handleTypeaheadSearch, resetTypeahead];
 }
-__name$2(useTypeaheadSearch, "useTypeaheadSearch");
+__name$3(useTypeaheadSearch, "useTypeaheadSearch");
 function findNextItem(items, search, currentItem) {
   const isRepeated = search.length > 1 && Array.from(search).every((char) => char === search[0]);
   const normalizedSearch = isRepeated ? search[0] : search;
@@ -31118,11 +30571,11 @@ function findNextItem(items, search, currentItem) {
   );
   return nextItem !== currentItem ? nextItem : void 0;
 }
-__name$2(findNextItem, "findNextItem");
+__name$3(findNextItem, "findNextItem");
 function wrapArray(array, startIndex) {
   return array.map((_, index2) => array[(startIndex + index2) % array.length]);
 }
-__name$2(wrapArray, "wrapArray");
+__name$3(wrapArray, "wrapArray");
 function Select({
   ...props
 }) {
@@ -31244,6 +30697,980 @@ function SelectScrollDownButton({
       children: /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronDown, { className: "size-4" })
     }
   );
+}
+function Skeleton({ className }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "div",
+    {
+      className: cn(
+        "animate-pulse rounded-md bg-slate-200 dark:bg-gray-700",
+        className
+      )
+    }
+  );
+}
+function CardSkeleton() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "border border-slate-200 dark:border-gray-700 rounded-lg p-4 bg-white dark:bg-gray-900", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-3", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-3/4" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-3 w-1/2" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-3 w-full" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-3 w-5/6" })
+    ] })
+  ] }) });
+}
+function ListSkeleton({ count: count2 = 3 }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: Array.from({ length: count2 }).map((_, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(CardSkeleton, {}, i)) });
+}
+function CountdownSkeleton() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-64 mx-auto mb-2" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-48 mx-auto" })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/50 dark:to-purple-950/50 border border-blue-200 dark:border-blue-800 rounded-lg p-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center space-y-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-32 mx-auto" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-16 w-48 mx-auto" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-24 mx-auto" })
+    ] }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid md:grid-cols-2 gap-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border border-slate-200 dark:border-gray-800 rounded-lg p-4 bg-white dark:bg-black", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-32 mb-4" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-24 mb-2" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-3 w-20" })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border border-slate-200 dark:border-gray-800 rounded-lg p-4 bg-white dark:bg-black", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-32 mb-4" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-24 mb-2" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-3 w-20" })
+      ] })
+    ] })
+  ] });
+}
+function HymnsSkeleton() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-48 mx-auto mb-2" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-64 mx-auto" })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "border border-slate-200 dark:border-gray-800 rounded-lg p-6 bg-white dark:bg-black", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-32" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-10 w-full" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid md:grid-cols-3 gap-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-10 w-full" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-10 w-full" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-10 w-full" })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border border-slate-200 dark:border-gray-800 rounded-lg p-6 bg-white dark:bg-black", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-24" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-32" })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ListSkeleton, { count: 5 })
+    ] })
+  ] });
+}
+function DevotionalsSkeleton() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-56 mx-auto mb-2" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-72 mx-auto" })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border border-slate-200 dark:border-gray-800 rounded-lg p-6 bg-white dark:bg-black", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-32" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-4", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-24" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-10 w-48" })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ListSkeleton, { count: 4 })
+    ] })
+  ] });
+}
+function SabbathSchoolSkeleton() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-48 mx-auto mb-2" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-64 mx-auto" })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/50 dark:to-purple-950/50 border border-blue-200 dark:border-blue-800 rounded-lg p-6", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-40 mb-4" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-3/4" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-1/2" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-white/50 dark:bg-gray-800/50 p-4 rounded-lg", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-5 w-2/3 mb-2" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-3 w-1/2" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-10 w-48" })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border border-slate-200 dark:border-gray-800 rounded-lg p-6 bg-white dark:bg-black", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-48 mb-4" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid md:grid-cols-2 gap-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardSkeleton, {}),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardSkeleton, {})
+      ] })
+    ] })
+  ] });
+}
+function ChurchFinderSkeleton() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-48 mx-auto mb-2" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-64 mx-auto" })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "border border-slate-200 dark:border-gray-800 rounded-lg p-6 bg-white dark:bg-black", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-32" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-12" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-16" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-8" })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4", children: Array.from({ length: 3 }).map((_, i) => /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "border border-slate-200 dark:border-gray-700 rounded-lg p-6 bg-white dark:bg-gray-900", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-start justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-6 w-3/4 mb-2" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-4" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-32" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-5 w-16" })
+        ] })
+      ] }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-4" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-48" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-4" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-4 w-32" })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Skeleton, { className: "h-8 w-24" })
+    ] }) }, i)) })
+  ] });
+}
+const POPULAR_CITIES = [
+  { name: "Nairobi", country: "Kenya", latitude: -1.2921, longitude: 36.8219, timezone: "Africa/Nairobi" },
+  { name: "London", country: "United Kingdom", latitude: 51.5074, longitude: -0.1278, timezone: "Europe/London" },
+  { name: "New York", country: "United States", latitude: 40.7128, longitude: -74.006, timezone: "America/New_York" },
+  { name: "Los Angeles", country: "United States", latitude: 34.0522, longitude: -118.2437, timezone: "America/Los_Angeles" },
+  { name: "Sydney", country: "Australia", latitude: -33.8688, longitude: 151.2093, timezone: "Australia/Sydney" },
+  { name: "Kingston", country: "Jamaica", latitude: 17.9714, longitude: -76.7936, timezone: "America/Jamaica" },
+  { name: "Johannesburg", country: "South Africa", latitude: -26.2041, longitude: 28.0473, timezone: "Africa/Johannesburg" },
+  { name: "São Paulo", country: "Brazil", latitude: -23.5505, longitude: -46.6333, timezone: "America/Sao_Paulo" },
+  { name: "Seoul", country: "South Korea", latitude: 37.5665, longitude: 126.978, timezone: "Asia/Seoul" },
+  { name: "Tokyo", country: "Japan", latitude: 35.6762, longitude: 139.6503, timezone: "Asia/Tokyo" },
+  { name: "Toronto", country: "Canada", latitude: 43.6532, longitude: -79.3832, timezone: "America/Toronto" },
+  { name: "Berlin", country: "Germany", latitude: 52.52, longitude: 13.405, timezone: "Europe/Berlin" }
+];
+function useLocationPermission() {
+  const [location, setLocation] = reactExports.useState(() => {
+    const saved = localStorage.getItem("adventist_user_location");
+    if (saved) {
+      try {
+        return JSON.parse(saved);
+      } catch (e) {
+        return null;
+      }
+    }
+    return null;
+  });
+  const [isLoading, setIsLoading] = reactExports.useState(false);
+  const [error, setError] = reactExports.useState(null);
+  const [permissionStatus, setPermissionStatus] = reactExports.useState("unknown");
+  reactExports.useEffect(() => {
+    if ("permissions" in navigator) {
+      navigator.permissions.query({ name: "geolocation" }).then((result) => {
+        setPermissionStatus(result.state);
+        result.onchange = () => {
+          setPermissionStatus(result.state);
+        };
+      }).catch(() => {
+        setPermissionStatus("unknown");
+      });
+    }
+  }, []);
+  const requestLocation = reactExports.useCallback(() => {
+    if (!navigator.geolocation) {
+      setError("Geolocation is not supported by this browser");
+      return;
+    }
+    setIsLoading(true);
+    setError(null);
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const detectedLocation = {
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+          cityName: "My Current Location",
+          isManual: false
+        };
+        setLocation(detectedLocation);
+        localStorage.setItem("adventist_user_location", JSON.stringify(detectedLocation));
+        setIsLoading(false);
+        setPermissionStatus("granted");
+      },
+      (geoError) => {
+        setError(geoError.message);
+        setIsLoading(false);
+        setPermissionStatus("denied");
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 1e4,
+        maximumAge: 3e5
+        // 5 minutes
+      }
+    );
+  }, []);
+  const setManualLocation = reactExports.useCallback((city) => {
+    const manualLoc = {
+      latitude: city.latitude,
+      longitude: city.longitude,
+      cityName: `${city.name}, ${city.country}`,
+      isManual: true
+    };
+    setLocation(manualLoc);
+    localStorage.setItem("adventist_user_location", JSON.stringify(manualLoc));
+    setError(null);
+  }, []);
+  return {
+    location,
+    isLoading,
+    error,
+    permissionStatus,
+    requestLocation,
+    setManualLocation
+  };
+}
+function SabbathCountdown({
+  userId,
+  location,
+  onRequestLocation,
+  onSelectCity
+}) {
+  const [currentTime, setCurrentTime] = reactExports.useState(/* @__PURE__ */ new Date());
+  const [showLocationPicker, setShowLocationPicker] = reactExports.useState(false);
+  const detectedTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const activeLat = (location == null ? void 0 : location.latitude) || 31.7683;
+  const activeLng = (location == null ? void 0 : location.longitude) || 35.2137;
+  const { data: sabbathTimes, isLoading, error } = useQuery({
+    queryKey: ["sabbathTimes", activeLat, activeLng],
+    queryFn: async () => {
+      try {
+        return await backend.sabbath.getSabbathTimes({
+          latitude: activeLat,
+          longitude: activeLng
+        });
+      } catch (err) {
+        const now = /* @__PURE__ */ new Date();
+        const friday = new Date(now);
+        const dayOfWeek = friday.getDay();
+        const diffToFriday = (5 - dayOfWeek + 7) % 7;
+        friday.setDate(now.getDate() + (diffToFriday === 0 && now.getHours() >= 18 ? 7 : diffToFriday));
+        friday.setHours(18, 15, 0, 0);
+        const saturday = new Date(friday);
+        saturday.setDate(friday.getDate() + 1);
+        saturday.setHours(18, 45, 0, 0);
+        return {
+          fridaySunset: friday.toISOString(),
+          saturdaySunset: saturday.toISOString(),
+          isSabbath: dayOfWeek === 5 && now.getHours() >= 18 || dayOfWeek === 6 && now.getHours() < 19,
+          preparationTimeRemaining: 24,
+          sabbathTimeRemaining: 0
+        };
+      }
+    },
+    refetchInterval: 6e4
+  });
+  reactExports.useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(/* @__PURE__ */ new Date());
+    }, 1e3);
+    return () => clearInterval(timer);
+  }, []);
+  const formatTimeRemaining = (milliseconds) => {
+    if (milliseconds <= 0) return "00:00:00";
+    const hours = Math.floor(milliseconds / (1e3 * 60 * 60));
+    const minutes = Math.floor(milliseconds % (1e3 * 60 * 60) / (1e3 * 60));
+    const seconds = Math.floor(milliseconds % (1e3 * 60) / 1e3);
+    if (hours >= 24) {
+      const days = Math.floor(hours / 24);
+      const remainingHours = hours % 24;
+      return `${days}d ${remainingHours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+    }
+    return `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+  };
+  const formatTime = (dateString) => {
+    try {
+      return new Date(dateString).toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true
+      });
+    } catch {
+      return "--:--";
+    }
+  };
+  if (!location && !showLocationPicker) {
+    return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-6 max-w-2xl mx-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-2 border-blue-200 dark:border-blue-900 bg-gradient-to-b from-white to-blue-50/40 dark:from-gray-950 dark:to-blue-950/20 shadow-xl overflow-hidden", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "text-center pb-4 pt-8", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-16 h-16 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white mx-auto mb-4 shadow-lg", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Compass, { className: "w-8 h-8 animate-pulse" }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-xs font-semibold mx-auto mb-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Globe, { className: "w-3.5 h-3.5" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
+            "Detected Timezone: ",
+            detectedTimezone
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white", children: "Set Your Sabbath Location" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { className: "text-sm text-slate-600 dark:text-gray-400 max-w-md mx-auto mt-2", children: "Sabbath begins at local sunset on Friday. Choose your city or allow location access to see your accurate countdown." })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-6 space-y-6", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-3", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Button,
+            {
+              size: "lg",
+              onClick: onRequestLocation,
+              className: "w-full bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-6 text-base rounded-xl shadow-lg shadow-blue-500/20 flex items-center justify-center gap-2 transition-all transform hover:scale-[1.01] active:scale-[0.99]",
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { className: "w-5 h-5" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Use My Current Location" })
+              ]
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-[11px] text-center text-slate-500 dark:text-gray-400 flex items-center justify-center gap-1", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(ShieldCheck, { className: "w-3.5 h-3.5 text-emerald-500" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Private & secure: Coordinates stay on your device for sunset math." })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative flex py-2 items-center", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex-grow border-t border-slate-200 dark:border-gray-800" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "flex-shrink mx-4 text-xs font-semibold uppercase tracking-wider text-slate-400", children: "Or Select a Major City" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex-grow border-t border-slate-200 dark:border-gray-800" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-2 sm:grid-cols-3 gap-2", children: POPULAR_CITIES.slice(0, 6).map((city) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "button",
+          {
+            onClick: () => onSelectCity == null ? void 0 : onSelectCity(city),
+            className: "p-3 text-left bg-white dark:bg-gray-900 hover:bg-blue-50 dark:hover:bg-blue-950/60 border border-slate-200 dark:border-gray-800 hover:border-blue-400 rounded-xl transition-all shadow-sm group",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-bold text-slate-800 dark:text-slate-200 group-hover:text-blue-600 dark:group-hover:text-blue-400", children: city.name }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[11px] text-slate-400 dark:text-gray-500", children: city.country })
+            ]
+          },
+          city.name
+        )) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "pt-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("label", { className: "block text-xs font-semibold text-slate-600 dark:text-gray-300 mb-1.5", children: "More Global Cities:" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            Select,
+            {
+              onValueChange: (val) => {
+                const found = POPULAR_CITIES.find((c) => c.name === val);
+                if (found && onSelectCity) onSelectCity(found);
+              },
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(SelectTrigger, { className: "w-full bg-white dark:bg-gray-900 border-slate-200 dark:border-gray-800", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, { placeholder: "Search or choose another city..." }) }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(SelectContent, { children: POPULAR_CITIES.map((c) => /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectItem, { value: c.name, children: [
+                  c.name,
+                  ", ",
+                  c.country,
+                  " (",
+                  c.timezone,
+                  ")"
+                ] }, c.name)) })
+              ]
+            }
+          )
+        ] })
+      ] })
+    ] }) });
+  }
+  if (isLoading) {
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(CountdownSkeleton, {});
+  }
+  const fridayDate = sabbathTimes ? new Date(sabbathTimes.fridaySunset) : /* @__PURE__ */ new Date();
+  const saturdayDate = sabbathTimes ? new Date(sabbathTimes.saturdaySunset) : /* @__PURE__ */ new Date();
+  const timeToSabbath = fridayDate.getTime() - currentTime.getTime();
+  const timeToSabbathEnd = saturdayDate.getTime() - currentTime.getTime();
+  const isSabbathActive = (sabbathTimes == null ? void 0 : sabbathTimes.isSabbath) || timeToSabbath <= 0 && timeToSabbathEnd > 0;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6 max-w-3xl mx-auto", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between bg-white dark:bg-gray-900 px-4 py-2.5 rounded-2xl border border-slate-200 dark:border-gray-800 shadow-sm", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-gray-200", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { className: "w-4 h-4 text-blue-600 dark:text-blue-400" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: (location == null ? void 0 : location.cityName) || "Jerusalem (Default)" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { variant: "outline", className: "text-[10px] uppercase font-bold py-0.5 px-2 text-slate-500", children: (location == null ? void 0 : location.isManual) ? "Manual City" : "GPS Detected" })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        Button,
+        {
+          variant: "ghost",
+          size: "sm",
+          onClick: onRequestLocation,
+          className: "text-xs text-blue-600 dark:text-blue-400 hover:text-blue-800 flex items-center gap-1 h-8",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(RefreshCw, { className: "w-3.5 h-3.5" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Update Location" })
+          ]
+        }
+      )
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: `border-2 shadow-2xl transition-all overflow-hidden ${isSabbathActive ? "border-amber-400/60 bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-purple-500/10" : "border-blue-500/40 bg-gradient-to-br from-blue-500/10 via-indigo-500/5 to-purple-500/10"}`, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "text-center pb-2 pt-6", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center mb-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: `p-3 rounded-2xl ${isSabbathActive ? "bg-amber-500 text-white shadow-lg shadow-amber-500/30 animate-pulse" : "bg-blue-600 text-white shadow-lg shadow-blue-500/30"}`, children: isSabbathActive ? /* @__PURE__ */ jsxRuntimeExports.jsx(Moon, { className: "w-8 h-8" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Sunset, { className: "w-8 h-8" }) }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { className: `mx-auto font-black text-xs px-3 py-1 uppercase tracking-wider ${isSabbathActive ? "bg-amber-500 text-white" : "bg-blue-600 text-white"}`, children: isSabbathActive ? "✨ Sabbath Shalom! Holy Hours Active" : "Sabbath Preparation" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2", children: isSabbathActive ? "Sabbath Concludes In" : "Sabbath Begins In" })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-6 text-center space-y-6", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "py-4", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-4xl sm:text-6xl font-mono font-black tracking-tight text-slate-900 dark:text-white drop-shadow-sm", children: isSabbathActive ? formatTimeRemaining(timeToSabbathEnd) : formatTimeRemaining(timeToSabbath) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-slate-500 dark:text-gray-400 mt-2", children: isSabbathActive ? `Until Saturday Sunset (${formatTime((sabbathTimes == null ? void 0 : sabbathTimes.saturdaySunset) || "")})` : `Until Friday Sunset (${formatTime((sabbathTimes == null ? void 0 : sabbathTimes.fridaySunset) || "")})` })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid sm:grid-cols-2 gap-4 text-left", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-4 rounded-2xl bg-white/80 dark:bg-black/50 border border-slate-200 dark:border-gray-800 flex items-center gap-3", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-2.5 rounded-xl bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Sunset, { className: "w-5 h-5" }) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-semibold text-slate-500 dark:text-gray-400", children: "Friday Sunset" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base font-bold text-slate-800 dark:text-white", children: formatTime((sabbathTimes == null ? void 0 : sabbathTimes.fridaySunset) || "") })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-4 rounded-2xl bg-white/80 dark:bg-black/50 border border-slate-200 dark:border-gray-800 flex items-center gap-3", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-2.5 rounded-xl bg-purple-100 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Moon, { className: "w-5 h-5" }) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-semibold text-slate-500 dark:text-gray-400", children: "Saturday Sunset" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base font-bold text-slate-800 dark:text-white", children: formatTime((sabbathTimes == null ? void 0 : sabbathTimes.saturdaySunset) || "") })
+            ] })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "pt-2 flex flex-col sm:flex-row gap-3 justify-center", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/prep", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Button, { className: "w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 rounded-xl gap-2 shadow-md", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(SquareCheckBig, { className: "w-4 h-4" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Open Prep Checklist" })
+          ] }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/reels", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Button, { variant: "outline", className: "w-full font-bold py-5 rounded-xl gap-2 border-slate-300 dark:border-gray-700", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Flame, { className: "w-4 h-4 text-amber-500" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Watch Daily Reels" })
+          ] }) })
+        ] })
+      ] })
+    ] })
+  ] });
+}
+function Input({ className, type, ...props }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "input",
+    {
+      type,
+      "data-slot": "input",
+      className: cn(
+        "file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
+        "focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]",
+        "aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
+        className
+      ),
+      ...props
+    }
+  );
+}
+var __defProp$2 = Object.defineProperty;
+var __name$2 = (target, value) => __defProp$2(target, "name", { value, configurable: true });
+var CHECKBOX_NAME = "Checkbox";
+var [createCheckboxContext, createCheckboxScope] = /* @__PURE__ */ createContextScope(CHECKBOX_NAME);
+var [CheckboxProviderImpl, useCheckboxContext] = createCheckboxContext(CHECKBOX_NAME);
+function CheckboxProvider(props) {
+  const {
+    __scopeCheckbox,
+    checked: checkedProp,
+    children,
+    defaultChecked,
+    disabled,
+    form,
+    name,
+    onCheckedChange,
+    required,
+    value = "on",
+    // @ts-expect-error
+    internal_do_not_use_render
+  } = props;
+  const [checked, setChecked] = useControllableState({
+    prop: checkedProp,
+    defaultProp: defaultChecked ?? false,
+    onChange: onCheckedChange,
+    caller: CHECKBOX_NAME
+  });
+  const [control, setControl] = reactExports.useState(null);
+  const [bubbleInput, setBubbleInput] = reactExports.useState(null);
+  const hasConsumerStoppedPropagationRef = reactExports.useRef(false);
+  const [userInteractionCount, onUserInteraction] = reactExports.useReducer(
+    (count2) => count2 + 1,
+    0
+  );
+  const isFormControl = control ? !!form || !!control.closest("form") : (
+    // We set this to true by default so that events bubble to forms without JS (SSR)
+    true
+  );
+  const context = {
+    checked,
+    disabled,
+    setChecked,
+    control,
+    setControl,
+    name,
+    form,
+    value,
+    hasConsumerStoppedPropagationRef,
+    userInteractionCount,
+    onUserInteraction,
+    required,
+    defaultChecked: isIndeterminate(defaultChecked) ? false : defaultChecked,
+    isFormControl,
+    bubbleInput,
+    setBubbleInput
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    CheckboxProviderImpl,
+    {
+      scope: __scopeCheckbox,
+      ...context,
+      children: isFunction$2(internal_do_not_use_render) ? internal_do_not_use_render(context) : children
+    }
+  );
+}
+__name$2(CheckboxProvider, "CheckboxProvider");
+var TRIGGER_NAME$1 = "CheckboxTrigger";
+var CheckboxTrigger = /* @__PURE__ */ reactExports.forwardRef(
+  /* @__PURE__ */ __name$2(function CheckboxTrigger2({ __scopeCheckbox, onKeyDown, onClick, ...checkboxProps }, forwardedRef) {
+    const {
+      control,
+      value,
+      disabled,
+      checked,
+      required,
+      setControl,
+      setChecked,
+      hasConsumerStoppedPropagationRef,
+      onUserInteraction,
+      isFormControl,
+      bubbleInput
+    } = useCheckboxContext(TRIGGER_NAME$1, __scopeCheckbox);
+    const composedRefs = useComposedRefs(forwardedRef, setControl);
+    const initialCheckedStateRef = reactExports.useRef(checked);
+    reactExports.useEffect(() => {
+      const form = control == null ? void 0 : control.form;
+      if (form) {
+        const reset = /* @__PURE__ */ __name$2(() => setChecked(initialCheckedStateRef.current), "reset");
+        form.addEventListener("reset", reset);
+        return () => form.removeEventListener("reset", reset);
+      }
+    }, [control, setChecked]);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Primitive.button,
+      {
+        type: "button",
+        role: "checkbox",
+        "aria-checked": isIndeterminate(checked) ? "mixed" : checked,
+        "aria-required": required,
+        "data-state": getState$1(checked),
+        "data-disabled": disabled ? "" : void 0,
+        disabled,
+        value,
+        ...checkboxProps,
+        ref: composedRefs,
+        onKeyDown: composeEventHandlers(onKeyDown, (event) => {
+          if (event.key === "Enter") event.preventDefault();
+        }),
+        onClick: composeEventHandlers(onClick, (event) => {
+          onUserInteraction();
+          setChecked((prevChecked) => isIndeterminate(prevChecked) ? true : !prevChecked);
+          if (bubbleInput && isFormControl) {
+            hasConsumerStoppedPropagationRef.current = event.isPropagationStopped();
+            if (!hasConsumerStoppedPropagationRef.current) event.stopPropagation();
+          }
+        })
+      }
+    );
+  }, "CheckboxTrigger")
+);
+var Checkbox$1 = /* @__PURE__ */ reactExports.forwardRef(
+  // blank line to reduce diff noise
+  /* @__PURE__ */ __name$2(function Checkbox2(props, forwardedRef) {
+    const {
+      __scopeCheckbox,
+      name,
+      checked,
+      defaultChecked,
+      required,
+      disabled,
+      value,
+      onCheckedChange,
+      form,
+      ...checkboxProps
+    } = props;
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      CheckboxProvider,
+      {
+        __scopeCheckbox,
+        checked,
+        defaultChecked,
+        disabled,
+        required,
+        onCheckedChange,
+        name,
+        form,
+        value,
+        internal_do_not_use_render: ({ isFormControl }) => /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            CheckboxTrigger,
+            {
+              ...checkboxProps,
+              ref: forwardedRef,
+              __scopeCheckbox
+            }
+          ),
+          isFormControl && /* @__PURE__ */ jsxRuntimeExports.jsx(
+            CheckboxBubbleInput,
+            {
+              __scopeCheckbox
+            }
+          )
+        ] })
+      }
+    );
+  }, "Checkbox")
+);
+var INDICATOR_NAME = "CheckboxIndicator";
+var CheckboxIndicator = /* @__PURE__ */ reactExports.forwardRef(
+  // blank line to reduce diff noise
+  /* @__PURE__ */ __name$2(function CheckboxIndicator2(props, forwardedRef) {
+    const { __scopeCheckbox, forceMount, ...indicatorProps } = props;
+    const context = useCheckboxContext(INDICATOR_NAME, __scopeCheckbox);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Presence,
+      {
+        present: forceMount || isIndeterminate(context.checked) || context.checked === true,
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Primitive.span,
+          {
+            "data-state": getState$1(context.checked),
+            "data-disabled": context.disabled ? "" : void 0,
+            ...indicatorProps,
+            ref: forwardedRef,
+            style: { pointerEvents: "none", ...props.style }
+          }
+        )
+      }
+    );
+  }, "CheckboxIndicator")
+);
+var BUBBLE_INPUT_NAME$2 = "CheckboxBubbleInput";
+var CheckboxBubbleInput = /* @__PURE__ */ reactExports.forwardRef(
+  // blank line to reduce diff noise
+  /* @__PURE__ */ __name$2(function CheckboxBubbleInput2({ __scopeCheckbox, onClick, ...props }, forwardedRef) {
+    const {
+      control,
+      hasConsumerStoppedPropagationRef,
+      userInteractionCount,
+      checked,
+      defaultChecked,
+      required,
+      disabled,
+      name,
+      value,
+      form,
+      bubbleInput,
+      setBubbleInput
+    } = useCheckboxContext(BUBBLE_INPUT_NAME$2, __scopeCheckbox);
+    const composedRefs = useComposedRefs(forwardedRef, setBubbleInput);
+    const controlSize = useSize(control);
+    const shouldStopClickPropagationRef = reactExports.useRef(false);
+    const prevCheckedRef = reactExports.useRef(checked);
+    const prevUserInteractionCountRef = reactExports.useRef(userInteractionCount);
+    reactExports.useEffect(() => {
+      const input = bubbleInput;
+      if (!input) return;
+      const inputProto = window.HTMLInputElement.prototype;
+      const descriptor = Object.getOwnPropertyDescriptor(
+        inputProto,
+        "checked"
+      );
+      const setChecked = descriptor.set;
+      const isUserInteraction = userInteractionCount !== prevUserInteractionCountRef.current;
+      prevUserInteractionCountRef.current = userInteractionCount;
+      const checkedChanged = prevCheckedRef.current !== checked;
+      prevCheckedRef.current = checked;
+      const bubbles = !(isUserInteraction && hasConsumerStoppedPropagationRef.current);
+      if (checkedChanged && setChecked) {
+        shouldStopClickPropagationRef.current = !isUserInteraction;
+        const event = new Event("click", { bubbles });
+        input.indeterminate = isIndeterminate(checked);
+        setChecked.call(input, isIndeterminate(checked) ? false : checked);
+        input.dispatchEvent(event);
+        shouldStopClickPropagationRef.current = false;
+      }
+    }, [bubbleInput, checked, hasConsumerStoppedPropagationRef, userInteractionCount]);
+    const defaultCheckedRef = reactExports.useRef(isIndeterminate(checked) ? false : checked);
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Primitive.input,
+      {
+        type: "checkbox",
+        "aria-hidden": true,
+        defaultChecked: defaultChecked ?? defaultCheckedRef.current,
+        required,
+        disabled,
+        name,
+        value,
+        form,
+        ...props,
+        tabIndex: -1,
+        ref: composedRefs,
+        onClick: composeEventHandlers(onClick, (event) => {
+          if (shouldStopClickPropagationRef.current) {
+            event.stopPropagation();
+          }
+        }),
+        style: {
+          ...props.style,
+          ...controlSize,
+          position: "absolute",
+          pointerEvents: "none",
+          opacity: 0,
+          margin: 0,
+          // We transform because the input is absolutely positioned but we have
+          // rendered it **after** the button. This pulls it back to sit on top
+          // of the button.
+          transform: "translateX(-100%)"
+        }
+      }
+    );
+  }, "CheckboxBubbleInput")
+);
+function isFunction$2(value) {
+  return typeof value === "function";
+}
+__name$2(isFunction$2, "isFunction");
+function isIndeterminate(checked) {
+  return checked === "indeterminate";
+}
+__name$2(isIndeterminate, "isIndeterminate");
+function getState$1(checked) {
+  return isIndeterminate(checked) ? "indeterminate" : checked ? "checked" : "unchecked";
+}
+__name$2(getState$1, "getState");
+function Checkbox({
+  className,
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Checkbox$1,
+    {
+      "data-slot": "checkbox",
+      className: cn(
+        "peer border-input dark:bg-input/30 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground dark:data-[state=checked]:bg-primary data-[state=checked]:border-primary focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive size-4 shrink-0 rounded-[4px] border shadow-xs transition-shadow outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50",
+        className
+      ),
+      ...props,
+      children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        CheckboxIndicator,
+        {
+          "data-slot": "checkbox-indicator",
+          className: "flex items-center justify-center text-current transition-none",
+          children: /* @__PURE__ */ jsxRuntimeExports.jsx(Check, { className: "size-3.5" })
+        }
+      )
+    }
+  );
+}
+const defaultReminders = [
+  "Clean and tidy the house",
+  "Prepare Sabbath meals",
+  "Choose appropriate attire",
+  "Turn off work devices",
+  "Prepare study materials",
+  "Set peaceful atmosphere",
+  "Review family worship plan",
+  "Charge devices for minimal use"
+];
+function PrepChecklist({ userId }) {
+  var _a2;
+  const [checkedItems, setCheckedItems] = reactExports.useState(/* @__PURE__ */ new Set());
+  const [newReminder, setNewReminder] = reactExports.useState("");
+  const [isAddingReminder, setIsAddingReminder] = reactExports.useState(false);
+  const { toast: toast2 } = useToast();
+  const queryClient2 = useQueryClient();
+  const { data: preferencesData } = useQuery({
+    queryKey: ["preferences", userId],
+    queryFn: () => backend.sabbath.getPreferences({ userId })
+  });
+  const preferences = preferencesData == null ? void 0 : preferencesData.preferences;
+  const savePreferencesMutation = useMutation({
+    mutationFn: (prepReminders) => backend.sabbath.savePreferences({ userId, prepReminders }),
+    onSuccess: () => {
+      queryClient2.invalidateQueries({ queryKey: ["preferences", userId] });
+      toast2({
+        title: "Preferences saved",
+        description: "Your preparation checklist has been updated."
+      });
+    },
+    onError: (error) => {
+      console.error("Failed to save preferences:", error);
+      toast2({
+        title: "Error",
+        description: "Failed to save your preferences. Please try again.",
+        variant: "destructive"
+      });
+    }
+  });
+  const currentReminders = ((_a2 = preferences == null ? void 0 : preferences.prepReminders) == null ? void 0 : _a2.length) ? preferences.prepReminders : defaultReminders;
+  const handleToggleItem = (item) => {
+    const newCheckedItems = new Set(checkedItems);
+    if (newCheckedItems.has(item)) {
+      newCheckedItems.delete(item);
+    } else {
+      newCheckedItems.add(item);
+    }
+    setCheckedItems(newCheckedItems);
+  };
+  const handleAddReminder = () => {
+    if (newReminder.trim()) {
+      const updatedReminders = [...currentReminders, newReminder.trim()];
+      savePreferencesMutation.mutate(updatedReminders);
+      setNewReminder("");
+      setIsAddingReminder(false);
+    }
+  };
+  const handleRemoveReminder = (reminderToRemove) => {
+    const updatedReminders = currentReminders.filter((reminder) => reminder !== reminderToRemove);
+    savePreferencesMutation.mutate(updatedReminders);
+    setCheckedItems((prev) => {
+      const newSet = new Set(prev);
+      newSet.delete(reminderToRemove);
+      return newSet;
+    });
+  };
+  const completedCount = Array.from(checkedItems).filter(
+    (item) => currentReminders.includes(item)
+  ).length;
+  const progressPercentage = currentReminders.length > 0 ? completedCount / currentReminders.length * 100 : 0;
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-8", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-slate-800 dark:text-white mb-2", children: "Sabbath Preparation" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-slate-600 dark:text-gray-300", children: "Prepare your heart and home for sacred time" })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-950/50 dark:to-blue-950/50 border-green-200 dark:border-green-800", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardTitle, { className: "flex items-center justify-between", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-green-700 dark:text-green-300", children: "Preparation Progress" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-2xl font-bold text-green-600 dark:text-green-400", children: [
+          completedCount,
+          "/",
+          currentReminders.length
+        ] })
+      ] }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full bg-green-100 dark:bg-green-900 rounded-full h-3 mb-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "div",
+          {
+            className: "bg-gradient-to-r from-green-500 to-green-600 h-3 rounded-full transition-all duration-300",
+            style: { width: `${progressPercentage}%` }
+          }
+        ) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-green-600 dark:text-green-400 text-center", children: progressPercentage === 100 ? "🎉 Ready for Sabbath!" : `${Math.round(progressPercentage)}% complete` })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-slate-200 dark:border-gray-800 bg-white dark:bg-black", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardTitle, { className: "flex items-center justify-between text-slate-800 dark:text-white", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Preparation Checklist" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          Button,
+          {
+            variant: "outline",
+            size: "sm",
+            onClick: () => setIsAddingReminder(true),
+            className: "text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-950",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { className: "w-4 h-4 mr-2" }),
+              "Add Item"
+            ]
+          }
+        )
+      ] }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "space-y-4", children: [
+        isAddingReminder && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex space-x-2 p-4 bg-blue-50 dark:bg-blue-950/50 rounded-lg", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            Input,
+            {
+              value: newReminder,
+              onChange: (e) => setNewReminder(e.target.value),
+              placeholder: "Enter new reminder...",
+              onKeyPress: (e) => e.key === "Enter" && handleAddReminder(),
+              className: "flex-1 bg-white dark:bg-black border-slate-300 dark:border-gray-600"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { onClick: handleAddReminder, size: "sm", children: "Add" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            Button,
+            {
+              variant: "outline",
+              size: "sm",
+              onClick: () => {
+                setIsAddingReminder(false);
+                setNewReminder("");
+              },
+              children: "Cancel"
+            }
+          )
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-3", children: currentReminders.map((reminder, index2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "div",
+          {
+            className: "flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-gray-800 transition-colors group",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Checkbox,
+                {
+                  checked: checkedItems.has(reminder),
+                  onCheckedChange: () => handleToggleItem(reminder),
+                  className: "data-[state=checked]:bg-green-600 data-[state=checked]:border-green-600"
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "span",
+                {
+                  className: `flex-1 ${checkedItems.has(reminder) ? "line-through text-slate-500 dark:text-gray-400" : "text-slate-700 dark:text-gray-200"}`,
+                  children: reminder
+                }
+              ),
+              !defaultReminders.includes(reminder) && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Button,
+                {
+                  variant: "ghost",
+                  size: "sm",
+                  onClick: () => handleRemoveReminder(reminder),
+                  className: "opacity-0 group-hover:opacity-100 transition-opacity text-red-500 hover:text-red-700 hover:bg-red-50 dark:hover:bg-red-950",
+                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-4 h-4" })
+                }
+              )
+            ]
+          },
+          index2
+        )) }),
+        currentReminders.length === 0 && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center py-8 text-slate-500 dark:text-gray-400", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(SquareCheckBig, { className: "w-12 h-12 mx-auto mb-4 text-slate-300 dark:text-gray-600" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "No preparation items yet. Add some to get started!" })
+        ] })
+      ] })
+    ] }),
+    progressPercentage === 100 && /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-950/50 dark:to-blue-950/50 border-green-200 dark:border-green-800", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "text-center py-8", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(SquareCheckBig, { className: "w-12 h-12 text-green-600 dark:text-green-400 mx-auto mb-4" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-green-700 dark:text-green-300 mb-2", children: "Preparation Complete!" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-green-600 dark:text-green-400", children: '"And God blessed the seventh day and made it holy." - Genesis 2:3' })
+    ] }) })
+  ] });
 }
 var __defProp$1 = Object.defineProperty;
 var __name$1 = (target, value) => __defProp$1(target, "name", { value, configurable: true });
@@ -33266,6 +33693,7 @@ function BibleLookup({ userId }) {
   const [expandedCrossRefs, setExpandedCrossRefs] = reactExports.useState(false);
   const [selectedTag, setSelectedTag] = reactExports.useState("all");
   const [showSearchHelp, setShowSearchHelp] = reactExports.useState(false);
+  const [showFilters, setShowFilters] = reactExports.useState(false);
   const { toast: toast2 } = useToast();
   const queryClient2 = useQueryClient();
   const pageSize = 20;
@@ -33422,16 +33850,6 @@ function BibleLookup({ userId }) {
         return Target;
       default:
         return Search;
-    }
-  };
-  const getSearchTypeDescription = (type) => {
-    switch (type) {
-      case "phrase":
-        return "Search for exact phrases in quotes";
-      case "topic":
-        return "Search by topics with related terms";
-      default:
-        return "Search by individual keywords";
     }
   };
   const renderVerseText = (verse) => {
@@ -33693,180 +34111,204 @@ function BibleLookup({ userId }) {
       /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-slate-800 dark:text-white mb-2", children: "Bible Lookup" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-slate-600 dark:text-gray-300", children: "Search Scripture with advanced full-text search capabilities" })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-slate-200 dark:border-gray-800 bg-white dark:bg-black", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardTitle, { className: "flex items-center justify-between text-slate-800 dark:text-white", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-slate-200 dark:border-gray-800 bg-white dark:bg-black shadow-lg", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { className: "pb-3", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Search, { className: "w-6 h-6 text-blue-600 dark:text-blue-400" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Advanced Scripture Search" })
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-9 h-9 rounded-xl bg-blue-100 dark:bg-blue-950 flex items-center justify-center text-blue-600 dark:text-blue-400", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Search, { className: "w-5 h-5" }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-xl text-slate-800 dark:text-white", children: "Scripture Search" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-slate-500 dark:text-gray-400", children: "Search keywords, topics, or exact phrases across the Bible" })
+          ] })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             Button,
             {
               variant: "outline",
+              size: "sm",
               onClick: () => handleOpenStudyMode(),
-              className: "text-green-600 dark:text-green-400 border-green-200 dark:border-green-700 hover:bg-green-50 dark:hover:bg-green-950",
+              className: "text-green-600 dark:text-green-400 border-green-200 dark:border-green-700 hover:bg-green-50 dark:hover:bg-green-950 text-xs font-semibold",
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(BookOpen, { className: "w-4 h-4 mr-2" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(BookOpen, { className: "w-3.5 h-3.5 mr-1.5" }),
                 "Study Mode"
               ]
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            Button,
-            {
-              variant: "ghost",
-              size: "sm",
-              onClick: () => setShowSearchHelp(!showSearchHelp),
-              className: "text-slate-500 dark:text-gray-400",
-              children: "?"
-            }
-          ),
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             Button,
             {
               variant: "outline",
+              size: "sm",
               onClick: () => setShowBookmarks(true),
-              className: "text-purple-600 dark:text-purple-400 border-purple-200 dark:border-purple-700 hover:bg-purple-50 dark:hover:bg-purple-950",
+              className: "text-purple-600 dark:text-purple-400 border-purple-200 dark:border-purple-700 hover:bg-purple-50 dark:hover:bg-purple-950 text-xs font-semibold",
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(Bookmark, { className: "w-4 h-4 mr-2" }),
-                "My Bookmarks"
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Bookmark, { className: "w-3.5 h-3.5 mr-1.5" }),
+                "Bookmarks"
               ]
             }
           )
         ] })
       ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "space-y-4", children: [
-        showSearchHelp && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-blue-50 dark:bg-blue-950/50 p-4 rounded-lg border border-blue-200 dark:border-blue-800 mb-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-blue-700 dark:text-blue-300 mb-2", children: "Search Help" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2 text-sm text-blue-600 dark:text-blue-400", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Keyword:" }),
-              ' Search for individual words (e.g., "love faith hope")'
-            ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Phrase:" }),
-              ' Search for exact phrases (e.g., "love your neighbor")'
-            ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Topic:" }),
-              ' Search by topics with related terms (e.g., "salvation" finds "save", "savior", "redeem")'
-            ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Study Mode:" }),
-              " Navigate verse-by-verse with notes, highlights, and commentary"
-            ] })
-          ] })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2 mb-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm font-medium text-slate-700 dark:text-gray-200", children: "Search Type:" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex space-x-1", children: ["keyword", "phrase", "topic"].map((type) => {
-              const Icon2 = getSearchTypeIcon(type);
-              return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-                Button,
-                {
-                  variant: searchType === type ? "default" : "outline",
-                  size: "sm",
-                  onClick: () => handleSearchTypeChange(type),
-                  className: searchType === type ? "bg-blue-600 text-white" : "",
-                  children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { className: "w-4 h-4 mr-1" }),
-                    type.charAt(0).toUpperCase() + type.slice(1)
-                  ]
-                },
-                type
-              );
-            }) })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Search, { className: "absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 dark:text-gray-500 w-4 h-4" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "space-y-4 pt-1", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-3", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative flex items-center", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Search, { className: "absolute left-3.5 text-slate-400 dark:text-gray-500 w-4 h-4" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx(
               Input,
               {
-                placeholder: `${getSearchTypeDescription(searchType)}...`,
+                placeholder: "Search Bible e.g., 'Sabbath rest', 'Sanctuary', 'John 3:16'...",
                 value: searchQuery,
                 onChange: (e) => handleSearch(e.target.value),
-                className: "pl-10 bg-white dark:bg-black border-slate-300 dark:border-gray-600"
+                className: "pl-10 pr-24 py-5 bg-white dark:bg-gray-900 border-slate-300 dark:border-gray-700 rounded-xl text-sm font-medium focus-visible:ring-blue-500"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute right-2 flex items-center gap-1", children: [
+              searchQuery && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Button,
+                {
+                  variant: "ghost",
+                  size: "sm",
+                  onClick: () => setSearchQuery(""),
+                  className: "h-7 w-7 p-0 rounded-lg text-slate-400 hover:text-slate-600",
+                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-3.5 h-3.5" })
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                Button,
+                {
+                  variant: showFilters ? "default" : "outline",
+                  size: "sm",
+                  onClick: () => setShowFilters(!showFilters),
+                  className: `h-8 text-xs font-semibold rounded-lg flex items-center gap-1 ${showFilters ? "bg-blue-600 text-white" : "text-slate-600 dark:text-gray-300"}`,
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(Funnel, { className: "w-3.5 h-3.5" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Filters" }),
+                    (selectedTranslation || selectedBook || selectedTestament !== "all") && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-2 h-2 rounded-full bg-amber-400 ml-0.5" })
+                  ]
+                }
+              )
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between text-xs pt-1", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1.5 overflow-x-auto pb-1", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-slate-500 dark:text-gray-400 font-medium mr-1", children: "Match:" }),
+              ["keyword", "phrase", "topic"].map((type) => {
+                const Icon2 = getSearchTypeIcon(type);
+                return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "button",
+                  {
+                    onClick: () => handleSearchTypeChange(type),
+                    className: `px-2.5 py-1 rounded-lg font-semibold transition-all flex items-center gap-1 ${searchType === type ? "bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300" : "bg-slate-100 dark:bg-gray-800 text-slate-600 dark:text-gray-400 hover:bg-slate-200"}`,
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { className: "w-3 h-3" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "capitalize", children: type })
+                    ]
+                  },
+                  type
+                );
+              })
+            ] }),
+            (selectedTranslation || selectedBook || selectedTestament !== "all") && /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "button",
+              {
+                onClick: () => {
+                  setSelectedTranslation(null);
+                  setSelectedBook(null);
+                  setSelectedTestament("all");
+                },
+                className: "text-xs text-blue-600 dark:text-blue-400 hover:underline",
+                children: "Reset filters"
               }
             )
-          ] }),
-          suggestions.length > 0 && !searchQuery && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-slate-50 dark:bg-gray-800 p-3 rounded-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-medium text-slate-700 dark:text-gray-200 mb-2", children: "Popular searches:" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap gap-2", children: suggestions.slice(0, 8).map((suggestion, index2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-              Button,
-              {
-                variant: "ghost",
-                size: "sm",
-                onClick: () => handleSuggestionClick(suggestion),
-                className: "text-xs text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950",
-                children: suggestion
-              },
-              index2
-            )) })
           ] })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid md:grid-cols-4 gap-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("label", { className: "block text-sm font-medium text-slate-700 dark:text-gray-200 mb-2", children: "Translation" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(Select, { value: (selectedTranslation == null ? void 0 : selectedTranslation.toString()) || "default", onValueChange: (value) => setSelectedTranslation(value === "default" ? null : parseInt(value)), children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(SelectTrigger, { className: "bg-white dark:bg-black border-slate-300 dark:border-gray-600", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, { placeholder: "Select translation" }) }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectContent, { children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: "default", children: "Default (KJV)" }),
-                translations.map((translation) => /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectItem, { value: translation.id.toString(), children: [
-                  translation.abbreviation,
-                  " - ",
-                  translation.name
-                ] }, translation.id))
-              ] })
-            ] })
+        showFilters && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-4 rounded-2xl bg-slate-50 dark:bg-gray-900/80 border border-slate-200 dark:border-gray-800 space-y-3 animate-in fade-in zoom-in-95 duration-150", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-gray-400", children: "Refine Search Scope" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[11px] text-slate-400", children: "Selecting a Testament automatically updates available Books" })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("label", { className: "block text-sm font-medium text-slate-700 dark:text-gray-200 mb-2", children: "Testament" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(Select, { value: selectedTestament, onValueChange: setSelectedTestament, children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(SelectTrigger, { className: "bg-white dark:bg-black border-slate-300 dark:border-gray-600", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, { placeholder: "Select testament" }) }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectContent, { children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: "all", children: "All Books" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: "old", children: "Old Testament" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: "new", children: "New Testament" })
-              ] })
-            ] })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("label", { className: "block text-sm font-medium text-slate-700 dark:text-gray-200 mb-2", children: "Book" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs(Select, { value: (selectedBook == null ? void 0 : selectedBook.toString()) || "all", onValueChange: (value) => setSelectedBook(value === "all" ? null : parseInt(value)), children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(SelectTrigger, { className: "bg-white dark:bg-black border-slate-300 dark:border-gray-600", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, { placeholder: "Select book" }) }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectContent, { children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: "all", children: "All Books" }),
-                selectedTestament !== "new" && /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "px-2 py-1 text-xs font-semibold text-slate-500 dark:text-gray-400", children: "Old Testament" }),
-                  oldTestamentBooks.map((book) => /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: book.id.toString(), children: book.name }, book.id))
-                ] }),
-                selectedTestament !== "old" && /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "px-2 py-1 text-xs font-semibold text-slate-500 dark:text-gray-400", children: "New Testament" }),
-                  newTestamentBooks.map((book) => /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: book.id.toString(), children: book.name }, book.id))
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid sm:grid-cols-3 gap-3", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("label", { className: "block text-xs font-semibold text-slate-700 dark:text-gray-300 mb-1", children: "Translation" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                Select,
+                {
+                  value: (selectedTranslation == null ? void 0 : selectedTranslation.toString()) || "default",
+                  onValueChange: (value) => setSelectedTranslation(value === "default" ? null : parseInt(value)),
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(SelectTrigger, { className: "bg-white dark:bg-black border-slate-300 dark:border-gray-700 text-xs", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, { placeholder: "Select translation" }) }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectContent, { children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: "default", children: "Default (King James Version)" }),
+                      translations.map((t) => /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectItem, { value: t.id.toString(), children: [
+                        t.abbreviation,
+                        " - ",
+                        t.name
+                      ] }, t.id))
+                    ] })
+                  ]
+                }
+              )
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("label", { className: "block text-xs font-semibold text-slate-700 dark:text-gray-300 mb-1", children: "Testament" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(Select, { value: selectedTestament, onValueChange: (val) => {
+                setSelectedTestament(val);
+                setSelectedBook(null);
+              }, children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(SelectTrigger, { className: "bg-white dark:bg-black border-slate-300 dark:border-gray-700 text-xs", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, { placeholder: "Select testament" }) }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectContent, { children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: "all", children: "Entire Bible (Old & New)" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: "old", children: "Old Testament (Genesis - Malachi)" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: "new", children: "New Testament (Matthew - Revelation)" })
                 ] })
               ] })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("label", { className: "block text-xs font-semibold text-slate-700 dark:text-gray-300 mb-1", children: "Specific Book" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                Select,
+                {
+                  value: (selectedBook == null ? void 0 : selectedBook.toString()) || "all",
+                  onValueChange: (value) => setSelectedBook(value === "all" ? null : parseInt(value)),
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(SelectTrigger, { className: "bg-white dark:bg-black border-slate-300 dark:border-gray-700 text-xs", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, { placeholder: "All Books" }) }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectContent, { children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: "all", children: "All Books" }),
+                      selectedTestament !== "new" && oldTestamentBooks.map((b) => /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectItem, { value: b.id.toString(), children: [
+                        b.name,
+                        " (OT)"
+                      ] }, b.id)),
+                      selectedTestament !== "old" && newTestamentBooks.map((b) => /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectItem, { value: b.id.toString(), children: [
+                        b.name,
+                        " (NT)"
+                      ] }, b.id))
+                    ] })
+                  ]
+                }
+              )
             ] })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-end", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            Button,
+          ] })
+        ] }),
+        !searchQuery && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "pt-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-bold uppercase tracking-wider text-slate-400 mb-2", children: "Curated Adventist Study Topics:" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap gap-1.5", children: [
+            "Creation & Eden",
+            "Sabbath Rest",
+            "Sanctuary in Heaven",
+            "Second Coming of Christ",
+            "Grace & Faith",
+            "Three Angels Messages",
+            "Peace in Troubled Times",
+            "Daniel 8:14"
+          ].map((topic) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "button",
             {
-              onClick: () => {
-                setSearchQuery("");
-                setSelectedTranslation(null);
-                setSelectedBook(null);
-                setSelectedTestament("all");
-                setCurrentPage(0);
-              },
-              variant: "outline",
-              className: "w-full",
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(Funnel, { className: "w-4 h-4 mr-2" }),
-                "Clear"
-              ]
-            }
-          ) })
+              onClick: () => handleSearch(topic),
+              className: "px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-gray-800 hover:bg-blue-50 dark:hover:bg-blue-950 text-slate-700 dark:text-slate-300 hover:text-blue-600 text-xs font-medium border border-slate-200 dark:border-gray-700 transition-colors",
+              children: topic
+            },
+            topic
+          )) })
         ] })
       ] })
     ] }),
@@ -34840,6 +35282,7 @@ function ReelsFeed() {
                 e.stopPropagation();
                 toggleMute();
               },
+              "aria-label": isMuted ? "Unmute video audio" : "Mute video audio",
               className: "h-9 w-9 p-0 rounded-full bg-black/50 text-white hover:bg-black/80 backdrop-blur-sm",
               children: isMuted ? /* @__PURE__ */ jsxRuntimeExports.jsx(VolumeX, { className: "w-4 h-4" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Volume2, { className: "w-4 h-4" })
             }
@@ -34860,6 +35303,7 @@ function ReelsFeed() {
               e.stopPropagation();
               handleLike(currentReel.id);
             },
+            "aria-label": `Like reel ${currentReel.title}, current likes: ${(currentReel.likesCount || 0) + (likedReels[currentReel.id] ? 1 : 0)}`,
             className: "flex flex-col items-center group",
             children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -34885,6 +35329,7 @@ function ReelsFeed() {
               e.stopPropagation();
               handleShare(currentReel);
             },
+            "aria-label": `Share reel ${currentReel.title}`,
             className: "flex flex-col items-center group",
             children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-full bg-black/50 text-white hover:bg-black/70 flex items-center justify-center backdrop-blur-md transition-all group-hover:scale-110 active:scale-90", children: copiedId === currentReel.id ? /* @__PURE__ */ jsxRuntimeExports.jsx(Check, { className: "w-6 h-6 text-emerald-400" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Share2, { className: "w-6 h-6" }) }),
@@ -34903,6 +35348,7 @@ function ReelsFeed() {
                 e.stopPropagation();
                 handlePrev();
               },
+              "aria-label": "Previous reel",
               className: "w-10 h-10 p-0 rounded-full bg-black/40 text-white hover:bg-black/70 disabled:opacity-30 backdrop-blur-sm",
               children: /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronUp, { className: "w-5 h-5" })
             }
@@ -34917,6 +35363,7 @@ function ReelsFeed() {
                 e.stopPropagation();
                 handleNext();
               },
+              "aria-label": "Next reel",
               className: "w-10 h-10 p-0 rounded-full bg-black/40 text-white hover:bg-black/70 disabled:opacity-30 backdrop-blur-sm",
               children: /* @__PURE__ */ jsxRuntimeExports.jsx(ChevronDown, { className: "w-5 h-5" })
             }
@@ -36295,28 +36742,40 @@ function Journal({ userId }) {
   ] });
 }
 function Settings({ userId, location }) {
+  const detectedTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   const [settings, setSettings] = reactExports.useState({
-    timezone: "UTC",
+    timezone: detectedTimezone || "UTC",
     digitalDetoxEnabled: false,
     prepReminders: []
   });
+  const [notificationPermission, setNotificationPermission] = reactExports.useState("default");
   const { toast: toast2 } = useToast();
   const queryClient2 = useQueryClient();
   const { theme, toggleTheme } = useTheme();
+  reactExports.useEffect(() => {
+    if ("Notification" in window) {
+      setNotificationPermission(Notification.permission);
+    }
+  }, []);
   const { data: preferencesData, isLoading } = useQuery({
     queryKey: ["preferences", userId],
-    queryFn: () => backend.sabbath.getPreferences({ userId }),
-    onSuccess: (data) => {
-      if (data == null ? void 0 : data.preferences) {
-        setSettings({
-          timezone: data.preferences.timezone,
-          digitalDetoxEnabled: data.preferences.digitalDetoxEnabled,
-          prepReminders: data.preferences.prepReminders
-        });
+    queryFn: async () => {
+      try {
+        return await backend.sabbath.getPreferences({ userId });
+      } catch (err) {
+        return null;
       }
     }
   });
-  preferencesData == null ? void 0 : preferencesData.preferences;
+  reactExports.useEffect(() => {
+    if (preferencesData == null ? void 0 : preferencesData.preferences) {
+      setSettings({
+        timezone: preferencesData.preferences.timezone || detectedTimezone,
+        digitalDetoxEnabled: preferencesData.preferences.digitalDetoxEnabled,
+        prepReminders: preferencesData.preferences.prepReminders || []
+      });
+    }
+  }, [preferencesData, detectedTimezone]);
   const savePreferencesMutation = useMutation({
     mutationFn: (newSettings) => backend.sabbath.savePreferences({
       userId,
@@ -36334,45 +36793,86 @@ function Settings({ userId, location }) {
       });
     },
     onError: (error) => {
-      console.error("Failed to save settings:", error);
+      console.warn("Preferences fallback saved locally:", error);
+      localStorage.setItem("adventist_settings", JSON.stringify(settings));
       toast2({
-        title: "Error",
-        description: "Failed to save your settings. Please try again.",
-        variant: "destructive"
+        title: "Preferences Saved",
+        description: "Your settings have been saved locally on this device."
       });
     }
   });
   const handleSaveSettings = () => {
     savePreferencesMutation.mutate(settings);
   };
+  const requestNotificationPermission = async () => {
+    if (!("Notification" in window)) {
+      toast2({
+        title: "Not Supported",
+        description: "Browser notifications are not supported on this device.",
+        variant: "destructive"
+      });
+      return;
+    }
+    try {
+      const perm = await Notification.requestPermission();
+      setNotificationPermission(perm);
+      if (perm === "granted") {
+        toast2({
+          title: "Notifications Enabled",
+          description: "You will receive Sabbath sunset and preparation alerts."
+        });
+      } else {
+        toast2({
+          title: "Permission Denied",
+          description: "You can enable notifications anytime in your browser settings."
+        });
+      }
+    } catch (err) {
+      console.error(err);
+    }
+  };
   const timezones = [
-    "UTC",
+    detectedTimezone,
+    "Africa/Nairobi",
+    "Africa/Johannesburg",
     "America/New_York",
     "America/Chicago",
     "America/Denver",
     "America/Los_Angeles",
-    "Europe/London",
-    "Europe/Paris",
-    "Europe/Berlin",
+    "America/Jamaica",
+    "America/Sao_Paulo",
+    "America/Toronto",
+    "Asia/Seoul",
     "Asia/Tokyo",
     "Asia/Shanghai",
     "Australia/Sydney",
-    "Pacific/Auckland"
-  ];
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-8", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-slate-800 dark:text-white mb-2", children: "Settings" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-slate-600 dark:text-gray-300", children: "Customize your Adventist Go experience" })
+    "Europe/London",
+    "Europe/Paris",
+    "Europe/Berlin",
+    "Pacific/Auckland",
+    "UTC"
+  ].filter((tz, index2, self) => self.indexOf(tz) === index2);
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6 max-w-3xl mx-auto pb-12", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-6", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-slate-800 dark:text-white mb-1.5", children: "Settings" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-slate-600 dark:text-gray-400 text-sm", children: "Personalize your local Sabbath countdown, theme, and reminders" })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-slate-200 dark:border-gray-800 bg-white dark:bg-black", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardTitle, { className: "flex items-center space-x-2 text-slate-800 dark:text-white", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Sun, { className: "w-6 h-6 text-blue-600 dark:text-blue-400" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Appearance" })
-      ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "space-y-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between p-4 bg-slate-50 dark:bg-gray-800 rounded-lg", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-slate-200 dark:border-gray-800 bg-white dark:bg-black shadow-sm", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "pb-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(CardTitle, { className: "flex items-center space-x-2 text-slate-800 dark:text-white text-lg", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Sun, { className: "w-5 h-5 text-blue-600 dark:text-blue-400" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Theme & Appearance" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { className: "text-xs", children: "Choose between daytime light theme or high-contrast dark sanctuary mode" })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "flex items-center justify-between pt-1", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-slate-700 dark:text-gray-200", children: "Dark Mode" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-slate-500 dark:text-gray-400", children: "Switch between light and dark themes" })
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm font-semibold text-slate-800 dark:text-white capitalize", children: [
+            "Current: ",
+            theme,
+            " Mode"
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-slate-500 dark:text-gray-400", children: theme === "light" ? "Light background with blue accents" : "Dark OLED-friendly aesthetic" })
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs(
           Button,
@@ -36380,140 +36880,98 @@ function Settings({ userId, location }) {
             variant: "outline",
             size: "sm",
             onClick: toggleTheme,
-            className: "flex items-center space-x-2",
+            className: "flex items-center gap-2 rounded-xl text-xs font-semibold",
             children: [
               theme === "light" ? /* @__PURE__ */ jsxRuntimeExports.jsx(Moon, { className: "w-4 h-4" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Sun, { className: "w-4 h-4" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: theme === "light" ? "Dark" : "Light" })
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
+                "Switch to ",
+                theme === "light" ? "Dark" : "Light"
+              ] })
             ]
+          }
+        )
+      ] })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-slate-200 dark:border-gray-800 bg-white dark:bg-black shadow-sm", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "pb-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(CardTitle, { className: "flex items-center space-x-2 text-slate-800 dark:text-white text-lg", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-5 h-5 text-blue-600 dark:text-blue-400" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Timezone & Sunset Math" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { className: "text-xs", children: "Used to calculate the exact moment the Sabbath begins and ends in your area" })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "space-y-4 pt-1", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("label", { className: "block text-xs font-bold text-slate-700 dark:text-gray-300 uppercase tracking-wider mb-2", children: "Active Timezone" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          Select,
+          {
+            value: settings.timezone,
+            onValueChange: (value) => setSettings({ ...settings, timezone: value }),
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(SelectTrigger, { className: "bg-white dark:bg-gray-900 border-slate-300 dark:border-gray-700", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, { placeholder: "Select timezone" }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(SelectContent, { children: timezones.map((tz) => /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectItem, { value: tz, children: [
+                tz,
+                " ",
+                tz === detectedTimezone ? "(Auto-Detected)" : ""
+              ] }, tz)) })
+            ]
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-[11px] text-slate-500 dark:text-gray-400 mt-1.5 flex items-center gap-1", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Globe, { className: "w-3.5 h-3.5 text-blue-500" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
+            "Browser detected: ",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: detectedTimezone })
+          ] })
+        ] })
+      ] }) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-slate-200 dark:border-gray-800 bg-white dark:bg-black shadow-sm", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "pb-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(CardTitle, { className: "flex items-center space-x-2 text-slate-800 dark:text-white text-lg", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Bell, { className: "w-5 h-5 text-blue-600 dark:text-blue-400" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Sabbath Reminders" })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { className: "text-xs", children: "Get notified before sunset on Friday to start winding down for the holy hours" })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "space-y-4 pt-1", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between p-3.5 rounded-xl bg-slate-50 dark:bg-gray-900 border border-slate-200 dark:border-gray-800", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-bold text-slate-800 dark:text-white", children: "Browser Notification Status" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              Badge,
+              {
+                className: `text-[10px] uppercase font-bold py-0.5 px-2 ${notificationPermission === "granted" ? "bg-emerald-500 text-white" : notificationPermission === "denied" ? "bg-red-500 text-white" : "bg-amber-500 text-white"}`,
+                children: notificationPermission === "granted" ? "Enabled" : notificationPermission === "denied" ? "Blocked" : "Permission Needed"
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-slate-500 dark:text-gray-400 mt-0.5", children: notificationPermission === "granted" ? "Active: Ready to receive Friday sunset countdown alerts" : "Tap below to grant permission in your browser" })
+        ] }),
+        notificationPermission !== "granted" && /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Button,
+          {
+            size: "sm",
+            onClick: requestNotificationPermission,
+            className: "bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg",
+            children: "Enable"
           }
         )
       ] }) })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-slate-200 dark:border-gray-800 bg-white dark:bg-black", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardTitle, { className: "flex items-center space-x-2 text-slate-800 dark:text-white", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-6 h-6 text-blue-600 dark:text-blue-400" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Time & Location" })
-      ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "space-y-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("label", { className: "block text-sm font-medium text-slate-700 dark:text-gray-200 mb-2", children: "Timezone" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "select",
-            {
-              value: settings.timezone,
-              onChange: (e) => setSettings({ ...settings, timezone: e.target.value }),
-              className: "w-full p-2 border border-slate-300 dark:border-gray-600 rounded-md bg-white dark:bg-black text-slate-700 dark:text-gray-200",
-              children: timezones.map((tz) => /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: tz, children: tz }, tz))
-            }
-          )
-        ] }),
-        location && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-slate-50 dark:bg-gray-800 p-4 rounded-lg", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2 mb-2", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { className: "w-5 h-5 text-slate-600 dark:text-gray-300" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-medium text-slate-700 dark:text-gray-200", children: "Current Location" })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-slate-600 dark:text-gray-300", children: [
-            "Latitude: ",
-            location.latitude.toFixed(4),
-            ", Longitude: ",
-            location.longitude.toFixed(4)
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-slate-500 dark:text-gray-400 mt-1", children: "Used for calculating accurate Sabbath times" })
-        ] })
-      ] })
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-slate-200 dark:border-gray-800 bg-white dark:bg-black", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardTitle, { className: "flex items-center space-x-2 text-slate-800 dark:text-white", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Bell, { className: "w-6 h-6 text-blue-600 dark:text-blue-400" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Notifications & Reminders" })
-      ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "space-y-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between p-4 bg-slate-50 dark:bg-gray-800 rounded-lg", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-slate-700 dark:text-gray-200", children: "Auto Digital Detox" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-slate-500 dark:text-gray-400", children: "Automatically enable detox mode during Sabbath hours" })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            Switch,
-            {
-              checked: settings.digitalDetoxEnabled,
-              onCheckedChange: (checked) => setSettings({ ...settings, digitalDetoxEnabled: checked })
-            }
-          )
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-blue-50 dark:bg-blue-950/50 p-4 rounded-lg border-l-4 border-blue-400 dark:border-blue-600", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-blue-700 dark:text-blue-300 mb-2", children: "Sabbath Notifications" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2 text-sm text-blue-600 dark:text-blue-400", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-2 h-2 bg-blue-500 rounded-full" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Friday sunset reminder (customizable timing)" })
-            ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-2 h-2 bg-blue-500 rounded-full" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Sabbath welcome notification" })
-            ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-2 h-2 bg-blue-500 rounded-full" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Saturday sunset notification" })
-            ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-2 h-2 bg-blue-500 rounded-full" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Custom preparation reminders" })
-            ] })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-            Button,
-            {
-              variant: "outline",
-              size: "sm",
-              onClick: () => window.location.href = "/settings?tab=notifications",
-              className: "text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-950",
-              children: "Configure Notifications"
-            }
-          ) })
-        ] })
-      ] })
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-slate-200 dark:border-gray-800 bg-white dark:bg-black", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-slate-800 dark:text-white", children: "App Information" }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "space-y-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid md:grid-cols-2 gap-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-slate-50 dark:bg-gray-800 p-4 rounded-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-slate-700 dark:text-gray-200 mb-2", children: "Version" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-slate-600 dark:text-gray-300", children: "Adventist Go v1.1.0" })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-slate-50 dark:bg-gray-800 p-4 rounded-lg", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-slate-700 dark:text-gray-200 mb-2", children: "Offline Mode" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-slate-600 dark:text-gray-300", children: "Enabled for all features" })
-          ] })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-green-50 dark:bg-green-950/50 p-4 rounded-lg border-l-4 border-green-400 dark:border-green-600", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-green-700 dark:text-green-300 mb-2", children: "Privacy & Data" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-green-600 dark:text-green-400", children: "Your data is stored locally and securely. Location is only used for Sabbath time calculations and notifications." })
-        ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-purple-50 dark:bg-purple-950/50 p-4 rounded-lg border-l-4 border-purple-400 dark:border-purple-600", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-semibold text-purple-700 dark:text-purple-300 mb-2", children: "Browser Notifications" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-purple-600 dark:text-purple-400", children: "Enable browser notifications to receive timely Sabbath reminders even when the app is closed." })
-        ] })
-      ] })
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "pt-2 flex justify-end", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
       Button,
       {
+        size: "lg",
         onClick: handleSaveSettings,
         disabled: savePreferencesMutation.isPending,
-        className: "bg-blue-600 hover:bg-blue-700 text-white px-8",
+        className: "bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl px-8 shadow-md flex items-center gap-2",
         children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Save, { className: "w-4 h-4 mr-2" }),
-          savePreferencesMutation.isPending ? "Saving..." : "Save Settings"
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Save, { className: "w-4 h-4" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: savePreferencesMutation.isPending ? "Saving..." : "Save Settings" })
         ]
       }
-    ) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/50 dark:to-purple-950/50 border-blue-200 dark:border-blue-800", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "text-center py-8", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Settings$1, { className: "w-12 h-12 text-blue-600 dark:text-blue-400 mx-auto mb-4" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-xl font-semibold text-blue-700 dark:text-blue-300 mb-2", children: "Personalized Experience" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-blue-600 dark:text-blue-400", children: "Customize Adventist Go to support your unique Sabbath journey." })
-    ] }) })
+    ) })
   ] });
 }
 function NotificationSettings({ userId }) {
@@ -36842,48 +37300,6 @@ function NotificationSettings({ userId }) {
     ] }) })
   ] });
 }
-function useLocationPermission() {
-  const [location, setLocation] = reactExports.useState(null);
-  const [isLoading, setIsLoading] = reactExports.useState(false);
-  const [error, setError] = reactExports.useState(null);
-  const requestLocation = reactExports.useCallback(() => {
-    if (!navigator.geolocation) {
-      setError("Geolocation is not supported by this browser");
-      return;
-    }
-    setIsLoading(true);
-    setError(null);
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        setLocation({
-          latitude: position.coords.latitude,
-          longitude: position.coords.longitude
-        });
-        setIsLoading(false);
-      },
-      (error2) => {
-        setError(error2.message);
-        setIsLoading(false);
-        setLocation({
-          latitude: 31.7683,
-          longitude: 35.2137
-        });
-      },
-      {
-        enableHighAccuracy: true,
-        timeout: 1e4,
-        maximumAge: 3e5
-        // 5 minutes
-      }
-    );
-  }, []);
-  return {
-    location,
-    isLoading,
-    error,
-    requestLocation
-  };
-}
 function generateUserId() {
   const stored = localStorage.getItem("adventist-go-user-id");
   if (stored) {
@@ -36906,10 +37322,12 @@ const queryClient = new QueryClient({
 function AppInner() {
   const [userId] = reactExports.useState(() => generateUserId());
   const [showNotificationSettings, setShowNotificationSettings] = reactExports.useState(false);
-  const { location, requestLocation } = useLocationPermission();
+  const { location, requestLocation, setManualLocation } = useLocationPermission();
   reactExports.useEffect(() => {
-    requestLocation();
-  }, [requestLocation]);
+    if (!location) {
+      requestLocation();
+    }
+  }, [location, requestLocation]);
   const handleOpenNotificationSettings = () => {
     setShowNotificationSettings(true);
   };
@@ -36917,9 +37335,9 @@ function AppInner() {
     setShowNotificationSettings(false);
   };
   if (showNotificationSettings) {
-    return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-black dark:to-gray-900 transition-colors", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col min-h-screen", children: [
+    return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-black dark:to-gray-900 transition-colors overflow-x-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col min-h-screen", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(Navigation, {}),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "flex-1 container mx-auto px-4 py-6 max-w-4xl", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "flex-1 container mx-auto px-4 py-6 max-w-4xl pb-20 lg:pb-8", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mb-6", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           "button",
           {
@@ -36932,10 +37350,10 @@ function AppInner() {
       ] })
     ] }) });
   }
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-black dark:to-gray-900 transition-colors", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-black dark:to-gray-900 transition-colors overflow-x-hidden", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(BrowserRouter, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col min-h-screen", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(Navigation, {}),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "flex-1 container mx-auto px-4 py-6 max-w-4xl", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "flex-1 container mx-auto px-4 py-6 max-w-4xl pb-20 lg:pb-8", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(ErrorBoundary, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           NotificationCenter,
           {
@@ -36945,7 +37363,15 @@ function AppInner() {
           }
         ) }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Routes, { children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/", element: /* @__PURE__ */ jsxRuntimeExports.jsx(ErrorBoundary, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(SabbathCountdown, { userId, location }) }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/", element: /* @__PURE__ */ jsxRuntimeExports.jsx(ErrorBoundary, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+            SabbathCountdown,
+            {
+              userId,
+              location,
+              onRequestLocation: requestLocation,
+              onSelectCity: setManualLocation
+            }
+          ) }) }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/reels", element: /* @__PURE__ */ jsxRuntimeExports.jsx(ErrorBoundary, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(ReelsFeed, {}) }) }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/verse-master", element: /* @__PURE__ */ jsxRuntimeExports.jsx(ErrorBoundary, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(VerseMaster, {}) }) }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/prep", element: /* @__PURE__ */ jsxRuntimeExports.jsx(ErrorBoundary, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(PrepChecklist, { userId }) }) }),

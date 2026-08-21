@@ -36,11 +36,14 @@ const queryClient = new QueryClient({
 function AppInner() {
   const [userId] = useState(() => generateUserId());
   const [showNotificationSettings, setShowNotificationSettings] = useState(false);
-  const { location, requestLocation } = useLocationPermission();
+  const { location, requestLocation, setManualLocation } = useLocationPermission();
 
   useEffect(() => {
-    requestLocation();
-  }, [requestLocation]);
+    // Only auto-request if no location is stored
+    if (!location) {
+      requestLocation();
+    }
+  }, [location, requestLocation]);
 
   const handleOpenNotificationSettings = () => {
     setShowNotificationSettings(true);
@@ -52,10 +55,10 @@ function AppInner() {
 
   if (showNotificationSettings) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-black dark:to-gray-900 transition-colors">
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-black dark:to-gray-900 transition-colors overflow-x-hidden">
         <div className="flex flex-col min-h-screen">
           <Navigation />
-          <main className="flex-1 container mx-auto px-4 py-6 max-w-4xl">
+          <main className="flex-1 container mx-auto px-4 py-6 max-w-4xl pb-20 lg:pb-8">
             <div className="mb-6">
               <button
                 onClick={handleCloseNotificationSettings}
@@ -74,11 +77,11 @@ function AppInner() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-black dark:to-gray-900 transition-colors">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-black dark:to-gray-900 transition-colors overflow-x-hidden">
       <Router>
         <div className="flex flex-col min-h-screen">
           <Navigation />
-          <main className="flex-1 container mx-auto px-4 py-6 max-w-4xl">
+          <main className="flex-1 container mx-auto px-4 py-6 max-w-4xl pb-20 lg:pb-8">
             <ErrorBoundary>
               <NotificationCenter 
                 userId={userId} 
@@ -90,7 +93,12 @@ function AppInner() {
               <Routes>
                 <Route path="/" element={
                   <ErrorBoundary>
-                    <SabbathCountdown userId={userId} location={location} />
+                    <SabbathCountdown 
+                      userId={userId} 
+                      location={location}
+                      onRequestLocation={requestLocation}
+                      onSelectCity={setManualLocation}
+                    />
                   </ErrorBoundary>
                 } />
                 <Route path="/reels" element={
