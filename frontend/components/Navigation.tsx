@@ -19,9 +19,8 @@ import {
   ChevronDown,
   Menu,
   X,
-  Compass,
-  HeartHandshake,
-  Sparkles
+  Sparkles,
+  Smile
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -41,22 +40,22 @@ interface NavGroup {
 
 const NAV_GROUPS: NavGroup[] = [
   {
+    label: 'Study',
+    icon: BookOpen,
+    items: [
+      { path: '/bible', label: 'Bible Lookup', description: 'Full-text scripture search & study', icon: BookOpen },
+      { path: '/verse-master', label: 'Verse Master', description: 'Voice recitation memory game', icon: Trophy, badge: 'Voice' },
+      { path: '/sabbath-school', label: 'SS Lessons', description: 'Quarterly daily study guides', icon: GraduationCap },
+      { path: '/devotionals', label: 'Devotionals', description: 'Morning & evening reflections', icon: Book },
+      { path: '/hymns', label: 'Hymnal', description: 'Audio & lyrics for 695 hymns', icon: Music },
+    ],
+  },
+  {
     label: 'Prepare',
     icon: CheckSquare,
     items: [
       { path: '/prep', label: 'Prep Checklist', description: 'Weekly Sabbath preparation tasks', icon: CheckSquare },
       { path: '/detox', label: 'Digital Detox', description: 'Mindful screen time & Sabbath pause', icon: Smartphone },
-    ],
-  },
-  {
-    label: 'Study',
-    icon: BookOpen,
-    items: [
-      { path: '/bible', label: 'Bible Lookup', description: 'Full-text scripture search & study', icon: BookOpen },
-      { path: '/verse-master', label: 'Verse Master', description: 'Voice recitation memory game', icon: Trophy, badge: 'New' },
-      { path: '/sabbath-school', label: 'SS Lessons', description: 'Quarterly daily study guides', icon: GraduationCap },
-      { path: '/devotionals', label: 'Devotionals', description: 'Morning & evening reflections', icon: Book },
-      { path: '/hymns', label: 'Hymnal', description: 'Audio & lyrics for 695 hymns', icon: Music },
     ],
   },
   {
@@ -79,6 +78,8 @@ export function Navigation() {
   const isGroupActive = (group: NavGroup) => {
     return group.items.some((item) => item.path === location.pathname);
   };
+
+  const isKidsMode = location.pathname === '/kids';
 
   return (
     <>
@@ -117,7 +118,23 @@ export function Navigation() {
                 <span>Countdown</span>
               </Link>
 
-              {/* 2. Watch (Reels) - Top-level priority */}
+              {/* 2. Kids Go Mode Button */}
+              <Link
+                to="/kids"
+                className={`px-3 py-1.5 rounded-xl text-sm font-black transition-all flex items-center gap-1.5 ${
+                  location.pathname === '/kids'
+                    ? 'bg-gradient-to-r from-amber-500 to-pink-500 text-white shadow-md shadow-amber-500/30 scale-[1.03]'
+                    : 'bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-200 border border-amber-300 dark:border-amber-700 hover:bg-amber-100'
+                }`}
+              >
+                <span className="text-base">🎈</span>
+                <span>Kids Go</span>
+                <span className="bg-amber-400 text-amber-950 text-[9px] font-black px-1.5 py-0.2 rounded-full uppercase">
+                  Play
+                </span>
+              </Link>
+
+              {/* 3. Watch (Reels) */}
               <Link
                 to="/reels"
                 className={`px-3 py-2 rounded-xl text-sm font-semibold transition-all flex items-center gap-1.5 ${
@@ -134,7 +151,7 @@ export function Navigation() {
                 </span>
               </Link>
 
-              {/* 3. Grouped Dropdowns: Prepare, Study, Community */}
+              {/* 4. Grouped Dropdowns: Study, Prepare, Community */}
               {NAV_GROUPS.map((group) => {
                 const isActive = isGroupActive(group);
                 const isOpen = activeDropdown === group.label;
@@ -244,12 +261,12 @@ export function Navigation() {
         {/* Mobile Full Navigation Sheet Modal */}
         {mobileMenuOpen && (
           <div className="lg:hidden border-t border-slate-200 dark:border-gray-800 bg-white/95 dark:bg-black/95 backdrop-blur-xl p-4 max-h-[80vh] overflow-y-auto space-y-6 animate-in slide-in-from-top duration-200">
-            {/* Quick Links Row */}
-            <div className="grid grid-cols-2 gap-2">
+            {/* Top Quick Mode Launchers */}
+            <div className="grid grid-cols-3 gap-2">
               <Link
                 to="/"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`p-3 rounded-xl flex items-center gap-2 text-sm font-bold ${
+                className={`p-3 rounded-xl flex flex-col items-center justify-center gap-1 text-xs font-bold text-center ${
                   location.pathname === '/'
                     ? 'bg-blue-600 text-white'
                     : 'bg-slate-100 dark:bg-gray-800 text-slate-800 dark:text-white'
@@ -259,16 +276,28 @@ export function Navigation() {
                 <span>Countdown</span>
               </Link>
               <Link
+                to="/kids"
+                onClick={() => setMobileMenuOpen(false)}
+                className={`p-3 rounded-xl flex flex-col items-center justify-center gap-1 text-xs font-bold text-center ${
+                  location.pathname === '/kids'
+                    ? 'bg-gradient-to-r from-amber-500 to-pink-500 text-white shadow-md'
+                    : 'bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-200 border border-amber-300'
+                }`}
+              >
+                <span className="text-base">🎈</span>
+                <span>Kids Go</span>
+              </Link>
+              <Link
                 to="/reels"
                 onClick={() => setMobileMenuOpen(false)}
-                className={`p-3 rounded-xl flex items-center gap-2 text-sm font-bold ${
+                className={`p-3 rounded-xl flex flex-col items-center justify-center gap-1 text-xs font-bold text-center ${
                   location.pathname === '/reels'
                     ? 'bg-amber-500 text-white'
-                    : 'bg-amber-50 dark:bg-amber-950/40 text-amber-800 dark:text-amber-200 border border-amber-200'
+                    : 'bg-slate-100 dark:bg-gray-800 text-slate-800 dark:text-white'
                 }`}
               >
                 <Flame className="w-4 h-4 text-amber-500" />
-                <span>Advent Reels</span>
+                <span>Reels</span>
               </Link>
             </div>
 
@@ -315,7 +344,7 @@ export function Navigation() {
           <Link
             to="/"
             className={`flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold transition-all ${
-              location.pathname === '/' ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400'
+              location.pathname === '/' ? 'text-blue-600 dark:text-blue-400 font-bold' : 'text-slate-400'
             }`}
             aria-label="Countdown Tab"
           >
@@ -324,9 +353,20 @@ export function Navigation() {
           </Link>
 
           <Link
+            to="/kids"
+            className={`flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-black transition-all ${
+              location.pathname === '/kids' ? 'text-pink-500 scale-105' : 'text-slate-400'
+            }`}
+            aria-label="Kids Go Tab"
+          >
+            <span className="text-lg leading-none">🎈</span>
+            <span className="mt-0.5">Kids Go</span>
+          </Link>
+
+          <Link
             to="/reels"
             className={`flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold transition-all ${
-              location.pathname === '/reels' ? 'text-amber-500' : 'text-slate-400'
+              location.pathname === '/reels' ? 'text-amber-500 font-bold' : 'text-slate-400'
             }`}
             aria-label="Reels Tab"
           >
@@ -337,23 +377,12 @@ export function Navigation() {
           <Link
             to="/bible"
             className={`flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold transition-all ${
-              location.pathname === '/bible' ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400'
+              location.pathname === '/bible' ? 'text-blue-600 dark:text-blue-400 font-bold' : 'text-slate-400'
             }`}
             aria-label="Bible Tab"
           >
             <BookOpen className="w-5 h-5" />
             <span className="mt-0.5">Bible</span>
-          </Link>
-
-          <Link
-            to="/family"
-            className={`flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold transition-all ${
-              location.pathname === '/family' ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400'
-            }`}
-            aria-label="Family Tab"
-          >
-            <Users className="w-5 h-5" />
-            <span className="mt-0.5">Family</span>
           </Link>
 
           <button

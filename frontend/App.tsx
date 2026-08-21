@@ -15,6 +15,7 @@ import { Hymns } from './components/Hymns';
 import { FamilyWorship } from './components/FamilyWorship';
 import { ReelsFeed } from './components/ReelsFeed';
 import { VerseMaster } from './components/VerseMaster';
+import { KidsMode } from './components/KidsMode';
 import { DigitalDetox } from './components/DigitalDetox';
 import { ChurchFinder } from './components/ChurchFinder';
 import { Journal } from './components/Journal';
@@ -104,6 +105,11 @@ function AppInner() {
                 <Route path="/reels" element={
                   <ErrorBoundary>
                     <ReelsFeed />
+                  </ErrorBoundary>
+                } />
+                <Route path="/kids" element={
+                  <ErrorBoundary>
+                    <KidsMode />
                   </ErrorBoundary>
                 } />
                 <Route path="/verse-master" element={
