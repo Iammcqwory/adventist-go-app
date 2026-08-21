@@ -1,0 +1,14 @@
+{
+  "name": "adventist-go-app",
+  "version": "1.0.0",
+  "type": "module",
+  "packageManager": "bun",
+  "scripts": {
+    "build": "bun --filter frontend build",
+    "dev": "bun --filter frontend dev"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}

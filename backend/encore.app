@@ -1,0 +1,1 @@
+{"id": "adventist-go-app-tszi", "lang": "typescript"}
