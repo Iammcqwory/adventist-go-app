@@ -68,16 +68,14 @@ This is a full child-friendly Sabbath experience hub. It lives at `/kids` and co
 - **🌿 Nature Explorer:** A Sabbath scavenger hunt bingo board with 8 outdoor items to find (butterfly, bird, flower, cloud shapes, etc.). Each found item awards a ⭐, persisted in `localStorage` under the key `kids_stars`.
 - **🏆 Verse Master Junior:** A quick-launch button that takes kids directly to the `/verse-master` game in a simplified context.
 
-**Why a separate mode?** Kids need big tap targets, bright colours, minimal text, and zero navigation friction. Embedding these activities inside the adult Study or Community groups would bury them. A top-level "Kids Go 🎈" tab with a distinctive gradient (amber → pink) gives parents a one-tap hand-off: *"Here, play this while I finish cooking."*
+#### 6. Mobile-First Responsive Engineering
+Mobile isn't just "desktop squeezed down"; it has distinct physical constraints: thumbs, notches, small screens (320px–430px), and bottom toolbars. Here are the key mobile refactorings applied:
 
-**Technical pattern — localStorage star system:**
-```typescript
-// Read stars (with safe fallback)
-const stars = parseInt(localStorage.getItem('kids_stars') || '0');
-// Award a star
-localStorage.setItem('kids_stars', String(stars + 1));
-```
-Stars survive page reloads and app restarts — no backend needed. This is the same persistence pattern used for user location (`adventist_user_location`). Simple, private, zero-cost.
+- **Edge-to-Edge Safe Area (`viewport-fit=cover`):** `index.html` configured with `viewport-fit=cover`, allowing the top and bottom navigation bars to adapt to iPhone notches and Android system bars via `env(safe-area-inset-bottom)`.
+- **The "Thumb Zone" Bottom Bar:** Replaced cramped desktop dropdowns on phones with a fixed, backdrop-blurred 5-tab bar with 44px+ tap targets (`Countdown`, `Kids Go 🎈`, `Reels`, `Bible`, `More`).
+- **Dynamic Font Scaling:** Large titles scale fluidly (`text-2xl sm:text-3xl md:text-4xl`) and digital timers prevent text clipping (`text-3xl sm:text-5xl md:text-6xl`) on 320px iPhone SE screens.
+- **Anti-Overlap Content Padding:** Main container uses `pb-24 lg:pb-8` so content never gets trapped behind the sticky bottom navigation bar.
+- **Responsive Stacked Layouts:** Multi-column grids (`grid-cols-4` on desktop) break gracefully into single or 2-column touch cards on mobile (`grid-cols-2 sm:grid-cols-4`).
 
 ---
 
