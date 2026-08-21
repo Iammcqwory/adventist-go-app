@@ -59,11 +59,11 @@ function AppInner() {
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-black dark:to-gray-900 transition-colors overflow-x-hidden">
         <div className="flex flex-col min-h-screen">
           <Navigation />
-          <main className="flex-1 container mx-auto px-4 py-6 max-w-4xl pb-20 lg:pb-8">
-            <div className="mb-6">
+          <main className="flex-1 container mx-auto px-3 sm:px-4 py-3 sm:py-6 max-w-4xl pb-24 lg:pb-8">
+            <div className="mb-4 sm:mb-6">
               <button
                 onClick={handleCloseNotificationSettings}
-                className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium"
+                className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium text-sm flex items-center gap-1 min-h-[44px]"
               >
                 ← Back to App
               </button>
@@ -82,7 +82,7 @@ function AppInner() {
       <Router>
         <div className="flex flex-col min-h-screen">
           <Navigation />
-          <main className="flex-1 container mx-auto px-4 py-6 max-w-4xl pb-20 lg:pb-8">
+          <main className="flex-1 container mx-auto px-3 sm:px-4 py-3 sm:py-6 max-w-4xl pb-24 lg:pb-8">
             <ErrorBoundary>
               <NotificationCenter 
                 userId={userId} 
@@ -90,7 +90,7 @@ function AppInner() {
                 onOpenSettings={handleOpenNotificationSettings}
               />
             </ErrorBoundary>
-            <div className="mt-6">
+            <div className="mt-3 sm:mt-6">
               <Routes>
                 <Route path="/" element={
                   <ErrorBoundary>

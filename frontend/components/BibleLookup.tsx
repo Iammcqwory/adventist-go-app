@@ -274,19 +274,19 @@ export function BibleLookup({ userId }: BibleLookupProps) {
 
   if (showBookmarks) {
     return (
-      <div className="space-y-6">
-        <div className="flex items-center space-x-4">
+      <div className="space-y-4 sm:space-y-6">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-4">
           <Button 
             variant="outline" 
             onClick={() => setShowBookmarks(false)}
-            className="text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-950"
+            className="text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-950 text-xs sm:text-sm min-h-[40px] justify-start sm:justify-center"
           >
             ← Back to Search
           </Button>
           <div className="flex items-center space-x-2">
-            <Tag className="w-4 h-4 text-slate-500 dark:text-gray-400" />
+            <Tag className="w-4 h-4 text-slate-500 dark:text-gray-400 flex-shrink-0" />
             <Select value={selectedTag} onValueChange={setSelectedTag}>
-              <SelectTrigger className="w-48 bg-white dark:bg-black border-slate-300 dark:border-gray-600">
+              <SelectTrigger className="w-full sm:w-48 bg-white dark:bg-black border-slate-300 dark:border-gray-600 text-xs">
                 <SelectValue placeholder="Filter by tag" />
               </SelectTrigger>
               <SelectContent>
@@ -525,32 +525,32 @@ export function BibleLookup({ userId }: BibleLookupProps) {
   }
 
   return (
-    <div className="space-y-6">
-      <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-slate-800 dark:text-white mb-2">Bible Lookup</h1>
-        <p className="text-slate-600 dark:text-gray-300">Search Scripture with advanced full-text search capabilities</p>
+    <div className="space-y-4 sm:space-y-6">
+      <div className="text-center mb-4 sm:mb-8">
+        <h1 className="text-2xl sm:text-3xl font-bold text-slate-800 dark:text-white mb-1 sm:mb-2">Bible Lookup</h1>
+        <p className="text-xs sm:text-sm text-slate-600 dark:text-gray-300">Search Scripture with advanced full-text search capabilities</p>
       </div>
 
       <Card className="border-slate-200 dark:border-gray-800 bg-white dark:bg-black shadow-lg">
-        <CardHeader className="pb-3">
+        <CardHeader className="p-4 sm:p-6 pb-2 sm:pb-3">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <div className="flex items-center space-x-2">
-              <div className="w-9 h-9 rounded-xl bg-blue-100 dark:bg-blue-950 flex items-center justify-center text-blue-600 dark:text-blue-400">
-                <Search className="w-5 h-5" />
+              <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-blue-100 dark:bg-blue-950 flex items-center justify-center text-blue-600 dark:text-blue-400 flex-shrink-0">
+                <Search className="w-4 h-4 sm:w-5 sm:h-5" />
               </div>
               <div>
-                <CardTitle className="text-xl text-slate-800 dark:text-white">
+                <CardTitle className="text-lg sm:text-xl text-slate-800 dark:text-white">
                   Scripture Search
                 </CardTitle>
-                <p className="text-xs text-slate-500 dark:text-gray-400">Search keywords, topics, or exact phrases across the Bible</p>
+                <p className="text-[11px] sm:text-xs text-slate-500 dark:text-gray-400">Search keywords, topics, or exact phrases across the Bible</p>
               </div>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 self-stretch sm:self-auto">
               <Button
                 variant="outline"
                 size="sm"
                 onClick={() => handleOpenStudyMode()}
-                className="text-green-600 dark:text-green-400 border-green-200 dark:border-green-700 hover:bg-green-50 dark:hover:bg-green-950 text-xs font-semibold"
+                className="flex-1 sm:flex-none text-green-600 dark:text-green-400 border-green-200 dark:border-green-700 hover:bg-green-50 dark:hover:bg-green-950 text-xs font-semibold min-h-[36px]"
               >
                 <BookOpen className="w-3.5 h-3.5 mr-1.5" />
                 Study Mode
@@ -559,7 +559,7 @@ export function BibleLookup({ userId }: BibleLookupProps) {
                 variant="outline"
                 size="sm"
                 onClick={() => setShowBookmarks(true)}
-                className="text-purple-600 dark:text-purple-400 border-purple-200 dark:border-purple-700 hover:bg-purple-50 dark:hover:bg-purple-950 text-xs font-semibold"
+                className="flex-1 sm:flex-none text-purple-600 dark:text-purple-400 border-purple-200 dark:border-purple-700 hover:bg-purple-50 dark:hover:bg-purple-950 text-xs font-semibold min-h-[36px]"
               >
                 <Bookmark className="w-3.5 h-3.5 mr-1.5" />
                 Bookmarks
@@ -567,7 +567,7 @@ export function BibleLookup({ userId }: BibleLookupProps) {
             </div>
           </div>
         </CardHeader>
-        <CardContent className="space-y-4 pt-1">
+        <CardContent className="p-4 sm:p-6 space-y-3 sm:space-y-4 pt-1">
           {/* Primary Search Bar */}
           <div className="space-y-3">
             <div className="relative flex items-center">

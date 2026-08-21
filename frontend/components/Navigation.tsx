@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { 
   Clock, 
@@ -85,19 +85,19 @@ export function Navigation() {
     <>
       {/* Top Header */}
       <header className="bg-white/90 dark:bg-black/90 backdrop-blur-md border-b border-slate-200 dark:border-gray-800 sticky top-0 z-40 transition-colors w-full">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="flex items-center justify-between h-16">
+        <div className="container mx-auto px-3 sm:px-4 max-w-6xl">
+          <div className="flex items-center justify-between h-14 sm:h-16">
             {/* Brand Logo */}
             <Link 
               to="/" 
-              className="flex items-center space-x-2.5 flex-shrink-0 group"
+              className="flex items-center space-x-2 sm:space-x-2.5 flex-shrink-0 group py-1"
               aria-label="Adventist Go Home"
             >
-              <div className="w-9 h-9 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 rounded-xl flex items-center justify-center shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
-                <Clock className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 sm:w-9 sm:h-9 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 rounded-xl flex items-center justify-center shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
+                <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
               </div>
               <div>
-                <span className="text-lg font-black tracking-tight text-slate-900 dark:text-white">
+                <span className="text-base sm:text-lg font-black tracking-tight text-slate-900 dark:text-white">
                   Adventist<span className="text-blue-600 dark:text-blue-400">Go</span>
                 </span>
               </div>
@@ -335,63 +335,63 @@ export function Navigation() {
         )}
       </header>
 
-      {/* Mobile Sticky Bottom Tab Bar (Fast switching on phones) */}
+      {/* Mobile Sticky Bottom Tab Bar (Fast switching on phones with safe-area support) */}
       <nav 
-        className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-black/95 backdrop-blur-lg border-t border-slate-200 dark:border-gray-800 px-3 py-1.5"
+        className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-black/95 backdrop-blur-xl border-t border-slate-200 dark:border-gray-800 px-2 pt-1.5 pb-[max(0.6rem,env(safe-area-inset-bottom,0.6rem))]"
         aria-label="Mobile Bottom Navigation"
       >
-        <div className="flex items-center justify-around">
+        <div className="flex items-center justify-around max-w-md mx-auto">
           <Link
             to="/"
-            className={`flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold transition-all ${
-              location.pathname === '/' ? 'text-blue-600 dark:text-blue-400 font-bold' : 'text-slate-400'
+            className={`flex flex-col items-center justify-center py-1 px-3 min-w-[56px] min-h-[44px] rounded-xl text-[10px] font-semibold transition-all ${
+              location.pathname === '/' ? 'text-blue-600 dark:text-blue-400 font-black' : 'text-slate-500 dark:text-gray-400 hover:text-slate-900'
             }`}
             aria-label="Countdown Tab"
           >
             <Clock className="w-5 h-5" />
-            <span className="mt-0.5">Countdown</span>
+            <span className="mt-0.5 tracking-tight">Countdown</span>
           </Link>
 
           <Link
             to="/kids"
-            className={`flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-black transition-all ${
-              location.pathname === '/kids' ? 'text-pink-500 scale-105' : 'text-slate-400'
+            className={`flex flex-col items-center justify-center py-1 px-3 min-w-[56px] min-h-[44px] rounded-xl text-[10px] font-black transition-all ${
+              location.pathname === '/kids' ? 'text-pink-500 scale-105' : 'text-slate-500 dark:text-gray-400 hover:text-pink-600'
             }`}
             aria-label="Kids Go Tab"
           >
             <span className="text-lg leading-none">🎈</span>
-            <span className="mt-0.5">Kids Go</span>
+            <span className="mt-0.5 tracking-tight">Kids Go</span>
           </Link>
 
           <Link
             to="/reels"
-            className={`flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold transition-all ${
-              location.pathname === '/reels' ? 'text-amber-500 font-bold' : 'text-slate-400'
+            className={`flex flex-col items-center justify-center py-1 px-3 min-w-[56px] min-h-[44px] rounded-xl text-[10px] font-semibold transition-all ${
+              location.pathname === '/reels' ? 'text-amber-500 font-black' : 'text-slate-500 dark:text-gray-400 hover:text-amber-500'
             }`}
             aria-label="Reels Tab"
           >
             <Flame className="w-5 h-5 text-amber-500" />
-            <span className="mt-0.5">Reels</span>
+            <span className="mt-0.5 tracking-tight">Reels</span>
           </Link>
 
           <Link
             to="/bible"
-            className={`flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold transition-all ${
-              location.pathname === '/bible' ? 'text-blue-600 dark:text-blue-400 font-bold' : 'text-slate-400'
+            className={`flex flex-col items-center justify-center py-1 px-3 min-w-[56px] min-h-[44px] rounded-xl text-[10px] font-semibold transition-all ${
+              location.pathname === '/bible' ? 'text-blue-600 dark:text-blue-400 font-black' : 'text-slate-500 dark:text-gray-400 hover:text-blue-600'
             }`}
             aria-label="Bible Tab"
           >
             <BookOpen className="w-5 h-5" />
-            <span className="mt-0.5">Bible</span>
+            <span className="mt-0.5 tracking-tight">Bible</span>
           </Link>
 
           <button
             onClick={() => setMobileMenuOpen(true)}
-            className="flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold text-slate-400"
+            className="flex flex-col items-center justify-center py-1 px-3 min-w-[56px] min-h-[44px] rounded-xl text-[10px] font-semibold text-slate-500 dark:text-gray-400 hover:text-slate-900"
             aria-label="More Menu"
           >
             <Menu className="w-5 h-5" />
-            <span className="mt-0.5">More</span>
+            <span className="mt-0.5 tracking-tight">More</span>
           </button>
         </div>
       </nav>

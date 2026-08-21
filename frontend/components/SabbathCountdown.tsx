@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { 
@@ -216,12 +216,12 @@ export function SabbathCountdown({
   const isSabbathActive = sabbathTimes?.isSabbath || (timeToSabbath <= 0 && timeToSabbathEnd > 0);
 
   return (
-    <div className="space-y-6 max-w-3xl mx-auto">
+    <div className="space-y-4 sm:space-y-6 max-w-3xl mx-auto">
       {/* Location Status Bar with Change Action */}
-      <div className="flex items-center justify-between bg-white dark:bg-gray-900 px-4 py-2.5 rounded-2xl border border-slate-200 dark:border-gray-800 shadow-sm">
-        <div className="flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-gray-200">
-          <MapPin className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-          <span>{location?.cityName || 'Jerusalem (Default)'}</span>
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 bg-white dark:bg-gray-900 px-3.5 sm:px-4 py-2.5 rounded-2xl border border-slate-200 dark:border-gray-800 shadow-sm">
+        <div className="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 dark:text-gray-200 flex-wrap">
+          <MapPin className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0" />
+          <span className="font-semibold">{location?.cityName || 'Jerusalem (Default)'}</span>
           <Badge variant="outline" className="text-[10px] uppercase font-bold py-0.5 px-2 text-slate-500">
             {location?.isManual ? 'Manual City' : 'GPS Detected'}
           </Badge>
@@ -230,7 +230,7 @@ export function SabbathCountdown({
           variant="ghost"
           size="sm"
           onClick={onRequestLocation}
-          className="text-xs text-blue-600 dark:text-blue-400 hover:text-blue-800 flex items-center gap-1 h-8"
+          className="text-xs text-blue-600 dark:text-blue-400 hover:text-blue-800 flex items-center gap-1.5 h-8 px-2 justify-start sm:justify-center self-start sm:self-auto min-h-[36px]"
         >
           <RefreshCw className="w-3.5 h-3.5" />
           <span>Update Location</span>
@@ -243,32 +243,32 @@ export function SabbathCountdown({
           ? 'border-amber-400/60 bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-purple-500/10'
           : 'border-blue-500/40 bg-gradient-to-br from-blue-500/10 via-indigo-500/5 to-purple-500/10'
       }`}>
-        <CardHeader className="text-center pb-2 pt-6">
-          <div className="flex justify-center mb-3">
-            <div className={`p-3 rounded-2xl ${
+        <CardHeader className="text-center pb-2 pt-4 sm:pt-6 px-4 sm:px-6">
+          <div className="flex justify-center mb-2 sm:mb-3">
+            <div className={`p-2.5 sm:p-3 rounded-2xl ${
               isSabbathActive 
                 ? 'bg-amber-500 text-white shadow-lg shadow-amber-500/30 animate-pulse' 
                 : 'bg-blue-600 text-white shadow-lg shadow-blue-500/30'
             }`}>
-              {isSabbathActive ? <Moon className="w-8 h-8" /> : <Sunset className="w-8 h-8" />}
+              {isSabbathActive ? <Moon className="w-6 h-6 sm:w-8 sm:h-8" /> : <Sunset className="w-6 h-6 sm:w-8 sm:h-8" />}
             </div>
           </div>
-          <Badge className={`mx-auto font-black text-xs px-3 py-1 uppercase tracking-wider ${
+          <Badge className={`mx-auto font-black text-[10px] sm:text-xs px-2.5 py-1 uppercase tracking-wider ${
             isSabbathActive 
               ? 'bg-amber-500 text-white' 
               : 'bg-blue-600 text-white'
           }`}>
             {isSabbathActive ? '✨ Sabbath Shalom! Holy Hours Active' : 'Sabbath Preparation'}
           </Badge>
-          <CardTitle className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">
+          <CardTitle className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">
             {isSabbathActive ? 'Sabbath Concludes In' : 'Sabbath Begins In'}
           </CardTitle>
         </CardHeader>
 
-        <CardContent className="p-6 text-center space-y-6">
+        <CardContent className="p-4 sm:p-6 text-center space-y-4 sm:space-y-6">
           {/* Big Digital Countdown */}
-          <div className="py-4">
-            <div className="text-4xl sm:text-6xl font-mono font-black tracking-tight text-slate-900 dark:text-white drop-shadow-sm">
+          <div className="py-2 sm:py-4">
+            <div className="text-3xl sm:text-5xl md:text-6xl font-mono font-black tracking-tight text-slate-900 dark:text-white drop-shadow-sm break-words">
               {isSabbathActive 
                 ? formatTimeRemaining(timeToSabbathEnd)
                 : formatTimeRemaining(timeToSabbath)}
@@ -281,26 +281,26 @@ export function SabbathCountdown({
           </div>
 
           {/* Sunset Schedule Cards Grid */}
-          <div className="grid sm:grid-cols-2 gap-4 text-left">
-            <div className="p-4 rounded-2xl bg-white/80 dark:bg-black/50 border border-slate-200 dark:border-gray-800 flex items-center gap-3">
-              <div className="p-2.5 rounded-xl bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-4 text-left">
+            <div className="p-3.5 sm:p-4 rounded-2xl bg-white/80 dark:bg-black/50 border border-slate-200 dark:border-gray-800 flex items-center gap-3">
+              <div className="p-2 sm:p-2.5 rounded-xl bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex-shrink-0">
                 <Sunset className="w-5 h-5" />
               </div>
-              <div>
+              <div className="min-w-0 flex-1">
                 <p className="text-xs font-semibold text-slate-500 dark:text-gray-400">Friday Sunset</p>
-                <p className="text-base font-bold text-slate-800 dark:text-white">
+                <p className="text-sm sm:text-base font-bold text-slate-800 dark:text-white truncate">
                   {formatTime(sabbathTimes?.fridaySunset || '')}
                 </p>
               </div>
             </div>
 
-            <div className="p-4 rounded-2xl bg-white/80 dark:bg-black/50 border border-slate-200 dark:border-gray-800 flex items-center gap-3">
-              <div className="p-2.5 rounded-xl bg-purple-100 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400">
+            <div className="p-3.5 sm:p-4 rounded-2xl bg-white/80 dark:bg-black/50 border border-slate-200 dark:border-gray-800 flex items-center gap-3">
+              <div className="p-2 sm:p-2.5 rounded-xl bg-purple-100 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 flex-shrink-0">
                 <Moon className="w-5 h-5" />
               </div>
-              <div>
+              <div className="min-w-0 flex-1">
                 <p className="text-xs font-semibold text-slate-500 dark:text-gray-400">Saturday Sunset</p>
-                <p className="text-base font-bold text-slate-800 dark:text-white">
+                <p className="text-sm sm:text-base font-bold text-slate-800 dark:text-white truncate">
                   {formatTime(sabbathTimes?.saturdaySunset || '')}
                 </p>
               </div>
@@ -308,15 +308,15 @@ export function SabbathCountdown({
           </div>
 
           {/* Primary Action Buttons */}
-          <div className="pt-2 flex flex-col sm:flex-row gap-3 justify-center">
+          <div className="pt-2 flex flex-col sm:flex-row gap-2.5 sm:gap-3 justify-center">
             <Link to="/prep" className="flex-1">
-              <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 rounded-xl gap-2 shadow-md">
+              <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 sm:py-5 min-h-[44px] rounded-xl gap-2 shadow-md text-sm">
                 <CheckSquare className="w-4 h-4" />
                 <span>Open Prep Checklist</span>
               </Button>
             </Link>
             <Link to="/reels" className="flex-1">
-              <Button variant="outline" className="w-full font-bold py-5 rounded-xl gap-2 border-slate-300 dark:border-gray-700">
+              <Button variant="outline" className="w-full font-bold py-4 sm:py-5 min-h-[44px] rounded-xl gap-2 border-slate-300 dark:border-gray-700 text-sm">
                 <Flame className="w-4 h-4 text-amber-500" />
                 <span>Watch Daily Reels</span>
               </Button>

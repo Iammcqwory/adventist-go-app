@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   Sparkles, 
@@ -227,31 +227,31 @@ export function KidsMode() {
   const completedCount = Object.values(checkedNature).filter(Boolean).length;
 
   return (
-    <div className="space-y-6 max-w-4xl mx-auto pb-12">
+    <div className="space-y-4 sm:space-y-6 max-w-4xl mx-auto pb-12">
       {/* Kids Header Banner */}
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-amber-400 via-pink-500 to-purple-600 p-6 sm:p-8 text-white shadow-2xl">
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-amber-400 via-pink-500 to-purple-600 p-4 sm:p-6 md:p-8 text-white shadow-2xl">
         <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <div className="space-y-2">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs font-black tracking-wider uppercase">
+          <div className="space-y-1.5 sm:space-y-2">
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-white/20 backdrop-blur-md text-[10px] sm:text-xs font-black tracking-wider uppercase">
               <Sparkles className="w-3.5 h-3.5 text-amber-200" />
               <span>Adventist Kids Go • Sanctuary Hub</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl font-black tracking-tight drop-shadow-md">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight drop-shadow-md">
               Sabbath Adventures & Joy! 🎈
             </h1>
-            <p className="text-sm text-amber-100 max-w-md font-medium">
+            <p className="text-xs sm:text-sm text-amber-100 max-w-md font-medium">
               Explore God’s word, sing favorite songs, collect discovery stars, and master memory verses!
             </p>
           </div>
 
           {/* Star Counter Pill */}
-          <div className="flex items-center gap-3 bg-white/20 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-white/30 shadow-lg">
-            <div className="p-2 rounded-xl bg-amber-400 text-amber-950 font-black flex items-center justify-center">
-              <Star className="w-5 h-5 fill-amber-950" />
+          <div className="flex items-center gap-2.5 sm:gap-3 bg-white/20 backdrop-blur-md px-3.5 sm:px-4 py-2 rounded-2xl border border-white/30 shadow-lg self-start sm:self-auto">
+            <div className="p-1.5 sm:p-2 rounded-xl bg-amber-400 text-amber-950 font-black flex items-center justify-center">
+              <Star className="w-4 h-4 sm:w-5 sm:h-5 fill-amber-950" />
             </div>
             <div>
-              <p className="text-[10px] uppercase font-bold text-amber-100 tracking-wider">Explorer Stars</p>
-              <p className="text-xl font-black">{stars} ⭐</p>
+              <p className="text-[9px] sm:text-[10px] uppercase font-bold text-amber-100 tracking-wider">Explorer Stars</p>
+              <p className="text-lg sm:text-xl font-black">{stars} ⭐</p>
             </div>
           </div>
         </div>
@@ -265,7 +265,7 @@ export function KidsMode() {
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
         <button
           onClick={() => setActiveTab('stories')}
-          className={`p-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 transition-all shadow-sm ${
+          className={`p-3 sm:p-3.5 rounded-2xl font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 sm:gap-2 transition-all shadow-sm min-h-[44px] ${
             activeTab === 'stories'
               ? 'bg-blue-600 text-white shadow-blue-500/30 scale-[1.02]'
               : 'bg-white dark:bg-gray-900 text-slate-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-800 border border-slate-200 dark:border-gray-800'
@@ -277,7 +277,7 @@ export function KidsMode() {
 
         <button
           onClick={() => setActiveTab('songs')}
-          className={`p-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 transition-all shadow-sm ${
+          className={`p-3 sm:p-3.5 rounded-2xl font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 sm:gap-2 transition-all shadow-sm min-h-[44px] ${
             activeTab === 'songs'
               ? 'bg-purple-600 text-white shadow-purple-500/30 scale-[1.02]'
               : 'bg-white dark:bg-gray-900 text-slate-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-gray-800 border border-slate-200 dark:border-gray-800'
@@ -289,7 +289,7 @@ export function KidsMode() {
 
         <button
           onClick={() => setActiveTab('nature')}
-          className={`p-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 transition-all shadow-sm ${
+          className={`p-3 sm:p-3.5 rounded-2xl font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 sm:gap-2 transition-all shadow-sm min-h-[44px] ${
             activeTab === 'nature'
               ? 'bg-emerald-600 text-white shadow-emerald-500/30 scale-[1.02]'
               : 'bg-white dark:bg-gray-900 text-slate-700 dark:text-gray-300 hover:bg-emerald-50 dark:hover:bg-gray-800 border border-slate-200 dark:border-gray-800'
@@ -301,7 +301,7 @@ export function KidsMode() {
 
         <Link to="/verse-master" className="w-full">
           <button
-            className="w-full p-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 transition-all bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white shadow-md shadow-amber-500/30 hover:scale-[1.02]"
+            className="w-full p-3 sm:p-3.5 rounded-2xl font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 sm:gap-2 transition-all bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white shadow-md shadow-amber-500/30 hover:scale-[1.02] min-h-[44px]"
           >
             <Trophy className="w-4 h-4" />
             <span>Verse Master 🎙️</span>
@@ -311,20 +311,20 @@ export function KidsMode() {
 
       {/* 1. BIBLE STORIES TAB */}
       {activeTab === 'stories' && (
-        <div className="space-y-6 animate-in fade-in duration-200">
-          {/* Stories Carousel / Selector Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5">
+        <div className="space-y-4 sm:space-y-6 animate-in fade-in duration-200">
+          {/* Stories Selector Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
             {BIBLE_STORIES.map((story) => (
               <button
                 key={story.id}
                 onClick={() => setSelectedStory(story)}
-                className={`p-3 rounded-2xl text-left border transition-all ${
+                className={`p-2.5 sm:p-3 rounded-2xl text-left border transition-all min-h-[44px] ${
                   selectedStory.id === story.id
                     ? 'border-blue-500 bg-blue-50 dark:bg-blue-950/60 shadow-md ring-2 ring-blue-400'
                     : 'border-slate-200 dark:border-gray-800 bg-white dark:bg-gray-900 hover:bg-slate-50'
                 }`}
               >
-                <div className="text-2xl mb-1">{story.emoji}</div>
+                <div className="text-xl sm:text-2xl mb-0.5 sm:mb-1">{story.emoji}</div>
                 <p className="text-xs font-bold text-slate-800 dark:text-white line-clamp-1">
                   {story.title}
                 </p>
@@ -335,32 +335,32 @@ export function KidsMode() {
 
           {/* Active Story Card */}
           <Card className={`border-2 shadow-xl bg-gradient-to-br ${selectedStory.bgGradient} bg-white dark:bg-gray-950 overflow-hidden`}>
-            <CardHeader className="pb-3">
+            <CardHeader className="pb-2 sm:pb-3 p-4 sm:p-6">
               <div className="flex items-center gap-3">
-                <span className="text-4xl p-2 rounded-2xl bg-white dark:bg-black shadow-sm">
+                <span className="text-3xl sm:text-4xl p-2 rounded-2xl bg-white dark:bg-black shadow-sm flex-shrink-0">
                   {selectedStory.emoji}
                 </span>
-                <div>
-                  <Badge className="bg-blue-600 text-white text-[10px] font-black uppercase">
+                <div className="min-w-0 flex-1">
+                  <Badge className="bg-blue-600 text-white text-[9px] sm:text-[10px] font-black uppercase">
                     {selectedStory.reference}
                   </Badge>
-                  <CardTitle className="text-2xl font-black text-slate-900 dark:text-white mt-1">
+                  <CardTitle className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mt-1 truncate">
                     {selectedStory.title}
                   </CardTitle>
                 </div>
               </div>
             </CardHeader>
 
-            <CardContent className="space-y-5 p-6">
+            <CardContent className="space-y-4 sm:space-y-5 p-4 sm:p-6">
               {/* Memory Verse Box */}
-              <div className="p-4 rounded-2xl bg-white/90 dark:bg-black/60 border border-slate-200 dark:border-gray-800 shadow-sm">
-                <p className="text-[11px] uppercase font-bold text-blue-600 dark:text-blue-400 tracking-wider mb-1">
+              <div className="p-3.5 sm:p-4 rounded-2xl bg-white/90 dark:bg-black/60 border border-slate-200 dark:border-gray-800 shadow-sm">
+                <p className="text-[10px] sm:text-[11px] uppercase font-bold text-blue-600 dark:text-blue-400 tracking-wider mb-1">
                   📖 Memory Verse:
                 </p>
-                <p className="text-sm sm:text-base font-serif italic text-slate-800 dark:text-gray-200 font-bold">
+                <p className="text-sm sm:text-base font-serif italic text-slate-800 dark:text-gray-200 font-bold leading-snug">
                   "{selectedStory.verse}"
                 </p>
-                <p className="text-xs text-slate-500 dark:text-gray-400 text-right mt-1 font-semibold">
+                <p className="text-[11px] sm:text-xs text-slate-500 dark:text-gray-400 text-right mt-1 font-semibold">
                   — {selectedStory.reference}
                 </p>
               </div>
@@ -401,37 +401,37 @@ export function KidsMode() {
 
       {/* 2. SING-ALONG SONGS TAB */}
       {activeTab === 'songs' && (
-        <div className="space-y-6 animate-in fade-in duration-200">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+        <div className="space-y-4 sm:space-y-6 animate-in fade-in duration-200">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
             {KIDS_SONGS.map((song) => (
               <button
                 key={song.title}
                 onClick={() => setSelectedSong(song)}
-                className={`p-3 rounded-2xl text-left border transition-all ${
+                className={`p-2.5 sm:p-3 rounded-2xl text-left border transition-all min-h-[44px] ${
                   selectedSong.title === song.title
                     ? 'border-purple-500 bg-purple-50 dark:bg-purple-950/60 shadow-md ring-2 ring-purple-400'
                     : 'border-slate-200 dark:border-gray-800 bg-white dark:bg-gray-900 hover:bg-slate-50'
                 }`}
               >
-                <div className="text-2xl mb-1">{song.emoji}</div>
+                <div className="text-xl sm:text-2xl mb-0.5 sm:mb-1">{song.emoji}</div>
                 <p className="text-xs font-bold text-slate-800 dark:text-white line-clamp-1">{song.title}</p>
-                <p className="text-[10px] text-purple-600 dark:text-purple-400">{song.theme}</p>
+                <p className="text-[10px] text-purple-600 dark:text-purple-400 truncate">{song.theme}</p>
               </button>
             ))}
           </div>
 
           <Card className="border-2 border-purple-200 dark:border-purple-900 bg-gradient-to-br from-purple-500/10 via-pink-500/5 to-white dark:to-gray-950 shadow-xl overflow-hidden">
-            <CardHeader className="pb-2">
+            <CardHeader className="pb-2 p-4 sm:p-6">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                  <span className="text-3xl p-2 rounded-2xl bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300">
+                  <span className="text-2xl sm:text-3xl p-2 rounded-2xl bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 flex-shrink-0">
                     {selectedSong.emoji}
                   </span>
-                  <div>
-                    <Badge className="bg-purple-600 text-white text-[10px] font-black uppercase">
+                  <div className="min-w-0 flex-1">
+                    <Badge className="bg-purple-600 text-white text-[9px] sm:text-[10px] font-black uppercase">
                       {selectedSong.theme}
                     </Badge>
-                    <CardTitle className="text-2xl font-black text-slate-900 dark:text-white mt-1">
+                    <CardTitle className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mt-1 truncate">
                       {selectedSong.title}
                     </CardTitle>
                   </div>
@@ -439,16 +439,16 @@ export function KidsMode() {
               </div>
             </CardHeader>
 
-            <CardContent className="p-6 space-y-6">
+            <CardContent className="p-4 sm:p-6 space-y-4 sm:space-y-6">
               {/* Lyrics Sing-Along Display */}
-              <div className="p-6 rounded-3xl bg-white/90 dark:bg-black/60 border border-slate-200 dark:border-gray-800 shadow-inner text-center space-y-2">
+              <div className="p-4 sm:p-6 rounded-3xl bg-white/90 dark:bg-black/60 border border-slate-200 dark:border-gray-800 shadow-inner text-center space-y-1.5 sm:space-y-2">
                 {selectedSong.lyrics.map((line, idx) => (
                   <p 
                     key={idx} 
                     className={`font-sans ${
                       line === '' 
-                        ? 'py-1' 
-                        : 'text-base sm:text-lg font-bold text-slate-800 dark:text-slate-100 leading-relaxed'
+                        ? 'py-0.5 sm:py-1' 
+                        : 'text-sm sm:text-lg font-bold text-slate-800 dark:text-slate-100 leading-relaxed'
                     }`}
                   >
                     {line}
@@ -457,8 +457,8 @@ export function KidsMode() {
               </div>
 
               <div className="flex justify-center">
-                <Link to="/hymns">
-                  <Button variant="outline" className="rounded-xl font-bold gap-2 border-purple-300 dark:border-purple-800">
+                <Link to="/hymns" className="w-full sm:w-auto">
+                  <Button variant="outline" className="w-full sm:w-auto rounded-xl font-bold gap-2 border-purple-300 dark:border-purple-800 text-xs sm:text-sm min-h-[44px]">
                     <Music className="w-4 h-4 text-purple-600" />
                     <span>Open Full Adventist Hymnal (695 Songs)</span>
                   </Button>
@@ -471,16 +471,16 @@ export function KidsMode() {
 
       {/* 3. SABBATH NATURE EXPLORER TAB */}
       {activeTab === 'nature' && (
-        <div className="space-y-6 animate-in fade-in duration-200">
+        <div className="space-y-4 sm:space-y-6 animate-in fade-in duration-200">
           <Card className="border-2 border-emerald-200 dark:border-emerald-900 bg-gradient-to-br from-emerald-500/10 via-teal-500/5 to-white dark:to-gray-950 shadow-xl overflow-hidden">
-            <CardHeader>
+            <CardHeader className="p-4 sm:p-6">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 <div>
-                  <div className="inline-flex items-center gap-1 text-emerald-600 dark:text-emerald-400 text-xs font-bold uppercase tracking-wider mb-1">
-                    <Trees className="w-4 h-4" />
+                  <div className="inline-flex items-center gap-1 text-emerald-600 dark:text-emerald-400 text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-1">
+                    <Trees className="w-3.5 h-3.5" />
                     <span>Sabbath Afternoon Scavenger Hunt</span>
                   </div>
-                  <CardTitle className="text-2xl font-black text-slate-900 dark:text-white">
+                  <CardTitle className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white">
                     God’s Wonderful Creation Bingo 🌿
                   </CardTitle>
                   <CardDescription className="text-xs text-slate-600 dark:text-gray-400 mt-1">
@@ -488,17 +488,17 @@ export function KidsMode() {
                   </CardDescription>
                 </div>
 
-                <div className="bg-emerald-100 dark:bg-emerald-950 px-4 py-2 rounded-2xl border border-emerald-300 dark:border-emerald-800 text-center">
-                  <p className="text-[10px] font-bold text-emerald-700 dark:text-emerald-300 uppercase">Found</p>
-                  <p className="text-lg font-black text-emerald-800 dark:text-emerald-200">
+                <div className="bg-emerald-100 dark:bg-emerald-950 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-2xl border border-emerald-300 dark:border-emerald-800 text-center self-start sm:self-auto">
+                  <p className="text-[9px] sm:text-[10px] font-bold text-emerald-700 dark:text-emerald-300 uppercase">Found</p>
+                  <p className="text-base sm:text-lg font-black text-emerald-800 dark:text-emerald-200">
                     {completedCount} / {NATURE_ITEMS.length}
                   </p>
                 </div>
               </div>
             </CardHeader>
 
-            <CardContent className="p-6 space-y-4">
-              <div className="grid sm:grid-cols-2 gap-3">
+            <CardContent className="p-4 sm:p-6 space-y-3 sm:space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
                 {NATURE_ITEMS.map((item) => {
                   const isChecked = !!checkedNature[item.id];
                   const Icon = item.icon;
@@ -506,35 +506,35 @@ export function KidsMode() {
                     <div
                       key={item.id}
                       onClick={() => handleToggleNature(item.id)}
-                      className={`p-4 rounded-2xl border-2 transition-all cursor-pointer flex items-start gap-3.5 ${
+                      className={`p-3 sm:p-4 rounded-2xl border-2 transition-all cursor-pointer flex items-start gap-3 min-h-[44px] ${
                         isChecked
                           ? 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/60 shadow-md'
                           : 'border-slate-200 dark:border-gray-800 bg-white dark:bg-gray-900 hover:border-emerald-300'
                       }`}
                     >
-                      <div className={`p-2.5 rounded-xl mt-0.5 ${
+                      <div className={`p-2 rounded-xl mt-0.5 flex-shrink-0 ${
                         isChecked
                           ? 'bg-emerald-500 text-white'
                           : 'bg-slate-100 dark:bg-gray-800 text-slate-500'
                       }`}>
-                        <Icon className="w-5 h-5" />
+                        <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
                       </div>
-                      <div className="flex-1">
-                        <div className="flex items-center justify-between">
-                          <p className={`text-sm font-bold ${
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center justify-between gap-2">
+                          <p className={`text-xs sm:text-sm font-bold truncate ${
                             isChecked ? 'text-emerald-800 dark:text-emerald-200' : 'text-slate-800 dark:text-slate-200'
                           }`}>
                             {item.label}
                           </p>
-                          <div className={`w-6 h-6 rounded-full border flex items-center justify-center ${
+                          <div className={`w-5 h-5 sm:w-6 sm:h-6 rounded-full border flex items-center justify-center flex-shrink-0 ${
                             isChecked
                               ? 'border-emerald-500 bg-emerald-500 text-white'
                               : 'border-slate-300 dark:border-gray-600'
                           }`}>
-                            {isChecked && <CheckCircle2 className="w-4 h-4" />}
+                            {isChecked && <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />}
                           </div>
                         </div>
-                        <p className="text-xs text-slate-500 dark:text-gray-400 mt-1">
+                        <p className="text-[11px] sm:text-xs text-slate-500 dark:text-gray-400 mt-0.5 line-clamp-2">
                           {item.hint}
                         </p>
                       </div>
@@ -544,9 +544,9 @@ export function KidsMode() {
               </div>
 
               {completedCount === NATURE_ITEMS.length && (
-                <div className="p-6 rounded-3xl bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 text-amber-950 text-center space-y-2 shadow-xl animate-bounce">
-                  <p className="text-2xl font-black">🎉 CONGRATULATIONS! 🎉</p>
-                  <p className="text-sm font-bold">
+                <div className="p-4 sm:p-6 rounded-3xl bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 text-amber-950 text-center space-y-1.5 sm:space-y-2 shadow-xl animate-bounce">
+                  <p className="text-xl sm:text-2xl font-black">🎉 CONGRATULATIONS! 🎉</p>
+                  <p className="text-xs sm:text-sm font-bold">
                     You completed the Sabbath Nature Hunt! You’re an Official Creation Explorer!
                   </p>
                 </div>

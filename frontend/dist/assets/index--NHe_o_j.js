@@ -25089,16 +25089,16 @@ function Navigation() {
   location.pathname === "/kids";
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("header", { className: "bg-white/90 dark:bg-black/90 backdrop-blur-md border-b border-slate-200 dark:border-gray-800 sticky top-0 z-40 transition-colors w-full", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-4 max-w-6xl", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between h-16", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "container mx-auto px-3 sm:px-4 max-w-6xl", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between h-14 sm:h-16", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs(
           Link,
           {
             to: "/",
-            className: "flex items-center space-x-2.5 flex-shrink-0 group",
+            className: "flex items-center space-x-2 sm:space-x-2.5 flex-shrink-0 group py-1",
             "aria-label": "Adventist Go Home",
             children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-9 h-9 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 rounded-xl flex items-center justify-center shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-5 h-5 text-white" }) }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-lg font-black tracking-tight text-slate-900 dark:text-white", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-8 sm:w-9 sm:h-9 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 rounded-xl flex items-center justify-center shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-4 h-4 sm:w-5 sm:h-5 text-white" }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-base sm:text-lg font-black tracking-tight text-slate-900 dark:text-white", children: [
                 "Adventist",
                 /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-blue-600 dark:text-blue-400", children: "Go" })
               ] }) })
@@ -25291,18 +25291,18 @@ function Navigation() {
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "nav",
       {
-        className: "lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-black/95 backdrop-blur-lg border-t border-slate-200 dark:border-gray-800 px-3 py-1.5",
+        className: "lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-black/95 backdrop-blur-xl border-t border-slate-200 dark:border-gray-800 px-2 pt-1.5 pb-[max(0.6rem,env(safe-area-inset-bottom,0.6rem))]",
         "aria-label": "Mobile Bottom Navigation",
-        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-around", children: [
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-around max-w-md mx-auto", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             Link,
             {
               to: "/",
-              className: `flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold transition-all ${location.pathname === "/" ? "text-blue-600 dark:text-blue-400 font-bold" : "text-slate-400"}`,
+              className: `flex flex-col items-center justify-center py-1 px-3 min-w-[56px] min-h-[44px] rounded-xl text-[10px] font-semibold transition-all ${location.pathname === "/" ? "text-blue-600 dark:text-blue-400 font-black" : "text-slate-500 dark:text-gray-400 hover:text-slate-900"}`,
               "aria-label": "Countdown Tab",
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-5 h-5" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-0.5", children: "Countdown" })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-0.5 tracking-tight", children: "Countdown" })
               ]
             }
           ),
@@ -25310,11 +25310,11 @@ function Navigation() {
             Link,
             {
               to: "/kids",
-              className: `flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-black transition-all ${location.pathname === "/kids" ? "text-pink-500 scale-105" : "text-slate-400"}`,
+              className: `flex flex-col items-center justify-center py-1 px-3 min-w-[56px] min-h-[44px] rounded-xl text-[10px] font-black transition-all ${location.pathname === "/kids" ? "text-pink-500 scale-105" : "text-slate-500 dark:text-gray-400 hover:text-pink-600"}`,
               "aria-label": "Kids Go Tab",
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-lg leading-none", children: "🎈" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-0.5", children: "Kids Go" })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-0.5 tracking-tight", children: "Kids Go" })
               ]
             }
           ),
@@ -25322,11 +25322,11 @@ function Navigation() {
             Link,
             {
               to: "/reels",
-              className: `flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold transition-all ${location.pathname === "/reels" ? "text-amber-500 font-bold" : "text-slate-400"}`,
+              className: `flex flex-col items-center justify-center py-1 px-3 min-w-[56px] min-h-[44px] rounded-xl text-[10px] font-semibold transition-all ${location.pathname === "/reels" ? "text-amber-500 font-black" : "text-slate-500 dark:text-gray-400 hover:text-amber-500"}`,
               "aria-label": "Reels Tab",
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(Flame, { className: "w-5 h-5 text-amber-500" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-0.5", children: "Reels" })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-0.5 tracking-tight", children: "Reels" })
               ]
             }
           ),
@@ -25334,11 +25334,11 @@ function Navigation() {
             Link,
             {
               to: "/bible",
-              className: `flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold transition-all ${location.pathname === "/bible" ? "text-blue-600 dark:text-blue-400 font-bold" : "text-slate-400"}`,
+              className: `flex flex-col items-center justify-center py-1 px-3 min-w-[56px] min-h-[44px] rounded-xl text-[10px] font-semibold transition-all ${location.pathname === "/bible" ? "text-blue-600 dark:text-blue-400 font-black" : "text-slate-500 dark:text-gray-400 hover:text-blue-600"}`,
               "aria-label": "Bible Tab",
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(BookOpen, { className: "w-5 h-5" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-0.5", children: "Bible" })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-0.5 tracking-tight", children: "Bible" })
               ]
             }
           ),
@@ -25346,11 +25346,11 @@ function Navigation() {
             "button",
             {
               onClick: () => setMobileMenuOpen(true),
-              className: "flex flex-col items-center py-1 px-2 rounded-xl text-[10px] font-semibold text-slate-400",
+              className: "flex flex-col items-center justify-center py-1 px-3 min-w-[56px] min-h-[44px] rounded-xl text-[10px] font-semibold text-slate-500 dark:text-gray-400 hover:text-slate-900",
               "aria-label": "More Menu",
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(Menu, { className: "w-5 h-5" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-0.5", children: "More" })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mt-0.5 tracking-tight", children: "More" })
               ]
             }
           )
@@ -31194,11 +31194,11 @@ function SabbathCountdown({
   const timeToSabbath = fridayDate.getTime() - currentTime.getTime();
   const timeToSabbathEnd = saturdayDate.getTime() - currentTime.getTime();
   const isSabbathActive = (sabbathTimes == null ? void 0 : sabbathTimes.isSabbath) || timeToSabbath <= 0 && timeToSabbathEnd > 0;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6 max-w-3xl mx-auto", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between bg-white dark:bg-gray-900 px-4 py-2.5 rounded-2xl border border-slate-200 dark:border-gray-800 shadow-sm", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-gray-200", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { className: "w-4 h-4 text-blue-600 dark:text-blue-400" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: (location == null ? void 0 : location.cityName) || "Jerusalem (Default)" }),
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 sm:space-y-6 max-w-3xl mx-auto", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 bg-white dark:bg-gray-900 px-3.5 sm:px-4 py-2.5 rounded-2xl border border-slate-200 dark:border-gray-800 shadow-sm", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-700 dark:text-gray-200 flex-wrap", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(MapPin, { className: "w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold", children: (location == null ? void 0 : location.cityName) || "Jerusalem (Default)" }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { variant: "outline", className: "text-[10px] uppercase font-bold py-0.5 px-2 text-slate-500", children: (location == null ? void 0 : location.isManual) ? "Manual City" : "GPS Detected" })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -31207,7 +31207,7 @@ function SabbathCountdown({
           variant: "ghost",
           size: "sm",
           onClick: onRequestLocation,
-          className: "text-xs text-blue-600 dark:text-blue-400 hover:text-blue-800 flex items-center gap-1 h-8",
+          className: "text-xs text-blue-600 dark:text-blue-400 hover:text-blue-800 flex items-center gap-1.5 h-8 px-2 justify-start sm:justify-center self-start sm:self-auto min-h-[36px]",
           children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(RefreshCw, { className: "w-3.5 h-3.5" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Update Location" })
@@ -31216,38 +31216,38 @@ function SabbathCountdown({
       )
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: `border-2 shadow-2xl transition-all overflow-hidden ${isSabbathActive ? "border-amber-400/60 bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-purple-500/10" : "border-blue-500/40 bg-gradient-to-br from-blue-500/10 via-indigo-500/5 to-purple-500/10"}`, children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "text-center pb-2 pt-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center mb-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: `p-3 rounded-2xl ${isSabbathActive ? "bg-amber-500 text-white shadow-lg shadow-amber-500/30 animate-pulse" : "bg-blue-600 text-white shadow-lg shadow-blue-500/30"}`, children: isSabbathActive ? /* @__PURE__ */ jsxRuntimeExports.jsx(Moon, { className: "w-8 h-8" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Sunset, { className: "w-8 h-8" }) }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { className: `mx-auto font-black text-xs px-3 py-1 uppercase tracking-wider ${isSabbathActive ? "bg-amber-500 text-white" : "bg-blue-600 text-white"}`, children: isSabbathActive ? "✨ Sabbath Shalom! Holy Hours Active" : "Sabbath Preparation" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2", children: isSabbathActive ? "Sabbath Concludes In" : "Sabbath Begins In" })
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "text-center pb-2 pt-4 sm:pt-6 px-4 sm:px-6", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center mb-2 sm:mb-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: `p-2.5 sm:p-3 rounded-2xl ${isSabbathActive ? "bg-amber-500 text-white shadow-lg shadow-amber-500/30 animate-pulse" : "bg-blue-600 text-white shadow-lg shadow-blue-500/30"}`, children: isSabbathActive ? /* @__PURE__ */ jsxRuntimeExports.jsx(Moon, { className: "w-6 h-6 sm:w-8 sm:h-8" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Sunset, { className: "w-6 h-6 sm:w-8 sm:h-8" }) }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { className: `mx-auto font-black text-[10px] sm:text-xs px-2.5 py-1 uppercase tracking-wider ${isSabbathActive ? "bg-amber-500 text-white" : "bg-blue-600 text-white"}`, children: isSabbathActive ? "✨ Sabbath Shalom! Holy Hours Active" : "Sabbath Preparation" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white mt-2", children: isSabbathActive ? "Sabbath Concludes In" : "Sabbath Begins In" })
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-6 text-center space-y-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "py-4", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-4xl sm:text-6xl font-mono font-black tracking-tight text-slate-900 dark:text-white drop-shadow-sm", children: isSabbathActive ? formatTimeRemaining(timeToSabbathEnd) : formatTimeRemaining(timeToSabbath) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-4 sm:p-6 text-center space-y-4 sm:space-y-6", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "py-2 sm:py-4", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-3xl sm:text-5xl md:text-6xl font-mono font-black tracking-tight text-slate-900 dark:text-white drop-shadow-sm break-words", children: isSabbathActive ? formatTimeRemaining(timeToSabbathEnd) : formatTimeRemaining(timeToSabbath) }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-slate-500 dark:text-gray-400 mt-2", children: isSabbathActive ? `Until Saturday Sunset (${formatTime((sabbathTimes == null ? void 0 : sabbathTimes.saturdaySunset) || "")})` : `Until Friday Sunset (${formatTime((sabbathTimes == null ? void 0 : sabbathTimes.fridaySunset) || "")})` })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid sm:grid-cols-2 gap-4 text-left", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-4 rounded-2xl bg-white/80 dark:bg-black/50 border border-slate-200 dark:border-gray-800 flex items-center gap-3", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-2.5 rounded-xl bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Sunset, { className: "w-5 h-5" }) }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-4 text-left", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-3.5 sm:p-4 rounded-2xl bg-white/80 dark:bg-black/50 border border-slate-200 dark:border-gray-800 flex items-center gap-3", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-2 sm:p-2.5 rounded-xl bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex-shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Sunset, { className: "w-5 h-5" }) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-w-0 flex-1", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-semibold text-slate-500 dark:text-gray-400", children: "Friday Sunset" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base font-bold text-slate-800 dark:text-white", children: formatTime((sabbathTimes == null ? void 0 : sabbathTimes.fridaySunset) || "") })
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm sm:text-base font-bold text-slate-800 dark:text-white truncate", children: formatTime((sabbathTimes == null ? void 0 : sabbathTimes.fridaySunset) || "") })
             ] })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-4 rounded-2xl bg-white/80 dark:bg-black/50 border border-slate-200 dark:border-gray-800 flex items-center gap-3", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-2.5 rounded-xl bg-purple-100 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Moon, { className: "w-5 h-5" }) }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-3.5 sm:p-4 rounded-2xl bg-white/80 dark:bg-black/50 border border-slate-200 dark:border-gray-800 flex items-center gap-3", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-2 sm:p-2.5 rounded-xl bg-purple-100 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 flex-shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Moon, { className: "w-5 h-5" }) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-w-0 flex-1", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-semibold text-slate-500 dark:text-gray-400", children: "Saturday Sunset" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base font-bold text-slate-800 dark:text-white", children: formatTime((sabbathTimes == null ? void 0 : sabbathTimes.saturdaySunset) || "") })
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm sm:text-base font-bold text-slate-800 dark:text-white truncate", children: formatTime((sabbathTimes == null ? void 0 : sabbathTimes.saturdaySunset) || "") })
             ] })
           ] })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "pt-2 flex flex-col sm:flex-row gap-3 justify-center", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/prep", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Button, { className: "w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-5 rounded-xl gap-2 shadow-md", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "pt-2 flex flex-col sm:flex-row gap-2.5 sm:gap-3 justify-center", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/prep", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Button, { className: "w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 sm:py-5 min-h-[44px] rounded-xl gap-2 shadow-md text-sm", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(SquareCheckBig, { className: "w-4 h-4" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Open Prep Checklist" })
           ] }) }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/reels", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Button, { variant: "outline", className: "w-full font-bold py-5 rounded-xl gap-2 border-slate-300 dark:border-gray-700", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/reels", className: "flex-1", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Button, { variant: "outline", className: "w-full font-bold py-4 sm:py-5 min-h-[44px] rounded-xl gap-2 border-slate-300 dark:border-gray-700 text-sm", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Flame, { className: "w-4 h-4 text-amber-500" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Watch Daily Reels" })
           ] }) })
@@ -33974,21 +33974,21 @@ function BibleLookup({ userId }) {
     );
   }
   if (showBookmarks) {
-    return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-4", children: [
+    return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 sm:space-y-6", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-4", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           Button,
           {
             variant: "outline",
             onClick: () => setShowBookmarks(false),
-            className: "text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-950",
+            className: "text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-700 hover:bg-blue-50 dark:hover:bg-blue-950 text-xs sm:text-sm min-h-[40px] justify-start sm:justify-center",
             children: "← Back to Search"
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Tag, { className: "w-4 h-4 text-slate-500 dark:text-gray-400" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Tag, { className: "w-4 h-4 text-slate-500 dark:text-gray-400 flex-shrink-0" }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs(Select, { value: selectedTag, onValueChange: setSelectedTag, children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(SelectTrigger, { className: "w-48 bg-white dark:bg-black border-slate-300 dark:border-gray-600", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, { placeholder: "Filter by tag" }) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(SelectTrigger, { className: "w-full sm:w-48 bg-white dark:bg-black border-slate-300 dark:border-gray-600 text-xs", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, { placeholder: "Filter by tag" }) }),
             /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectContent, { children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: "all", children: "All Tags" }),
               getAllTags().map((tag) => /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: tag, children: tag }, tag))
@@ -34200,28 +34200,28 @@ function BibleLookup({ userId }) {
       ] })
     ] });
   }
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-8", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl font-bold text-slate-800 dark:text-white mb-2", children: "Bible Lookup" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-slate-600 dark:text-gray-300", children: "Search Scripture with advanced full-text search capabilities" })
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 sm:space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-4 sm:mb-8", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-2xl sm:text-3xl font-bold text-slate-800 dark:text-white mb-1 sm:mb-2", children: "Bible Lookup" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs sm:text-sm text-slate-600 dark:text-gray-300", children: "Search Scripture with advanced full-text search capabilities" })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-slate-200 dark:border-gray-800 bg-white dark:bg-black shadow-lg", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { className: "pb-3", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { className: "p-4 sm:p-6 pb-2 sm:pb-3", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-9 h-9 rounded-xl bg-blue-100 dark:bg-blue-950 flex items-center justify-center text-blue-600 dark:text-blue-400", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Search, { className: "w-5 h-5" }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-blue-100 dark:bg-blue-950 flex items-center justify-center text-blue-600 dark:text-blue-400 flex-shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Search, { className: "w-4 h-4 sm:w-5 sm:h-5" }) }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-xl text-slate-800 dark:text-white", children: "Scripture Search" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-slate-500 dark:text-gray-400", children: "Search keywords, topics, or exact phrases across the Bible" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-lg sm:text-xl text-slate-800 dark:text-white", children: "Scripture Search" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[11px] sm:text-xs text-slate-500 dark:text-gray-400", children: "Search keywords, topics, or exact phrases across the Bible" })
           ] })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 self-stretch sm:self-auto", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             Button,
             {
               variant: "outline",
               size: "sm",
               onClick: () => handleOpenStudyMode(),
-              className: "text-green-600 dark:text-green-400 border-green-200 dark:border-green-700 hover:bg-green-50 dark:hover:bg-green-950 text-xs font-semibold",
+              className: "flex-1 sm:flex-none text-green-600 dark:text-green-400 border-green-200 dark:border-green-700 hover:bg-green-50 dark:hover:bg-green-950 text-xs font-semibold min-h-[36px]",
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(BookOpen, { className: "w-3.5 h-3.5 mr-1.5" }),
                 "Study Mode"
@@ -34234,7 +34234,7 @@ function BibleLookup({ userId }) {
               variant: "outline",
               size: "sm",
               onClick: () => setShowBookmarks(true),
-              className: "text-purple-600 dark:text-purple-400 border-purple-200 dark:border-purple-700 hover:bg-purple-50 dark:hover:bg-purple-950 text-xs font-semibold",
+              className: "flex-1 sm:flex-none text-purple-600 dark:text-purple-400 border-purple-200 dark:border-purple-700 hover:bg-purple-50 dark:hover:bg-purple-950 text-xs font-semibold min-h-[36px]",
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(Bookmark, { className: "w-3.5 h-3.5 mr-1.5" }),
                 "Bookmarks"
@@ -34243,7 +34243,7 @@ function BibleLookup({ userId }) {
           )
         ] })
       ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "space-y-4 pt-1", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-4 sm:p-6 space-y-3 sm:space-y-4 pt-1", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-3", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative flex items-center", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Search, { className: "absolute left-3.5 text-slate-400 dark:text-gray-500 w-4 h-4" }),
@@ -35303,17 +35303,17 @@ function ReelsFeed() {
       setTimeout(() => setCopiedId(null), 2500);
     }
   };
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6 max-w-2xl mx-auto pb-12", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 p-6 rounded-2xl text-white shadow-xl", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 sm:space-y-6 max-w-2xl mx-auto pb-12", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 p-4 sm:p-6 rounded-2xl text-white shadow-xl", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center space-x-2", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex h-3 w-3 relative", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "relative inline-flex rounded-full h-3 w-3 bg-red-500" })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-2xl font-bold tracking-tight", children: "The Advent Message Reels" })
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-xl sm:text-2xl font-bold tracking-tight", children: "The Advent Message Reels" })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-blue-200 mt-1", children: "Bite-sized prophecy, sanctuary gospel, Sabbath sanctuary & kids quests." })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs sm:text-sm text-blue-200 mt-1", children: "Bite-sized prophecy, sanctuary gospel, Sabbath sanctuary & kids quests." })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs(
         "a",
@@ -35321,7 +35321,7 @@ function ReelsFeed() {
           href: "https://t.me/adventmessage",
           target: "_blank",
           rel: "noopener noreferrer",
-          className: "inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-xl text-sm shadow-md transition-all hover:scale-105 active:scale-95",
+          className: "inline-flex items-center justify-center gap-2 px-3.5 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-xl text-xs sm:text-sm shadow-md transition-all hover:scale-105 active:scale-95 w-full sm:w-auto min-h-[38px]",
           children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Send, { className: "w-4 h-4" }),
             "Join Telegram Hub"
@@ -35329,7 +35329,7 @@ function ReelsFeed() {
         }
       )
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none", children: PILLARS.map((p) => {
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-2 scrollbar-none", children: PILLARS.map((p) => {
       const isSelected = selectedPillar === p.id;
       return /* @__PURE__ */ jsxRuntimeExports.jsxs(
         "button",
@@ -35338,7 +35338,7 @@ function ReelsFeed() {
             setSelectedPillar(p.id);
             setCurrentIndex(0);
           },
-          className: `px-3.5 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 shadow-sm ${isSelected ? "bg-slate-900 text-white dark:bg-white dark:text-black scale-105" : "bg-white/80 dark:bg-gray-800 text-slate-700 dark:text-gray-300 hover:bg-slate-100 dark:hover:bg-gray-700 border border-slate-200 dark:border-gray-700"}`,
+          className: `px-3 sm:px-3.5 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 shadow-sm min-h-[38px] ${isSelected ? "bg-slate-900 text-white dark:bg-white dark:text-black scale-105" : "bg-white/80 dark:bg-gray-800 text-slate-700 dark:text-gray-300 hover:bg-slate-100 dark:hover:bg-gray-700 border border-slate-200 dark:border-gray-700"}`,
           children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(p.icon, { className: "w-3.5 h-3.5" }),
             p.label
@@ -35347,7 +35347,7 @@ function ReelsFeed() {
         p.id
       );
     }) }),
-    currentReel && /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "relative overflow-hidden rounded-3xl border-slate-300 dark:border-gray-800 bg-black shadow-2xl aspect-[9/16] max-h-[720px] mx-auto flex flex-col justify-between", children: [
+    currentReel && /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "relative overflow-hidden rounded-3xl border-slate-300 dark:border-gray-800 bg-black shadow-2xl aspect-[9/16] max-h-[78vh] sm:max-h-[720px] mx-auto flex flex-col justify-between", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute inset-0 cursor-pointer", onClick: togglePlay, children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "video",
@@ -35711,37 +35711,37 @@ function VerseMaster() {
       setCurrentVerseIndex(0);
     }
   };
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6 max-w-3xl mx-auto pb-12", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 sm:grid-cols-4 gap-3", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "bg-gradient-to-br from-amber-500/10 to-amber-500/20 border-amber-300 dark:border-amber-700", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-3.5 flex items-center gap-3", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center text-white shadow-md", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Coins, { className: "w-5 h-5" }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[11px] font-semibold uppercase text-amber-800 dark:text-amber-300 tracking-wider", children: "Sabbath Coins" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xl font-black text-amber-900 dark:text-amber-100", children: coins })
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 sm:space-y-6 max-w-3xl mx-auto pb-12", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "bg-gradient-to-br from-amber-500/10 to-amber-500/20 border-amber-300 dark:border-amber-700 shadow-sm", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-2.5 sm:p-3.5 flex items-center gap-2.5 sm:gap-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-amber-500 flex items-center justify-center text-white shadow-md flex-shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Coins, { className: "w-4 h-4 sm:w-5 sm:h-5" }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-w-0", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[9px] sm:text-[11px] font-semibold uppercase text-amber-800 dark:text-amber-300 tracking-wider truncate", children: "Sabbath Coins" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base sm:text-xl font-black text-amber-900 dark:text-amber-100", children: coins })
         ] })
       ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "bg-gradient-to-br from-orange-500/10 to-orange-500/20 border-orange-300 dark:border-orange-700", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-3.5 flex items-center gap-3", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 rounded-xl bg-orange-500 flex items-center justify-center text-white shadow-md", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Flame, { className: "w-5 h-5" }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[11px] font-semibold uppercase text-orange-800 dark:text-orange-300 tracking-wider", children: "Day Streak" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xl font-black text-orange-900 dark:text-orange-100", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "bg-gradient-to-br from-orange-500/10 to-orange-500/20 border-orange-300 dark:border-orange-700 shadow-sm", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-2.5 sm:p-3.5 flex items-center gap-2.5 sm:gap-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-orange-500 flex items-center justify-center text-white shadow-md flex-shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Flame, { className: "w-4 h-4 sm:w-5 sm:h-5" }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-w-0", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[9px] sm:text-[11px] font-semibold uppercase text-orange-800 dark:text-orange-300 tracking-wider truncate", children: "Day Streak" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-base sm:text-xl font-black text-orange-900 dark:text-orange-100", children: [
             streak,
             " Days"
           ] })
         ] })
       ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "bg-gradient-to-br from-purple-500/10 to-purple-500/20 border-purple-300 dark:border-purple-700", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-3.5 flex items-center gap-3", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 rounded-xl bg-purple-500 flex items-center justify-center text-white shadow-md", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Trophy, { className: "w-5 h-5" }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[11px] font-semibold uppercase text-purple-800 dark:text-purple-300 tracking-wider", children: "Badge Level" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xl font-black text-purple-900 dark:text-purple-100", children: "Explorer II" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "bg-gradient-to-br from-purple-500/10 to-purple-500/20 border-purple-300 dark:border-purple-700 shadow-sm", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-2.5 sm:p-3.5 flex items-center gap-2.5 sm:gap-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-purple-500 flex items-center justify-center text-white shadow-md flex-shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Trophy, { className: "w-4 h-4 sm:w-5 sm:h-5" }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-w-0", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[9px] sm:text-[11px] font-semibold uppercase text-purple-800 dark:text-purple-300 tracking-wider truncate", children: "Badge Level" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base sm:text-xl font-black text-purple-900 dark:text-purple-100 truncate", children: "Explorer II" })
         ] })
       ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "bg-gradient-to-br from-emerald-500/10 to-emerald-500/20 border-emerald-300 dark:border-emerald-700", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-3.5 flex items-center gap-3", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center text-white shadow-md", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Award, { className: "w-5 h-5" }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[11px] font-semibold uppercase text-emerald-800 dark:text-emerald-300 tracking-wider", children: "Reward" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xl font-black text-emerald-900 dark:text-emerald-100", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "bg-gradient-to-br from-emerald-500/10 to-emerald-500/20 border-emerald-300 dark:border-emerald-700 shadow-sm", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-2.5 sm:p-3.5 flex items-center gap-2.5 sm:gap-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-emerald-500 flex items-center justify-center text-white shadow-md flex-shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Award, { className: "w-4 h-4 sm:w-5 sm:h-5" }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-w-0", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[9px] sm:text-[11px] font-semibold uppercase text-emerald-800 dark:text-emerald-300 tracking-wider truncate", children: "Reward" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-base sm:text-xl font-black text-emerald-900 dark:text-emerald-100", children: [
             "+",
             activeVerse.coinsReward
           ] })
@@ -35749,8 +35749,8 @@ function VerseMaster() {
       ] }) })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-2 border-indigo-200 dark:border-indigo-900 shadow-xl overflow-hidden bg-white dark:bg-gray-950", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-slate-50 dark:bg-gray-900 border-b border-slate-200 dark:border-gray-800 p-4 flex flex-wrap items-center justify-between gap-3", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center gap-2", children: ["beginner", "junior", "youth"].map((tier) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-slate-50 dark:bg-gray-900 border-b border-slate-200 dark:border-gray-800 p-3 sm:p-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0", children: ["beginner", "junior", "youth"].map((tier) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
           Button,
           {
             size: "sm",
@@ -35759,22 +35759,22 @@ function VerseMaster() {
               setSelectedTier(tier);
               setCurrentVerseIndex(0);
             },
-            className: `capitalize font-bold text-xs rounded-xl ${selectedTier === tier ? "bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm" : "text-slate-600 dark:text-gray-300"}`,
+            className: `capitalize font-bold text-[11px] sm:text-xs rounded-xl flex-1 sm:flex-none min-h-[36px] ${selectedTier === tier ? "bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm" : "text-slate-600 dark:text-gray-300"}`,
             children: [
-              tier === "beginner" && "🌱 Beginner (3-6)",
-              tier === "junior" && "⭐ Junior (7-11)",
-              tier === "youth" && "🚀 Youth (12+)"
+              tier === "beginner" && "🌱 Beginner",
+              tier === "junior" && "⭐ Junior",
+              tier === "youth" && "🚀 Youth"
             ]
           },
           tier
         )) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1 bg-slate-200 dark:bg-gray-800 p-1 rounded-xl", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1 bg-slate-200 dark:bg-gray-800 p-1 rounded-xl self-center sm:self-auto", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             "button",
             {
               onClick: () => setMode("voice"),
               disabled: !speechSupported,
-              className: `px-3 py-1 text-xs font-semibold rounded-lg transition-all flex items-center gap-1.5 ${mode === "voice" ? "bg-white dark:bg-black text-indigo-600 dark:text-indigo-400 shadow-sm" : "text-slate-600 dark:text-gray-400 hover:text-slate-900"}`,
+              className: `px-2.5 sm:px-3 py-1 text-xs font-semibold rounded-lg transition-all flex items-center gap-1.5 min-h-[32px] ${mode === "voice" ? "bg-white dark:bg-black text-indigo-600 dark:text-indigo-400 shadow-sm" : "text-slate-600 dark:text-gray-400 hover:text-slate-900"}`,
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(Mic, { className: "w-3.5 h-3.5" }),
                 "Voice Reciter"
@@ -35785,7 +35785,7 @@ function VerseMaster() {
             "button",
             {
               onClick: () => setMode("puzzle"),
-              className: `px-3 py-1 text-xs font-semibold rounded-lg transition-all flex items-center gap-1.5 ${mode === "puzzle" ? "bg-white dark:bg-black text-indigo-600 dark:text-indigo-400 shadow-sm" : "text-slate-600 dark:text-gray-400 hover:text-slate-900"}`,
+              className: `px-2.5 sm:px-3 py-1 text-xs font-semibold rounded-lg transition-all flex items-center gap-1.5 min-h-[32px] ${mode === "puzzle" ? "bg-white dark:bg-black text-indigo-600 dark:text-indigo-400 shadow-sm" : "text-slate-600 dark:text-gray-400 hover:text-slate-900"}`,
               children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx(Puzzle, { className: "w-3.5 h-3.5" }),
                 "Word Builder"
@@ -35794,9 +35794,9 @@ function VerseMaster() {
           )
         ] })
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "text-center pb-3 pt-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-center items-center gap-2 mb-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { className: "bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 font-bold border-indigo-200", children: activeVerse.theme }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardHeader, { className: "text-center pb-2 sm:pb-3 pt-4 sm:pt-6 p-4 sm:p-6", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-center items-center gap-2 mb-1.5 sm:mb-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { className: "bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 font-bold border-indigo-200 text-[10px] sm:text-xs", children: activeVerse.theme }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-xs text-slate-400 font-medium", children: [
             "Verse ",
             currentVerseIndex + 1,
@@ -35804,11 +35804,11 @@ function VerseMaster() {
             filteredVerses.length
           ] })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight", children: activeVerse.reference }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { className: "text-sm text-slate-500", children: mode === "voice" ? "Tap the microphone and recite the verse clearly from memory!" : "Tap the scrambled words in the correct order to assemble the scripture." })
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight", children: activeVerse.reference }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { className: "text-xs sm:text-sm text-slate-500", children: mode === "voice" ? "Tap the microphone and recite the verse clearly from memory!" : "Tap the scrambled words in the correct order to assemble the scripture." })
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "space-y-6 p-6", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative p-6 rounded-2xl bg-gradient-to-r from-blue-50/70 via-indigo-50/70 to-purple-50/70 dark:from-blue-950/30 dark:via-indigo-950/30 dark:to-purple-950/30 border border-indigo-100 dark:border-indigo-900/60 shadow-inner", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-lg sm:text-xl font-serif text-slate-800 dark:text-slate-100 text-center leading-relaxed font-medium", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "space-y-4 sm:space-y-6 p-4 sm:p-6", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative p-4 sm:p-6 rounded-2xl bg-gradient-to-r from-blue-50/70 via-indigo-50/70 to-purple-50/70 dark:from-blue-950/30 dark:via-indigo-950/30 dark:to-purple-950/30 border border-indigo-100 dark:border-indigo-900/60 shadow-inner", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-base sm:text-xl font-serif text-slate-800 dark:text-slate-100 text-center leading-relaxed font-medium", children: [
           '"',
           activeVerse.text,
           '"'
@@ -36103,22 +36103,22 @@ function KidsMode() {
     }
   };
   const completedCount = Object.values(checkedNature).filter(Boolean).length;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6 max-w-4xl mx-auto pb-12", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative overflow-hidden rounded-3xl bg-gradient-to-r from-amber-400 via-pink-500 to-purple-600 p-6 sm:p-8 text-white shadow-2xl", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 sm:space-y-6 max-w-4xl mx-auto pb-12", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative overflow-hidden rounded-3xl bg-gradient-to-r from-amber-400 via-pink-500 to-purple-600 p-4 sm:p-6 md:p-8 text-white shadow-2xl", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-xs font-black tracking-wider uppercase", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5 sm:space-y-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "inline-flex items-center gap-1.5 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-white/20 backdrop-blur-md text-[10px] sm:text-xs font-black tracking-wider uppercase", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Sparkles, { className: "w-3.5 h-3.5 text-amber-200" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Adventist Kids Go • Sanctuary Hub" })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-3xl sm:text-4xl font-black tracking-tight drop-shadow-md", children: "Sabbath Adventures & Joy! 🎈" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-amber-100 max-w-md font-medium", children: "Explore God’s word, sing favorite songs, collect discovery stars, and master memory verses!" })
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-2xl sm:text-3xl md:text-4xl font-black tracking-tight drop-shadow-md", children: "Sabbath Adventures & Joy! 🎈" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs sm:text-sm text-amber-100 max-w-md font-medium", children: "Explore God’s word, sing favorite songs, collect discovery stars, and master memory verses!" })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 bg-white/20 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-white/30 shadow-lg", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-2 rounded-xl bg-amber-400 text-amber-950 font-black flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Star, { className: "w-5 h-5 fill-amber-950" }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2.5 sm:gap-3 bg-white/20 backdrop-blur-md px-3.5 sm:px-4 py-2 rounded-2xl border border-white/30 shadow-lg self-start sm:self-auto", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-1.5 sm:p-2 rounded-xl bg-amber-400 text-amber-950 font-black flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Star, { className: "w-4 h-4 sm:w-5 sm:h-5 fill-amber-950" }) }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[10px] uppercase font-bold text-amber-100 tracking-wider", children: "Explorer Stars" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xl font-black", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[9px] sm:text-[10px] uppercase font-bold text-amber-100 tracking-wider", children: "Explorer Stars" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-lg sm:text-xl font-black", children: [
               stars,
               " ⭐"
             ] })
@@ -36133,7 +36133,7 @@ function KidsMode() {
         "button",
         {
           onClick: () => setActiveTab("stories"),
-          className: `p-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 transition-all shadow-sm ${activeTab === "stories" ? "bg-blue-600 text-white shadow-blue-500/30 scale-[1.02]" : "bg-white dark:bg-gray-900 text-slate-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-800 border border-slate-200 dark:border-gray-800"}`,
+          className: `p-3 sm:p-3.5 rounded-2xl font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 sm:gap-2 transition-all shadow-sm min-h-[44px] ${activeTab === "stories" ? "bg-blue-600 text-white shadow-blue-500/30 scale-[1.02]" : "bg-white dark:bg-gray-900 text-slate-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-gray-800 border border-slate-200 dark:border-gray-800"}`,
           children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(BookOpen, { className: "w-4 h-4" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Bible Stories" })
@@ -36144,7 +36144,7 @@ function KidsMode() {
         "button",
         {
           onClick: () => setActiveTab("songs"),
-          className: `p-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 transition-all shadow-sm ${activeTab === "songs" ? "bg-purple-600 text-white shadow-purple-500/30 scale-[1.02]" : "bg-white dark:bg-gray-900 text-slate-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-gray-800 border border-slate-200 dark:border-gray-800"}`,
+          className: `p-3 sm:p-3.5 rounded-2xl font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 sm:gap-2 transition-all shadow-sm min-h-[44px] ${activeTab === "songs" ? "bg-purple-600 text-white shadow-purple-500/30 scale-[1.02]" : "bg-white dark:bg-gray-900 text-slate-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-gray-800 border border-slate-200 dark:border-gray-800"}`,
           children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Music, { className: "w-4 h-4" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Sing-Along" })
@@ -36155,7 +36155,7 @@ function KidsMode() {
         "button",
         {
           onClick: () => setActiveTab("nature"),
-          className: `p-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 transition-all shadow-sm ${activeTab === "nature" ? "bg-emerald-600 text-white shadow-emerald-500/30 scale-[1.02]" : "bg-white dark:bg-gray-900 text-slate-700 dark:text-gray-300 hover:bg-emerald-50 dark:hover:bg-gray-800 border border-slate-200 dark:border-gray-800"}`,
+          className: `p-3 sm:p-3.5 rounded-2xl font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 sm:gap-2 transition-all shadow-sm min-h-[44px] ${activeTab === "nature" ? "bg-emerald-600 text-white shadow-emerald-500/30 scale-[1.02]" : "bg-white dark:bg-gray-900 text-slate-700 dark:text-gray-300 hover:bg-emerald-50 dark:hover:bg-gray-800 border border-slate-200 dark:border-gray-800"}`,
           children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Trees, { className: "w-4 h-4" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Nature Hunt" })
@@ -36165,7 +36165,7 @@ function KidsMode() {
       /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/verse-master", className: "w-full", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
         "button",
         {
-          className: "w-full p-3.5 rounded-2xl font-black text-sm flex items-center justify-center gap-2 transition-all bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white shadow-md shadow-amber-500/30 hover:scale-[1.02]",
+          className: "w-full p-3 sm:p-3.5 rounded-2xl font-black text-xs sm:text-sm flex items-center justify-center gap-1.5 sm:gap-2 transition-all bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white shadow-md shadow-amber-500/30 hover:scale-[1.02] min-h-[44px]",
           children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Trophy, { className: "w-4 h-4" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Verse Master 🎙️" })
@@ -36173,14 +36173,14 @@ function KidsMode() {
         }
       ) })
     ] }),
-    activeTab === "stories" && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6 animate-in fade-in duration-200", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-2 sm:grid-cols-5 gap-2.5", children: BIBLE_STORIES.map((story) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    activeTab === "stories" && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 sm:space-y-6 animate-in fade-in duration-200", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2", children: BIBLE_STORIES.map((story) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
         "button",
         {
           onClick: () => setSelectedStory(story),
-          className: `p-3 rounded-2xl text-left border transition-all ${selectedStory.id === story.id ? "border-blue-500 bg-blue-50 dark:bg-blue-950/60 shadow-md ring-2 ring-blue-400" : "border-slate-200 dark:border-gray-800 bg-white dark:bg-gray-900 hover:bg-slate-50"}`,
+          className: `p-2.5 sm:p-3 rounded-2xl text-left border transition-all min-h-[44px] ${selectedStory.id === story.id ? "border-blue-500 bg-blue-50 dark:bg-blue-950/60 shadow-md ring-2 ring-blue-400" : "border-slate-200 dark:border-gray-800 bg-white dark:bg-gray-900 hover:bg-slate-50"}`,
           children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-2xl mb-1", children: story.emoji }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xl sm:text-2xl mb-0.5 sm:mb-1", children: story.emoji }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-bold text-slate-800 dark:text-white line-clamp-1", children: story.title }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[10px] text-slate-500 dark:text-gray-400", children: story.reference })
           ]
@@ -36188,22 +36188,22 @@ function KidsMode() {
         story.id
       )) }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: `border-2 shadow-xl bg-gradient-to-br ${selectedStory.bgGradient} bg-white dark:bg-gray-950 overflow-hidden`, children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { className: "pb-3", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-4xl p-2 rounded-2xl bg-white dark:bg-black shadow-sm", children: selectedStory.emoji }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { className: "bg-blue-600 text-white text-[10px] font-black uppercase", children: selectedStory.reference }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-2xl font-black text-slate-900 dark:text-white mt-1", children: selectedStory.title })
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { className: "pb-2 sm:pb-3 p-4 sm:p-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-3xl sm:text-4xl p-2 rounded-2xl bg-white dark:bg-black shadow-sm flex-shrink-0", children: selectedStory.emoji }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-w-0 flex-1", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { className: "bg-blue-600 text-white text-[9px] sm:text-[10px] font-black uppercase", children: selectedStory.reference }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-xl sm:text-2xl font-black text-slate-900 dark:text-white mt-1 truncate", children: selectedStory.title })
           ] })
         ] }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "space-y-5 p-6", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-4 rounded-2xl bg-white/90 dark:bg-black/60 border border-slate-200 dark:border-gray-800 shadow-sm", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[11px] uppercase font-bold text-blue-600 dark:text-blue-400 tracking-wider mb-1", children: "📖 Memory Verse:" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm sm:text-base font-serif italic text-slate-800 dark:text-gray-200 font-bold", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "space-y-4 sm:space-y-5 p-4 sm:p-6", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-3.5 sm:p-4 rounded-2xl bg-white/90 dark:bg-black/60 border border-slate-200 dark:border-gray-800 shadow-sm", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[10px] sm:text-[11px] uppercase font-bold text-blue-600 dark:text-blue-400 tracking-wider mb-1", children: "📖 Memory Verse:" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm sm:text-base font-serif italic text-slate-800 dark:text-gray-200 font-bold leading-snug", children: [
               '"',
               selectedStory.verse,
               '"'
             ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs text-slate-500 dark:text-gray-400 text-right mt-1 font-semibold", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-[11px] sm:text-xs text-slate-500 dark:text-gray-400 text-right mt-1 font-semibold", children: [
               "— ",
               selectedStory.reference
             ] })
@@ -36223,89 +36223,89 @@ function KidsMode() {
         ] })
       ] })
     ] }),
-    activeTab === "songs" && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6 animate-in fade-in duration-200", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-2 sm:grid-cols-4 gap-2.5", children: KIDS_SONGS.map((song) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    activeTab === "songs" && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 sm:space-y-6 animate-in fade-in duration-200", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-2 sm:grid-cols-4 gap-2", children: KIDS_SONGS.map((song) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
         "button",
         {
           onClick: () => setSelectedSong(song),
-          className: `p-3 rounded-2xl text-left border transition-all ${selectedSong.title === song.title ? "border-purple-500 bg-purple-50 dark:bg-purple-950/60 shadow-md ring-2 ring-purple-400" : "border-slate-200 dark:border-gray-800 bg-white dark:bg-gray-900 hover:bg-slate-50"}`,
+          className: `p-2.5 sm:p-3 rounded-2xl text-left border transition-all min-h-[44px] ${selectedSong.title === song.title ? "border-purple-500 bg-purple-50 dark:bg-purple-950/60 shadow-md ring-2 ring-purple-400" : "border-slate-200 dark:border-gray-800 bg-white dark:bg-gray-900 hover:bg-slate-50"}`,
           children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-2xl mb-1", children: song.emoji }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xl sm:text-2xl mb-0.5 sm:mb-1", children: song.emoji }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-bold text-slate-800 dark:text-white line-clamp-1", children: song.title }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[10px] text-purple-600 dark:text-purple-400", children: song.theme })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[10px] text-purple-600 dark:text-purple-400 truncate", children: song.theme })
           ]
         },
         song.title
       )) }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-2 border-purple-200 dark:border-purple-900 bg-gradient-to-br from-purple-500/10 via-pink-500/5 to-white dark:to-gray-950 shadow-xl overflow-hidden", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { className: "pb-2", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-3xl p-2 rounded-2xl bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300", children: selectedSong.emoji }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { className: "bg-purple-600 text-white text-[10px] font-black uppercase", children: selectedSong.theme }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-2xl font-black text-slate-900 dark:text-white mt-1", children: selectedSong.title })
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { className: "pb-2 p-4 sm:p-6", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-2xl sm:text-3xl p-2 rounded-2xl bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 flex-shrink-0", children: selectedSong.emoji }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-w-0 flex-1", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { className: "bg-purple-600 text-white text-[9px] sm:text-[10px] font-black uppercase", children: selectedSong.theme }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-xl sm:text-2xl font-black text-slate-900 dark:text-white mt-1 truncate", children: selectedSong.title })
           ] })
         ] }) }) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-6 space-y-6", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-6 rounded-3xl bg-white/90 dark:bg-black/60 border border-slate-200 dark:border-gray-800 shadow-inner text-center space-y-2", children: selectedSong.lyrics.map((line, idx) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-4 sm:p-6 space-y-4 sm:space-y-6", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-4 sm:p-6 rounded-3xl bg-white/90 dark:bg-black/60 border border-slate-200 dark:border-gray-800 shadow-inner text-center space-y-1.5 sm:space-y-2", children: selectedSong.lyrics.map((line, idx) => /* @__PURE__ */ jsxRuntimeExports.jsx(
             "p",
             {
-              className: `font-sans ${line === "" ? "py-1" : "text-base sm:text-lg font-bold text-slate-800 dark:text-slate-100 leading-relaxed"}`,
+              className: `font-sans ${line === "" ? "py-0.5 sm:py-1" : "text-sm sm:text-lg font-bold text-slate-800 dark:text-slate-100 leading-relaxed"}`,
               children: line
             },
             idx
           )) }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/hymns", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Button, { variant: "outline", className: "rounded-xl font-bold gap-2 border-purple-300 dark:border-purple-800", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/hymns", className: "w-full sm:w-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Button, { variant: "outline", className: "w-full sm:w-auto rounded-xl font-bold gap-2 border-purple-300 dark:border-purple-800 text-xs sm:text-sm min-h-[44px]", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Music, { className: "w-4 h-4 text-purple-600" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Open Full Adventist Hymnal (695 Songs)" })
           ] }) }) })
         ] })
       ] })
     ] }),
-    activeTab === "nature" && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-6 animate-in fade-in duration-200", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-2 border-emerald-200 dark:border-emerald-900 bg-gradient-to-br from-emerald-500/10 via-teal-500/5 to-white dark:to-gray-950 shadow-xl overflow-hidden", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row sm:items-center justify-between gap-3", children: [
+    activeTab === "nature" && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-4 sm:space-y-6 animate-in fade-in duration-200", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-2 border-emerald-200 dark:border-emerald-900 bg-gradient-to-br from-emerald-500/10 via-teal-500/5 to-white dark:to-gray-950 shadow-xl overflow-hidden", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { className: "p-4 sm:p-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row sm:items-center justify-between gap-3", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "inline-flex items-center gap-1 text-emerald-600 dark:text-emerald-400 text-xs font-bold uppercase tracking-wider mb-1", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(Trees, { className: "w-4 h-4" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "inline-flex items-center gap-1 text-emerald-600 dark:text-emerald-400 text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-1", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Trees, { className: "w-3.5 h-3.5" }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Sabbath Afternoon Scavenger Hunt" })
           ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-2xl font-black text-slate-900 dark:text-white", children: "God’s Wonderful Creation Bingo 🌿" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-xl sm:text-2xl font-black text-slate-900 dark:text-white", children: "God’s Wonderful Creation Bingo 🌿" }),
           /* @__PURE__ */ jsxRuntimeExports.jsx(CardDescription, { className: "text-xs text-slate-600 dark:text-gray-400 mt-1", children: "Step outside with family on Sabbath afternoon. Check off items you discover and earn Explorer Stars!" })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-emerald-100 dark:bg-emerald-950 px-4 py-2 rounded-2xl border border-emerald-300 dark:border-emerald-800 text-center", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[10px] font-bold text-emerald-700 dark:text-emerald-300 uppercase", children: "Found" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-lg font-black text-emerald-800 dark:text-emerald-200", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-emerald-100 dark:bg-emerald-950 px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-2xl border border-emerald-300 dark:border-emerald-800 text-center self-start sm:self-auto", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[9px] sm:text-[10px] font-bold text-emerald-700 dark:text-emerald-300 uppercase", children: "Found" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-base sm:text-lg font-black text-emerald-800 dark:text-emerald-200", children: [
             completedCount,
             " / ",
             NATURE_ITEMS.length
           ] })
         ] })
       ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-6 space-y-4", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid sm:grid-cols-2 gap-3", children: NATURE_ITEMS.map((item) => {
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "p-4 sm:p-6 space-y-3 sm:space-y-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3", children: NATURE_ITEMS.map((item) => {
           const isChecked = !!checkedNature[item.id];
           const Icon2 = item.icon;
           return /* @__PURE__ */ jsxRuntimeExports.jsxs(
             "div",
             {
               onClick: () => handleToggleNature(item.id),
-              className: `p-4 rounded-2xl border-2 transition-all cursor-pointer flex items-start gap-3.5 ${isChecked ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-950/60 shadow-md" : "border-slate-200 dark:border-gray-800 bg-white dark:bg-gray-900 hover:border-emerald-300"}`,
+              className: `p-3 sm:p-4 rounded-2xl border-2 transition-all cursor-pointer flex items-start gap-3 min-h-[44px] ${isChecked ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-950/60 shadow-md" : "border-slate-200 dark:border-gray-800 bg-white dark:bg-gray-900 hover:border-emerald-300"}`,
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: `p-2.5 rounded-xl mt-0.5 ${isChecked ? "bg-emerald-500 text-white" : "bg-slate-100 dark:bg-gray-800 text-slate-500"}`, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { className: "w-5 h-5" }) }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1", children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: `text-sm font-bold ${isChecked ? "text-emerald-800 dark:text-emerald-200" : "text-slate-800 dark:text-slate-200"}`, children: item.label }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: `w-6 h-6 rounded-full border flex items-center justify-center ${isChecked ? "border-emerald-500 bg-emerald-500 text-white" : "border-slate-300 dark:border-gray-600"}`, children: isChecked && /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheck, { className: "w-4 h-4" }) })
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: `p-2 rounded-xl mt-0.5 flex-shrink-0 ${isChecked ? "bg-emerald-500 text-white" : "bg-slate-100 dark:bg-gray-800 text-slate-500"}`, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Icon2, { className: "w-4 h-4 sm:w-5 sm:h-5" }) }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between gap-2", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: `text-xs sm:text-sm font-bold truncate ${isChecked ? "text-emerald-800 dark:text-emerald-200" : "text-slate-800 dark:text-slate-200"}`, children: item.label }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: `w-5 h-5 sm:w-6 sm:h-6 rounded-full border flex items-center justify-center flex-shrink-0 ${isChecked ? "border-emerald-500 bg-emerald-500 text-white" : "border-slate-300 dark:border-gray-600"}`, children: isChecked && /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheck, { className: "w-3.5 h-3.5 sm:w-4 sm:h-4" }) })
                   ] }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-slate-500 dark:text-gray-400 mt-1", children: item.hint })
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[11px] sm:text-xs text-slate-500 dark:text-gray-400 mt-0.5 line-clamp-2", children: item.hint })
                 ] })
               ]
             },
             item.id
           );
         }) }),
-        completedCount === NATURE_ITEMS.length && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 rounded-3xl bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 text-amber-950 text-center space-y-2 shadow-xl animate-bounce", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-2xl font-black", children: "🎉 CONGRATULATIONS! 🎉" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm font-bold", children: "You completed the Sabbath Nature Hunt! You’re an Official Creation Explorer!" })
+        completedCount === NATURE_ITEMS.length && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-4 sm:p-6 rounded-3xl bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 text-amber-950 text-center space-y-1.5 sm:space-y-2 shadow-xl animate-bounce", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xl sm:text-2xl font-black", children: "🎉 CONGRATULATIONS! 🎉" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs sm:text-sm font-bold", children: "You completed the Sabbath Nature Hunt! You’re an Official Creation Explorer!" })
         ] })
       ] })
     ] }) })
@@ -37800,12 +37800,12 @@ function AppInner() {
   if (showNotificationSettings) {
     return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-black dark:to-gray-900 transition-colors overflow-x-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col min-h-screen", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(Navigation, {}),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "flex-1 container mx-auto px-4 py-6 max-w-4xl pb-20 lg:pb-8", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mb-6", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "flex-1 container mx-auto px-3 sm:px-4 py-3 sm:py-6 max-w-4xl pb-24 lg:pb-8", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mb-4 sm:mb-6", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           "button",
           {
             onClick: handleCloseNotificationSettings,
-            className: "text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium",
+            className: "text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium text-sm flex items-center gap-1 min-h-[44px]",
             children: "← Back to App"
           }
         ) }),
@@ -37816,7 +37816,7 @@ function AppInner() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-black dark:to-gray-900 transition-colors overflow-x-hidden", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(BrowserRouter, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col min-h-screen", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(Navigation, {}),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "flex-1 container mx-auto px-4 py-6 max-w-4xl pb-20 lg:pb-8", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "flex-1 container mx-auto px-3 sm:px-4 py-3 sm:py-6 max-w-4xl pb-24 lg:pb-8", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(ErrorBoundary, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           NotificationCenter,
           {
@@ -37825,7 +37825,7 @@ function AppInner() {
             onOpenSettings: handleOpenNotificationSettings
           }
         ) }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Routes, { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-3 sm:mt-6", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Routes, { children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/", element: /* @__PURE__ */ jsxRuntimeExports.jsx(ErrorBoundary, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
             SabbathCountdown,
             {

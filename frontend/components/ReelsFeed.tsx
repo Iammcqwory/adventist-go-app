@@ -227,18 +227,18 @@ export function ReelsFeed() {
   };
 
   return (
-    <div className="space-y-6 max-w-2xl mx-auto pb-12">
+    <div className="space-y-4 sm:space-y-6 max-w-2xl mx-auto pb-12">
       {/* Header Banner */}
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 p-6 rounded-2xl text-white shadow-xl">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 p-4 sm:p-6 rounded-2xl text-white shadow-xl">
         <div>
           <div className="flex items-center space-x-2">
             <span className="flex h-3 w-3 relative">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
             </span>
-            <h1 className="text-2xl font-bold tracking-tight">The Advent Message Reels</h1>
+            <h1 className="text-xl sm:text-2xl font-bold tracking-tight">The Advent Message Reels</h1>
           </div>
-          <p className="text-sm text-blue-200 mt-1">
+          <p className="text-xs sm:text-sm text-blue-200 mt-1">
             Bite-sized prophecy, sanctuary gospel, Sabbath sanctuary & kids quests.
           </p>
         </div>
@@ -246,7 +246,7 @@ export function ReelsFeed() {
           href="https://t.me/adventmessage"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-xl text-sm shadow-md transition-all hover:scale-105 active:scale-95"
+          className="inline-flex items-center justify-center gap-2 px-3.5 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-xl text-xs sm:text-sm shadow-md transition-all hover:scale-105 active:scale-95 w-full sm:w-auto min-h-[38px]"
         >
           <Send className="w-4 h-4" />
           Join Telegram Hub
@@ -254,7 +254,7 @@ export function ReelsFeed() {
       </div>
 
       {/* Pillar Filter Pills */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+      <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-2 scrollbar-none">
         {PILLARS.map((p) => {
           const isSelected = selectedPillar === p.id;
           return (
@@ -264,7 +264,7 @@ export function ReelsFeed() {
                 setSelectedPillar(p.id);
                 setCurrentIndex(0);
               }}
-              className={`px-3.5 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 shadow-sm ${
+              className={`px-3 sm:px-3.5 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 shadow-sm min-h-[38px] ${
                 isSelected
                   ? "bg-slate-900 text-white dark:bg-white dark:text-black scale-105"
                   : "bg-white/80 dark:bg-gray-800 text-slate-700 dark:text-gray-300 hover:bg-slate-100 dark:hover:bg-gray-700 border border-slate-200 dark:border-gray-700"
@@ -279,7 +279,7 @@ export function ReelsFeed() {
 
       {/* Vertical Reels Player Card */}
       {currentReel && (
-        <Card className="relative overflow-hidden rounded-3xl border-slate-300 dark:border-gray-800 bg-black shadow-2xl aspect-[9/16] max-h-[720px] mx-auto flex flex-col justify-between">
+        <Card className="relative overflow-hidden rounded-3xl border-slate-300 dark:border-gray-800 bg-black shadow-2xl aspect-[9/16] max-h-[78vh] sm:max-h-[720px] mx-auto flex flex-col justify-between">
           {/* Video Container */}
           <div className="absolute inset-0 cursor-pointer" onClick={togglePlay}>
             <video

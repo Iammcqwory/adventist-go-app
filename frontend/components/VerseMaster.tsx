@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { 
   Mic, 
   MicOff, 
@@ -297,61 +297,61 @@ export function VerseMaster() {
   };
 
   return (
-    <div className="space-y-6 max-w-3xl mx-auto pb-12">
+    <div className="space-y-4 sm:space-y-6 max-w-3xl mx-auto pb-12">
       {/* Top Gamification Bar */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-        <Card className="bg-gradient-to-br from-amber-500/10 to-amber-500/20 border-amber-300 dark:border-amber-700">
-          <CardContent className="p-3.5 flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center text-white shadow-md">
-              <Coins className="w-5 h-5" />
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
+        <Card className="bg-gradient-to-br from-amber-500/10 to-amber-500/20 border-amber-300 dark:border-amber-700 shadow-sm">
+          <CardContent className="p-2.5 sm:p-3.5 flex items-center gap-2.5 sm:gap-3">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-amber-500 flex items-center justify-center text-white shadow-md flex-shrink-0">
+              <Coins className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
-            <div>
-              <p className="text-[11px] font-semibold uppercase text-amber-800 dark:text-amber-300 tracking-wider">
+            <div className="min-w-0">
+              <p className="text-[9px] sm:text-[11px] font-semibold uppercase text-amber-800 dark:text-amber-300 tracking-wider truncate">
                 Sabbath Coins
               </p>
-              <p className="text-xl font-black text-amber-900 dark:text-amber-100">{coins}</p>
+              <p className="text-base sm:text-xl font-black text-amber-900 dark:text-amber-100">{coins}</p>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-orange-500/10 to-orange-500/20 border-orange-300 dark:border-orange-700">
-          <CardContent className="p-3.5 flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-orange-500 flex items-center justify-center text-white shadow-md">
-              <Flame className="w-5 h-5" />
+        <Card className="bg-gradient-to-br from-orange-500/10 to-orange-500/20 border-orange-300 dark:border-orange-700 shadow-sm">
+          <CardContent className="p-2.5 sm:p-3.5 flex items-center gap-2.5 sm:gap-3">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-orange-500 flex items-center justify-center text-white shadow-md flex-shrink-0">
+              <Flame className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
-            <div>
-              <p className="text-[11px] font-semibold uppercase text-orange-800 dark:text-orange-300 tracking-wider">
+            <div className="min-w-0">
+              <p className="text-[9px] sm:text-[11px] font-semibold uppercase text-orange-800 dark:text-orange-300 tracking-wider truncate">
                 Day Streak
               </p>
-              <p className="text-xl font-black text-orange-900 dark:text-orange-100">{streak} Days</p>
+              <p className="text-base sm:text-xl font-black text-orange-900 dark:text-orange-100">{streak} Days</p>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-purple-500/10 to-purple-500/20 border-purple-300 dark:border-purple-700">
-          <CardContent className="p-3.5 flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-purple-500 flex items-center justify-center text-white shadow-md">
-              <Trophy className="w-5 h-5" />
+        <Card className="bg-gradient-to-br from-purple-500/10 to-purple-500/20 border-purple-300 dark:border-purple-700 shadow-sm">
+          <CardContent className="p-2.5 sm:p-3.5 flex items-center gap-2.5 sm:gap-3">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-purple-500 flex items-center justify-center text-white shadow-md flex-shrink-0">
+              <Trophy className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
-            <div>
-              <p className="text-[11px] font-semibold uppercase text-purple-800 dark:text-purple-300 tracking-wider">
+            <div className="min-w-0">
+              <p className="text-[9px] sm:text-[11px] font-semibold uppercase text-purple-800 dark:text-purple-300 tracking-wider truncate">
                 Badge Level
               </p>
-              <p className="text-xl font-black text-purple-900 dark:text-purple-100">Explorer II</p>
+              <p className="text-base sm:text-xl font-black text-purple-900 dark:text-purple-100 truncate">Explorer II</p>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-emerald-500/10 to-emerald-500/20 border-emerald-300 dark:border-emerald-700">
-          <CardContent className="p-3.5 flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-emerald-500 flex items-center justify-center text-white shadow-md">
-              <Award className="w-5 h-5" />
+        <Card className="bg-gradient-to-br from-emerald-500/10 to-emerald-500/20 border-emerald-300 dark:border-emerald-700 shadow-sm">
+          <CardContent className="p-2.5 sm:p-3.5 flex items-center gap-2.5 sm:gap-3">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-emerald-500 flex items-center justify-center text-white shadow-md flex-shrink-0">
+              <Award className="w-4 h-4 sm:w-5 sm:h-5" />
             </div>
-            <div>
-              <p className="text-[11px] font-semibold uppercase text-emerald-800 dark:text-emerald-300 tracking-wider">
+            <div className="min-w-0">
+              <p className="text-[9px] sm:text-[11px] font-semibold uppercase text-emerald-800 dark:text-emerald-300 tracking-wider truncate">
                 Reward
               </p>
-              <p className="text-xl font-black text-emerald-900 dark:text-emerald-100">+{activeVerse.coinsReward}</p>
+              <p className="text-base sm:text-xl font-black text-emerald-900 dark:text-emerald-100">+{activeVerse.coinsReward}</p>
             </div>
           </CardContent>
         </Card>
@@ -360,8 +360,8 @@ export function VerseMaster() {
       {/* Main Challenge Card */}
       <Card className="border-2 border-indigo-200 dark:border-indigo-900 shadow-xl overflow-hidden bg-white dark:bg-gray-950">
         {/* Tier Header Navigation */}
-        <div className="bg-slate-50 dark:bg-gray-900 border-b border-slate-200 dark:border-gray-800 p-4 flex flex-wrap items-center justify-between gap-3">
-          <div className="flex items-center gap-2">
+        <div className="bg-slate-50 dark:bg-gray-900 border-b border-slate-200 dark:border-gray-800 p-3 sm:p-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-3">
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0">
             {(["beginner", "junior", "youth"] as const).map((tier) => (
               <Button
                 key={tier}
@@ -371,25 +371,25 @@ export function VerseMaster() {
                   setSelectedTier(tier);
                   setCurrentVerseIndex(0);
                 }}
-                className={`capitalize font-bold text-xs rounded-xl ${
+                className={`capitalize font-bold text-[11px] sm:text-xs rounded-xl flex-1 sm:flex-none min-h-[36px] ${
                   selectedTier === tier 
                     ? "bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm" 
                     : "text-slate-600 dark:text-gray-300"
                 }`}
               >
-                {tier === "beginner" && "🌱 Beginner (3-6)"}
-                {tier === "junior" && "⭐ Junior (7-11)"}
-                {tier === "youth" && "🚀 Youth (12+)"}
+                {tier === "beginner" && "🌱 Beginner"}
+                {tier === "junior" && "⭐ Junior"}
+                {tier === "youth" && "🚀 Youth"}
               </Button>
             ))}
           </div>
 
           {/* Mode Switcher (Voice vs Puzzle) */}
-          <div className="flex items-center gap-1 bg-slate-200 dark:bg-gray-800 p-1 rounded-xl">
+          <div className="flex items-center gap-1 bg-slate-200 dark:bg-gray-800 p-1 rounded-xl self-center sm:self-auto">
             <button
               onClick={() => setMode("voice")}
               disabled={!speechSupported}
-              className={`px-3 py-1 text-xs font-semibold rounded-lg transition-all flex items-center gap-1.5 ${
+              className={`px-2.5 sm:px-3 py-1 text-xs font-semibold rounded-lg transition-all flex items-center gap-1.5 min-h-[32px] ${
                 mode === "voice"
                   ? "bg-white dark:bg-black text-indigo-600 dark:text-indigo-400 shadow-sm"
                   : "text-slate-600 dark:text-gray-400 hover:text-slate-900"
@@ -400,7 +400,7 @@ export function VerseMaster() {
             </button>
             <button
               onClick={() => setMode("puzzle")}
-              className={`px-3 py-1 text-xs font-semibold rounded-lg transition-all flex items-center gap-1.5 ${
+              className={`px-2.5 sm:px-3 py-1 text-xs font-semibold rounded-lg transition-all flex items-center gap-1.5 min-h-[32px] ${
                 mode === "puzzle"
                   ? "bg-white dark:bg-black text-indigo-600 dark:text-indigo-400 shadow-sm"
                   : "text-slate-600 dark:text-gray-400 hover:text-slate-900"
@@ -412,29 +412,29 @@ export function VerseMaster() {
           </div>
         </div>
 
-        <CardHeader className="text-center pb-3 pt-6">
-          <div className="flex justify-center items-center gap-2 mb-2">
-            <Badge className="bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 font-bold border-indigo-200">
+        <CardHeader className="text-center pb-2 sm:pb-3 pt-4 sm:pt-6 p-4 sm:p-6">
+          <div className="flex justify-center items-center gap-2 mb-1.5 sm:mb-2">
+            <Badge className="bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 font-bold border-indigo-200 text-[10px] sm:text-xs">
               {activeVerse.theme}
             </Badge>
             <span className="text-xs text-slate-400 font-medium">
               Verse {currentVerseIndex + 1} of {filteredVerses.length}
             </span>
           </div>
-          <CardTitle className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+          <CardTitle className="text-xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
             {activeVerse.reference}
           </CardTitle>
-          <CardDescription className="text-sm text-slate-500">
+          <CardDescription className="text-xs sm:text-sm text-slate-500">
             {mode === "voice"
               ? "Tap the microphone and recite the verse clearly from memory!"
               : "Tap the scrambled words in the correct order to assemble the scripture."}
           </CardDescription>
         </CardHeader>
 
-        <CardContent className="space-y-6 p-6">
+        <CardContent className="space-y-4 sm:space-y-6 p-4 sm:p-6">
           {/* Target Verse Box */}
-          <div className="relative p-6 rounded-2xl bg-gradient-to-r from-blue-50/70 via-indigo-50/70 to-purple-50/70 dark:from-blue-950/30 dark:via-indigo-950/30 dark:to-purple-950/30 border border-indigo-100 dark:border-indigo-900/60 shadow-inner">
-            <p className="text-lg sm:text-xl font-serif text-slate-800 dark:text-slate-100 text-center leading-relaxed font-medium">
+          <div className="relative p-4 sm:p-6 rounded-2xl bg-gradient-to-r from-blue-50/70 via-indigo-50/70 to-purple-50/70 dark:from-blue-950/30 dark:via-indigo-950/30 dark:to-purple-950/30 border border-indigo-100 dark:border-indigo-900/60 shadow-inner">
+            <p className="text-base sm:text-xl font-serif text-slate-800 dark:text-slate-100 text-center leading-relaxed font-medium">
               "{activeVerse.text}"
             </p>
           </div>
