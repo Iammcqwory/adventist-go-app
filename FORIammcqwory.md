@@ -1,4 +1,4 @@
-﻿# 🎓 Qwory Teacher: The Ultimate Guide to Adventist Go
+# 🎓 Qwory Teacher: The Ultimate Guide to Adventist Go
 
 **Welcome, Brian!** This guide breaks down the full technical architecture, design philosophy, recent UI/UX overhaul, and engineering lessons behind **Adventist Go** (`https://adventistgoapp.vercel.app`).
 
@@ -41,13 +41,15 @@ graph TD
 - **Privacy Guarantee:** GPS coordinates never leave the browser; they stay in `localStorage`.
 
 #### 2. Intent-Led Navigation (Desktop & Mobile)
-- Grouped 13 scattered destinations into 4 clear mental models:
+- Grouped 14 destinations into 5 clear mental models:
   - **Countdown / Home:** The persistent anchor.
+  - **🎈 Kids Go:** A standalone, prominently branded mode at `/kids` (see Section 2.5 below).
   - **Prepare:** Checklist (`/prep`), Digital Detox (`/detox`).
   - **Study:** Bible Lookup (`/bible`), Verse Master (`/verse-master`), Sabbath School (`/sabbath-school`), Devotionals (`/devotionals`), Hymnal (`/hymns`).
   - **Watch:** Advent Message Reels (`/reels`).
   - **Community:** Family Worship (`/family`), Church Finder (`/churches`), Journal (`/journal`).
-- Added a **Mobile Bottom Tab Bar** for one-thumb switching on smartphones (`Countdown`, `Reels`, `Bible`, `Family`, `More`).
+- Added a **Mobile Bottom Tab Bar** with 5 fast-switch tabs: `Countdown`, `Kids Go 🎈`, `Reels`, `Bible`, `More`.
+- Kids Go gets a distinctive amber-to-pink gradient treatment in both desktop and mobile nav so parents can spot it instantly.
 
 #### 3. Progressive Disclosure Scripture Search
 - The main search input and match type pills (`Keyword`, `Phrase`, `Topic`) take primary visual dominance.
@@ -57,6 +59,25 @@ graph TD
 #### 4. Advent Message Reels & Verse Master Voice Engine
 - Vertical 9:16 snap-scroll player with pillar filters (`prophecy`, `sabbath`, `gospel`, `health`, `kids`).
 - Web Speech API voice recognition engine with fuzzy text scoring and Web Audio API synthesized fanfare.
+
+#### 5. Adventist Kids Go Mode (`/kids`)
+This is a full child-friendly Sabbath experience hub. It lives at `/kids` and contains four interactive sections:
+
+- **📖 Bible Stories:** 5 illustrated stories (*Creation*, *Noah's Ark*, *David & Goliath*, *Daniel in the Lions' Den*, *Jesus Calms the Storm*), each with an age-appropriate narrative and a memory verse to recite.
+- **🎵 Sing Along:** 4 beloved children's hymns (*Jesus Loves Me*, *This Little Light of Mine*, *I've Got the Joy*, *The Wise Man Built His House*) with lyrics that kids can follow while singing.
+- **🌿 Nature Explorer:** A Sabbath scavenger hunt bingo board with 8 outdoor items to find (butterfly, bird, flower, cloud shapes, etc.). Each found item awards a ⭐, persisted in `localStorage` under the key `kids_stars`.
+- **🏆 Verse Master Junior:** A quick-launch button that takes kids directly to the `/verse-master` game in a simplified context.
+
+**Why a separate mode?** Kids need big tap targets, bright colours, minimal text, and zero navigation friction. Embedding these activities inside the adult Study or Community groups would bury them. A top-level "Kids Go 🎈" tab with a distinctive gradient (amber → pink) gives parents a one-tap hand-off: *"Here, play this while I finish cooking."*
+
+**Technical pattern — localStorage star system:**
+```typescript
+// Read stars (with safe fallback)
+const stars = parseInt(localStorage.getItem('kids_stars') || '0');
+// Award a star
+localStorage.setItem('kids_stars', String(stars + 1));
+```
+Stars survive page reloads and app restarts — no backend needed. This is the same persistence pattern used for user location (`adventist_user_location`). Simple, private, zero-cost.
 
 ---
 
